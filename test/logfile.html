@@ -1,0 +1,582 @@
+<title>Vdbench test/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+11:58:49.203 input argument scanned: '-fsd_oceanstor.param'
+11:58:49.204 input argument scanned: '-otest'
+11:58:49.204 java.vendor                   Oracle Corporation
+11:58:49.204 java.home                     /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.161-2.b14.el7.x86_64/jre
+11:58:49.204 java.vm.specification.version 1.8
+11:58:49.204 java.vm.version               25.161-b14
+11:58:49.204 java.vm.vendor                Oracle Corporation
+11:58:49.204 java.specification.version    1.8
+11:58:49.204 java.class.version            52.0
+11:58:49.204 user.name                     root
+11:58:49.204 user.dir                      /root/vdbench50407
+11:58:49.204 java.io.tmpdir                /tmp
+11:58:49.204 java.class.path               ./:./classes:./vdbench.jar
+11:58:49.204 os.name                       Linux
+11:58:49.204 os.arch                       amd64
+11:58:49.204 os.version                    3.10.0-862.el7.x86_64
+11:58:49.204 sun.arch.data.model           64
+11:58:49.207 Flushing all reports
+11:58:49.342 Starting slave: /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.162-10-190411-11.58.49.173 -l n1-0 -p 5570   
+11:58:49.355 Starting slave: ssh 10.233.233.225 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.225-11-190411-11.58.49.173 -l n2-0 -p 5570   
+11:58:49.376 Starting slave: ssh 10.233.233.26 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.26-12-190411-11.58.49.173 -l n3-0 -p 5570   
+11:58:49.396 Starting slave: ssh 10.233.233.177 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.177-13-190411-11.58.49.173 -l n4-0 -p 5570   
+11:58:49.416 Starting slave: ssh 10.233.233.166 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.166-14-190411-11.58.49.173 -l n5-0 -p 5570   
+11:58:49.436 Starting slave: ssh 10.233.233.136 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.136-15-190411-11.58.49.173 -l n6-0 -p 5570   
+11:58:49.456 Starting slave: ssh 10.233.233.192 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.192-16-190411-11.58.49.173 -l n7-0 -p 5570   
+11:58:49.477 Starting slave: ssh 10.233.233.193 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.193-17-190411-11.58.49.173 -l n8-0 -p 5570   
+11:58:49.575 Slave n1-0 (pid  16622) connected to master 16567
+11:58:50.222 Slave n2-0 (pid  15020) connected to master 16567
+11:58:50.225 Slow getMessage: signon         0  6104 SEND_SIGNON_INFO_TO_MASTER
+11:58:50.226 Slave n8-0 (pid   2401) connected to master 16567
+11:58:50.227 Slow getMessage: n6-0           1  6104 SEND_SIGNON_SUCCESSFUL    
+11:58:50.227 Slave n6-0 (pid  15297) connected to master 16567
+11:58:50.237 Slow getMessage: signon         0  7497 SEND_SIGNON_INFO_TO_MASTER
+11:58:50.239 Slow getMessage: n7-0           1  7497 SEND_SIGNON_SUCCESSFUL    
+11:58:50.239 Slave n7-0 (pid  16308) connected to master 16567
+11:58:50.242 Slave n3-0 (pid  14574) connected to master 16567
+11:58:50.250 Slave n4-0 (pid  14629) connected to master 16567
+11:58:50.595 Slow getMessage: signon         0 10386 SEND_SIGNON_INFO_TO_MASTER
+11:58:50.596 Slow getMessage: n5-0           1 10386 SEND_SIGNON_SUCCESSFUL    
+11:58:50.596 Slave n5-0 (pid  16667) connected to master 16567
+11:58:50.665 All slaves are now connected
+11:58:50.669 Slow getMessage: n1-0           2 10809 HEARTBEAT_MESSAGE         
+11:58:50.734 Slow getMessage: n5-0           2 10386 HEARTBEAT_MESSAGE         
+11:58:50.749 Slow getMessage: n1-0           3 10809 GET_LUN_INFO_FROM_SLAVE   
+11:58:50.765 Slow getMessage: n8-0           2  9731 HEARTBEAT_MESSAGE         
+11:58:50.767 Slow getMessage: n5-0           3 10386 GET_LUN_INFO_FROM_SLAVE   
+11:58:50.771 Slow getMessage: n2-0           2  5283 HEARTBEAT_MESSAGE         
+11:58:50.783 Slow getMessage: n6-0           2 11387 HEARTBEAT_MESSAGE         
+11:58:50.794 Slow getMessage: n7-0           2 12780 HEARTBEAT_MESSAGE         
+11:58:50.797 Slow getMessage: n8-0           3  9731 GET_LUN_INFO_FROM_SLAVE   
+11:58:50.812 Slow getMessage: n2-0           3  5283 GET_LUN_INFO_FROM_SLAVE   
+11:58:50.816 Slow getMessage: n6-0           3 11386 GET_LUN_INFO_FROM_SLAVE   
+11:58:50.828 Slow getMessage: n7-0           3 12780 GET_LUN_INFO_FROM_SLAVE   
+11:58:50.829 sd=sd_varlog,lun=/dev/dm-3 lun size: 322,118,352,896 bytes; 299.9961 GB (1024**3); 322.1184 GB (1000**3)
+
+Link to Run Definitions:         <A HREF="#_1227229563">random_write For loops: None</A>
+
+11:58:50.931 Flushing all reports
+11:58:50.971 Waiting for synchronization of all slaves
+11:58:51.368 Slow getMessage: n5-0           4 10386 SLAVE_READY_TO_GO         
+11:58:51.426 Slow getMessage: n1-0           4 10808 SLAVE_READY_TO_GO         
+11:58:51.428 Slow getMessage: n7-0           4 12780 SLAVE_READY_TO_GO         
+11:58:51.432 Slow getMessage: n2-0           4  5283 SLAVE_READY_TO_GO         
+11:58:51.438 Slow getMessage: n8-0           4  9731 SLAVE_READY_TO_GO         
+11:58:51.461 Slow getMessage: n6-0           4 11387 SLAVE_READY_TO_GO         
+11:58:51.471 Synchronization of all slaves complete
+
+<a name="_1227229563"></a><i><b>11:58:52.001 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+11:58:53.027 Slow getMessage: n7-0           5 12780 SLAVE_STATISTICS          
+11:58:53.027 Slow getMessage: n2-0           5  5283 SLAVE_STATISTICS          
+11:58:53.028 Slow getMessage: n1-0           5 10808 SLAVE_STATISTICS          
+11:58:53.028 Slow getMessage: n5-0           5 10386 SLAVE_STATISTICS          
+11:58:53.028 Slow getMessage: n6-0           5 11387 SLAVE_STATISTICS          
+11:58:53.028 Slow getMessage: n8-0           5  9731 SLAVE_STATISTICS          
+
+Apr 11, 2019    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue  cpu%  cpu%
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth sys+u   sys
+11:58:53.047           1    25796.0   192.00    7804   0.00    0.260    0.000    0.260     0.00     7.04    0.133    6.7   1.2   0.2
+11:58:54.005 Slow getMessage: n1-0           6 10808 SLAVE_STATISTICS          
+11:58:54.006 Slow getMessage: n2-0           6  5283 SLAVE_STATISTICS          
+11:58:54.006 Slow getMessage: n7-0           6 12779 SLAVE_STATISTICS          
+11:58:54.007 Slow getMessage: n8-0           6  9731 SLAVE_STATISTICS          
+11:58:54.008 Slow getMessage: n6-0           6 11387 SLAVE_STATISTICS          
+11:58:54.008 Slow getMessage: n5-0           6 10386 SLAVE_STATISTICS          
+11:58:54.013           2    31139.0   232.30    7822   0.00    0.249    0.000    0.249     0.00     7.82    0.144    7.7   0.7   0.2
+11:58:55.005 Slow getMessage: n1-0           7 10809 SLAVE_STATISTICS          
+11:58:55.005 Slow getMessage: n2-0           7  5283 SLAVE_STATISTICS          
+11:58:55.005 Slow getMessage: n8-0           7  9731 SLAVE_STATISTICS          
+11:58:55.006 Slow getMessage: n7-0           7 12780 SLAVE_STATISTICS          
+11:58:55.006 Slow getMessage: n6-0           7 11387 SLAVE_STATISTICS          
+11:58:55.006 Slow getMessage: n5-0           7 10386 SLAVE_STATISTICS          
+11:58:55.008           3    31613.0   230.25    7637   0.00    0.250    0.000    0.250     0.00     8.03    0.174    7.9   0.3   0.2
+11:58:56.004 Slow getMessage: n1-0           8 10808 SLAVE_STATISTICS          
+11:58:56.004 Slow getMessage: n2-0           8  5282 SLAVE_STATISTICS          
+11:58:56.005 Slow getMessage: n8-0           8  9731 SLAVE_STATISTICS          
+11:58:56.005 Slow getMessage: n5-0           8 10386 SLAVE_STATISTICS          
+11:58:56.005 Slow getMessage: n6-0           8 11387 SLAVE_STATISTICS          
+11:58:56.005 Slow getMessage: n7-0           8 12780 SLAVE_STATISTICS          
+11:58:56.007           4    30100.0   226.38    7886   0.00    0.262    0.000    0.262     0.00     5.37    0.160    7.9   0.3   0.1
+11:58:56.028 
+11:58:56.028 Message from slave n4-0: 
+11:58:56.028 New messages found on /var/adm/messages. Do they belong to you?
+11:58:56.028 /var/log/messages: Apr 11 11:59:04 host-10-233-233-177 journal: No devices in use, exit
+11:58:56.028 
+11:58:56.028 Slow getMessage: n5-0           9 10386 CONSOLE_MESSAGE           
+11:58:56.028 
+11:58:56.028 Message from slave n5-0: 
+11:58:56.028 New messages found on /var/adm/messages. Do they belong to you?
+11:58:56.028 /var/log/messages: Apr 11 11:58:54 host-10-233-233-166 journal: No devices in use, exit
+11:58:56.028 
+11:58:56.028 Slow getMessage: n2-0           9  5283 CONSOLE_MESSAGE           
+11:58:56.028 
+11:58:56.028 Message from slave n2-0: 
+11:58:56.028 New messages found on /var/adm/messages. Do they belong to you?
+11:58:56.028 /var/log/messages: Apr 11 11:58:58 host-10-233-233-225 journal: No devices in use, exit
+11:58:56.028 
+11:58:56.030 Slow getMessage: n7-0           9 12780 CONSOLE_MESSAGE           
+11:58:56.030 
+11:58:56.030 Message from slave n7-0: 
+11:58:56.030 New messages found on /var/adm/messages. Do they belong to you?
+11:58:56.030 /var/log/messages: Apr 11 11:58:53 host-10-233-233-192 journal: No devices in use, exit
+11:58:56.030 
+11:58:56.031 Slow getMessage: n8-0           9  9731 CONSOLE_MESSAGE           
+11:58:56.031 
+11:58:56.031 Message from slave n8-0: 
+11:58:56.031 New messages found on /var/adm/messages. Do they belong to you?
+11:58:56.031 /var/log/messages: Apr 11 11:58:56 host-10-233-233-193 journal: No devices in use, exit
+11:58:56.031 
+11:58:56.033 
+11:58:56.033 Message from slave n3-0: 
+11:58:56.033 New messages found on /var/adm/messages. Do they belong to you?
+11:58:56.033 /var/log/messages: Apr 11 11:58:59 host-10-233-233-26 journal: No devices in use, exit
+11:58:56.033 
+11:58:56.040 Slow getMessage: n6-0           9 11387 CONSOLE_MESSAGE           
+11:58:56.040 
+11:58:56.040 Message from slave n6-0: 
+11:58:56.040 New messages found on /var/adm/messages. Do they belong to you?
+11:58:56.040 /var/log/messages: Apr 11 11:58:54 host-10-233-233-136 journal: No devices in use, exit
+11:58:56.040 
+11:58:57.004 Slow getMessage: n2-0          10  5283 SLAVE_STATISTICS          
+11:58:57.004 Slow getMessage: n1-0           9 10808 SLAVE_STATISTICS          
+11:58:57.004 Slow getMessage: n5-0          10 10387 SLAVE_STATISTICS          
+11:58:57.004 Slow getMessage: n6-0          10 11387 SLAVE_STATISTICS          
+11:58:57.004 Slow getMessage: n7-0          10 12780 SLAVE_STATISTICS          
+11:58:57.005 Slow getMessage: n8-0          10  9731 SLAVE_STATISTICS          
+11:58:57.006           5    29529.0   220.68    7836   0.00    0.268    0.000    0.268     0.00     7.32    0.167    7.9   0.3   0.2
+11:58:58.004 Slow getMessage: n1-0          10 10809 SLAVE_STATISTICS          
+11:58:58.004 Slow getMessage: n5-0          11 10386 SLAVE_STATISTICS          
+11:58:58.004 Slow getMessage: n2-0          11  5283 SLAVE_STATISTICS          
+11:58:58.004 Slow getMessage: n8-0          11  9731 SLAVE_STATISTICS          
+11:58:58.004 Slow getMessage: n6-0          11 11387 SLAVE_STATISTICS          
+11:58:58.005 Slow getMessage: n7-0          11 12780 SLAVE_STATISTICS          
+11:58:58.006           6    29570.0   219.21    7773   0.00    0.267    0.000    0.267     0.00     5.85    0.146    7.9   0.2   0.1
+11:58:59.004 Slow getMessage: n1-0          11 10808 SLAVE_STATISTICS          
+11:58:59.004 Slow getMessage: n2-0          12  5283 SLAVE_STATISTICS          
+11:58:59.004 Slow getMessage: n5-0          12 10386 SLAVE_STATISTICS          
+11:58:59.005 Slow getMessage: n6-0          12 11387 SLAVE_STATISTICS          
+11:58:59.005 Slow getMessage: n8-0          12  9731 SLAVE_STATISTICS          
+11:58:59.005 Slow getMessage: n7-0          12 12780 SLAVE_STATISTICS          
+11:58:59.007           7    27939.0   205.42    7709   0.00    0.283    0.000    0.283     0.00     6.56    0.173    7.9   0.2   0.1
+11:59:00.004 Slow getMessage: n2-0          13  5283 SLAVE_STATISTICS          
+11:59:00.004 Slow getMessage: n1-0          12 10809 SLAVE_STATISTICS          
+11:59:00.004 Slow getMessage: n5-0          13 10386 SLAVE_STATISTICS          
+11:59:00.004 Slow getMessage: n6-0          13 11387 SLAVE_STATISTICS          
+11:59:00.004 Slow getMessage: n7-0          13 12780 SLAVE_STATISTICS          
+11:59:00.005 Slow getMessage: n8-0          13  9731 SLAVE_STATISTICS          
+11:59:00.007           8    27891.0   204.93    7704   0.00    0.283    0.000    0.283     0.00     7.31    0.183    7.9   0.2   0.1
+11:59:01.003 Slow getMessage: n2-0          14  5283 SLAVE_STATISTICS          
+11:59:01.004 Slow getMessage: n1-0          13 10808 SLAVE_STATISTICS          
+11:59:01.004 Slow getMessage: n5-0          14 10386 SLAVE_STATISTICS          
+11:59:01.004 Slow getMessage: n6-0          14 11387 SLAVE_STATISTICS          
+11:59:01.004 Slow getMessage: n7-0          14 12780 SLAVE_STATISTICS          
+11:59:01.004 Slow getMessage: n8-0          14  9731 SLAVE_STATISTICS          
+11:59:01.006           9    30216.0   223.65    7761   0.00    0.262    0.000    0.262     0.00     3.99    0.118    7.9   0.2   0.1
+11:59:02.003 Slow getMessage: n1-0          14 10809 SLAVE_STATISTICS          
+11:59:02.003 Slow getMessage: n2-0          15  5283 SLAVE_STATISTICS          
+11:59:02.004 Slow getMessage: n5-0          15 10386 SLAVE_STATISTICS          
+11:59:02.004 Slow getMessage: n8-0          15  9731 SLAVE_STATISTICS          
+11:59:02.004 Slow getMessage: n7-0          15 12779 SLAVE_STATISTICS          
+11:59:02.004 Slow getMessage: n6-0          15 11387 SLAVE_STATISTICS          
+11:59:02.006          10    29721.0   218.60    7712   0.00    0.266    0.000    0.266     0.00     5.57    0.143    7.9   0.3   0.1
+11:59:03.004 Slow getMessage: n1-0          15 10809 SLAVE_STATISTICS          
+11:59:03.004 Slow getMessage: n2-0          16  5284 SLAVE_STATISTICS          
+11:59:03.004 Slow getMessage: n6-0          16 11387 SLAVE_STATISTICS          
+11:59:03.004 Slow getMessage: n8-0          16  9731 SLAVE_STATISTICS          
+11:59:03.004 Slow getMessage: n7-0          16 12780 SLAVE_STATISTICS          
+11:59:03.005 Slow getMessage: n5-0          16 10387 SLAVE_STATISTICS          
+11:59:03.006          11    29291.0   216.50    7750   0.00    0.270    0.000    0.270     0.00     6.26    0.157    7.9   0.3   0.2
+11:59:04.003 Slow getMessage: n1-0          16 10809 SLAVE_STATISTICS          
+11:59:04.003 Slow getMessage: n2-0          17  5283 SLAVE_STATISTICS          
+11:59:04.004 Slow getMessage: n5-0          17 10386 SLAVE_STATISTICS          
+11:59:04.004 Slow getMessage: n7-0          17 12779 SLAVE_STATISTICS          
+11:59:04.004 Slow getMessage: n6-0          17 11387 SLAVE_STATISTICS          
+11:59:04.004 Slow getMessage: n8-0          17  9731 SLAVE_STATISTICS          
+11:59:04.005          12    29159.0   218.96    7874   0.00    0.271    0.000    0.271     0.00     6.72    0.145    7.9   0.2   0.1
+11:59:05.004 Slow getMessage: n1-0          17 10809 SLAVE_STATISTICS          
+11:59:05.004 Slow getMessage: n2-0          18  5282 SLAVE_STATISTICS          
+11:59:05.006 Slow getMessage: n8-0          18  9730 SLAVE_STATISTICS          
+11:59:05.006 Slow getMessage: n6-0          18 11386 SLAVE_STATISTICS          
+11:59:05.006 Slow getMessage: n5-0          18 10386 SLAVE_STATISTICS          
+11:59:05.006 Slow getMessage: n7-0          18 12780 SLAVE_STATISTICS          
+11:59:05.008          13    29107.0   215.89    7777   0.00    0.272    0.000    0.272     0.00     4.66    0.149    7.9   0.2   0.1
+11:59:06.003 Slow getMessage: n1-0          18 10809 SLAVE_STATISTICS          
+11:59:06.003 Slow getMessage: n2-0          19  5283 SLAVE_STATISTICS          
+11:59:06.004 Slow getMessage: n5-0          19 10386 SLAVE_STATISTICS          
+11:59:06.004 Slow getMessage: n7-0          19 12779 SLAVE_STATISTICS          
+11:59:06.004 Slow getMessage: n6-0          19 11386 SLAVE_STATISTICS          
+11:59:06.004 Slow getMessage: n8-0          19  9731 SLAVE_STATISTICS          
+11:59:06.005          14    29194.0   221.19    7944   0.00    0.271    0.000    0.271     0.00     6.72    0.138    7.9   0.3   0.1
+11:59:07.003 Slow getMessage: n1-0          19 10808 SLAVE_STATISTICS          
+11:59:07.004 Slow getMessage: n2-0          20  5283 SLAVE_STATISTICS          
+11:59:07.004 Slow getMessage: n7-0          20 12780 SLAVE_STATISTICS          
+11:59:07.005 Slow getMessage: n5-0          20 10386 SLAVE_STATISTICS          
+11:59:07.005 Slow getMessage: n6-0          20 11387 SLAVE_STATISTICS          
+11:59:07.005 Slow getMessage: n8-0          20  9731 SLAVE_STATISTICS          
+11:59:07.006          15    29587.0   219.33    7773   0.00    0.267    0.000    0.267     0.00     5.23    0.146    7.9   0.2   0.1
+11:59:08.003 Slow getMessage: n1-0          20 10808 SLAVE_STATISTICS          
+11:59:08.004 Slow getMessage: n7-0          21 12780 SLAVE_STATISTICS          
+11:59:08.004 Slow getMessage: n6-0          21 11386 SLAVE_STATISTICS          
+11:59:08.005 Slow getMessage: n8-0          21  9730 SLAVE_STATISTICS          
+11:59:08.005 Slow getMessage: n5-0          21 10386 SLAVE_STATISTICS          
+11:59:08.005 Slow getMessage: n2-0          21  5283 SLAVE_STATISTICS          
+11:59:08.006          16    28533.0   213.83    7858   0.00    0.277    0.000    0.277     0.00     5.02    0.172    7.9   0.2   0.2
+11:59:09.004 Slow getMessage: n2-0          22  5283 SLAVE_STATISTICS          
+11:59:09.004 Slow getMessage: n1-0          21 10808 SLAVE_STATISTICS          
+11:59:09.004 Slow getMessage: n6-0          22 11387 SLAVE_STATISTICS          
+11:59:09.005 Slow getMessage: n7-0          22 12780 SLAVE_STATISTICS          
+11:59:09.005 Slow getMessage: n5-0          22 10386 SLAVE_STATISTICS          
+11:59:09.005 Slow getMessage: n8-0          22  9731 SLAVE_STATISTICS          
+11:59:09.006          17    28770.0   213.38    7777   0.00    0.275    0.000    0.275     0.00     6.58    0.153    7.9   0.3   0.1
+11:59:10.003 Slow getMessage: n1-0          22 10808 SLAVE_STATISTICS          
+11:59:10.003 Slow getMessage: n2-0          23  5282 SLAVE_STATISTICS          
+11:59:10.003 Slow getMessage: n6-0          23 11386 SLAVE_STATISTICS          
+11:59:10.004 Slow getMessage: n5-0          23 10386 SLAVE_STATISTICS          
+11:59:10.004 Slow getMessage: n8-0          23  9731 SLAVE_STATISTICS          
+11:59:10.004 Slow getMessage: n7-0          23 12780 SLAVE_STATISTICS          
+11:59:10.005          18    29285.0   217.04    7771   0.00    0.271    0.000    0.271     0.00     7.54    0.161    7.9   0.2   0.1
+11:59:11.003 Slow getMessage: n1-0          23 10809 SLAVE_STATISTICS          
+11:59:11.003 Slow getMessage: n2-0          24  5283 SLAVE_STATISTICS          
+11:59:11.004 Slow getMessage: n5-0          24 10386 SLAVE_STATISTICS          
+11:59:11.004 Slow getMessage: n6-0          24 11386 SLAVE_STATISTICS          
+11:59:11.004 Slow getMessage: n7-0          24 12779 SLAVE_STATISTICS          
+11:59:11.004 Slow getMessage: n8-0          24  9731 SLAVE_STATISTICS          
+11:59:11.005          19    29715.0   224.88    7935   0.00    0.267    0.000    0.267     0.00     4.51    0.128    7.9   0.2   0.2
+11:59:12.004 Slow getMessage: n2-0          25  5283 SLAVE_STATISTICS          
+11:59:12.004 Slow getMessage: n1-0          24 10808 SLAVE_STATISTICS          
+11:59:12.005 Slow getMessage: n5-0          25 10386 SLAVE_STATISTICS          
+11:59:12.005 Slow getMessage: n6-0          25 11387 SLAVE_STATISTICS          
+11:59:12.005 Slow getMessage: n8-0          25  9731 SLAVE_STATISTICS          
+11:59:12.005 Slow getMessage: n7-0          25 12780 SLAVE_STATISTICS          
+11:59:12.006          20    29175.0   215.18    7733   0.00    0.271    0.000    0.271     0.00    10.01    0.160    7.9   0.2   0.1
+11:59:13.003 Slow getMessage: n2-0          26  5283 SLAVE_STATISTICS          
+11:59:13.004 Slow getMessage: n5-0          26 10386 SLAVE_STATISTICS          
+11:59:13.004 Slow getMessage: n1-0          25 10808 SLAVE_STATISTICS          
+11:59:13.004 Slow getMessage: n6-0          26 11386 SLAVE_STATISTICS          
+11:59:13.004 Slow getMessage: n8-0          26  9730 SLAVE_STATISTICS          
+11:59:13.004 Slow getMessage: n7-0          26 12780 SLAVE_STATISTICS          
+11:59:13.005          21    28746.0   217.16    7921   0.00    0.276    0.000    0.276     0.00     4.55    0.132    7.9   0.2   0.1
+11:59:14.002 Slow getMessage: n1-0          26 10808 SLAVE_STATISTICS          
+11:59:14.003 Slow getMessage: n2-0          27  5283 SLAVE_STATISTICS          
+11:59:14.004 Slow getMessage: n7-0          27 12780 SLAVE_STATISTICS          
+11:59:14.004 Slow getMessage: n6-0          27 11386 SLAVE_STATISTICS          
+11:59:14.004 Slow getMessage: n8-0          27  9732 SLAVE_STATISTICS          
+11:59:14.004 Slow getMessage: n5-0          27 10386 SLAVE_STATISTICS          
+11:59:14.006          22    27758.0   203.53    7688   0.00    0.285    0.000    0.285     0.00     4.12    0.151    7.9   0.3   0.1
+11:59:15.004 Slow getMessage: n1-0          27 10808 SLAVE_STATISTICS          
+11:59:15.004 Slow getMessage: n5-0          28 10386 SLAVE_STATISTICS          
+11:59:15.004 Slow getMessage: n6-0          28 11387 SLAVE_STATISTICS          
+11:59:15.004 Slow getMessage: n7-0          28 12780 SLAVE_STATISTICS          
+11:59:15.004 Slow getMessage: n8-0          28  9731 SLAVE_STATISTICS          
+11:59:15.004 Slow getMessage: n2-0          28  5284 SLAVE_STATISTICS          
+11:59:15.005          23    27926.0   206.87    7767   0.00    0.284    0.000    0.284     0.00     6.49    0.174    7.9   0.2   0.1
+11:59:16.003 Slow getMessage: n1-0          28 10808 SLAVE_STATISTICS          
+11:59:16.003 Slow getMessage: n2-0          29  5282 SLAVE_STATISTICS          
+11:59:16.003 Slow getMessage: n5-0          29 10386 SLAVE_STATISTICS          
+11:59:16.003 Slow getMessage: n7-0          29 12780 SLAVE_STATISTICS          
+11:59:16.003 Slow getMessage: n8-0          29  9731 SLAVE_STATISTICS          
+11:59:16.003 Slow getMessage: n6-0          29 11386 SLAVE_STATISTICS          
+11:59:16.005          24    28322.0   207.39    7678   0.00    0.280    0.000    0.280     0.00     8.04    0.180    7.9   0.2   0.1
+11:59:17.003 Slow getMessage: n1-0          29 10809 SLAVE_STATISTICS          
+11:59:17.003 Slow getMessage: n8-0          30  9731 SLAVE_STATISTICS          
+11:59:17.004 Slow getMessage: n7-0          30 12780 SLAVE_STATISTICS          
+11:59:17.004 Slow getMessage: n5-0          30 10386 SLAVE_STATISTICS          
+11:59:17.004 Slow getMessage: n6-0          30 11387 SLAVE_STATISTICS          
+11:59:17.004 Slow getMessage: n2-0          30  5284 SLAVE_STATISTICS          
+11:59:17.005          25    28695.0   215.98    7892   0.00    0.276    0.000    0.276     0.00     5.24    0.157    7.9   0.2   0.1
+11:59:18.003 Slow getMessage: n1-0          30 10809 SLAVE_STATISTICS          
+11:59:18.004 Slow getMessage: n2-0          31  5283 SLAVE_STATISTICS          
+11:59:18.004 Slow getMessage: n6-0          31 11387 SLAVE_STATISTICS          
+11:59:18.004 Slow getMessage: n7-0          31 12780 SLAVE_STATISTICS          
+11:59:18.004 Slow getMessage: n8-0          31  9731 SLAVE_STATISTICS          
+11:59:18.004 Slow getMessage: n5-0          31 10386 SLAVE_STATISTICS          
+11:59:18.018          26    28784.0   215.77    7860   0.00    0.275    0.000    0.275     0.00     4.17    0.141    7.9   0.2   0.1
+11:59:19.003 Slow getMessage: n2-0          32  5282 SLAVE_STATISTICS          
+11:59:19.003 Slow getMessage: n5-0          32 10386 SLAVE_STATISTICS          
+11:59:19.003 Slow getMessage: n6-0          32 11387 SLAVE_STATISTICS          
+11:59:19.003 Slow getMessage: n1-0          31 10809 SLAVE_STATISTICS          
+11:59:19.003 Slow getMessage: n8-0          32  9731 SLAVE_STATISTICS          
+11:59:19.004 Slow getMessage: n7-0          32 12780 SLAVE_STATISTICS          
+11:59:19.004          27    29350.0   221.15    7901   0.00    0.270    0.000    0.270     0.00     5.58    0.142    7.9   0.3   0.1
+11:59:20.003 Slow getMessage: n2-0          33  5282 SLAVE_STATISTICS          
+11:59:20.003 Slow getMessage: n6-0          33 11386 SLAVE_STATISTICS          
+11:59:20.004 Slow getMessage: n7-0          33 12780 SLAVE_STATISTICS          
+11:59:20.004 Slow getMessage: n1-0          32 10809 SLAVE_STATISTICS          
+11:59:20.004 Slow getMessage: n8-0          33  9731 SLAVE_STATISTICS          
+11:59:20.004 Slow getMessage: n5-0          33 10386 SLAVE_STATISTICS          
+11:59:20.005          28    28859.0   213.62    7761   0.00    0.275    0.000    0.275     0.00     4.78    0.142    7.9   0.3   0.2
+11:59:21.004 Slow getMessage: n1-0          33 10808 SLAVE_STATISTICS          
+11:59:21.004 Slow getMessage: n2-0          34  5283 SLAVE_STATISTICS          
+11:59:21.004 Slow getMessage: n5-0          34 10386 SLAVE_STATISTICS          
+11:59:21.004 Slow getMessage: n6-0          34 11386 SLAVE_STATISTICS          
+11:59:21.004 Slow getMessage: n7-0          34 12780 SLAVE_STATISTICS          
+11:59:21.005 Slow getMessage: n8-0          34  9731 SLAVE_STATISTICS          
+11:59:21.006          29    27998.0   209.49    7845   0.00    0.283    0.000    0.283     0.00     5.37    0.151    7.9   0.2   0.1
+11:59:22.002 Slow getMessage: n1-0          34 10808 SLAVE_STATISTICS          
+11:59:22.003 Slow getMessage: n2-0          35  5282 SLAVE_STATISTICS          
+11:59:22.004 Slow getMessage: n6-0          35 11386 SLAVE_STATISTICS          
+11:59:22.004 Slow getMessage: n8-0          35  9730 SLAVE_STATISTICS          
+11:59:22.004 Slow getMessage: n7-0          35 12780 SLAVE_STATISTICS          
+11:59:22.004 Slow getMessage: n5-0          35 10387 SLAVE_STATISTICS          
+11:59:22.005          30    28213.0   209.73    7795   0.00    0.281    0.000    0.281     0.00     6.92    0.171    7.9   0.2   0.2
+11:59:23.004 Slow getMessage: n2-0          36  5283 SLAVE_STATISTICS          
+11:59:23.004 Slow getMessage: n5-0          36 10386 SLAVE_STATISTICS          
+11:59:23.004 Slow getMessage: n1-0          35 10809 SLAVE_STATISTICS          
+11:59:23.004 Slow getMessage: n7-0          36 12780 SLAVE_STATISTICS          
+11:59:23.004 Slow getMessage: n8-0          36  9731 SLAVE_STATISTICS          
+11:59:23.004 Slow getMessage: n6-0          36 11387 SLAVE_STATISTICS          
+
+Apr 11, 2019    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue  cpu%  cpu%
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth sys+u   sys
+11:59:23.006          31    29423.0   218.59    7790   0.00    0.269    0.000    0.269     0.00     6.65    0.146    7.9   0.2   0.1
+11:59:24.003 Slow getMessage: n1-0          36 10808 SLAVE_STATISTICS          
+11:59:24.003 Slow getMessage: n2-0          37  5282 SLAVE_STATISTICS          
+11:59:24.003 Slow getMessage: n6-0          37 11386 SLAVE_STATISTICS          
+11:59:24.003 Slow getMessage: n5-0          37 10386 SLAVE_STATISTICS          
+11:59:24.004 Slow getMessage: n7-0          37 12780 SLAVE_STATISTICS          
+11:59:24.004 Slow getMessage: n8-0          37  9731 SLAVE_STATISTICS          
+11:59:24.005          32    29052.0   215.72    7786   0.00    0.273    0.000    0.273     0.00     6.63    0.155    7.9   0.2   0.1
+11:59:25.003 Slow getMessage: n1-0          37 10809 SLAVE_STATISTICS          
+11:59:25.003 Slow getMessage: n2-0          38  5283 SLAVE_STATISTICS          
+11:59:25.004 Slow getMessage: n8-0          38  9731 SLAVE_STATISTICS          
+11:59:25.004 Slow getMessage: n5-0          38 10386 SLAVE_STATISTICS          
+11:59:25.004 Slow getMessage: n6-0          38 11386 SLAVE_STATISTICS          
+11:59:25.004 Slow getMessage: n7-0          38 12779 SLAVE_STATISTICS          
+11:59:25.005          33    27723.0   208.33    7879   0.00    0.286    0.000    0.286     0.00   210.74    1.272    7.9   0.2   0.1
+11:59:26.003 Slow getMessage: n2-0          39  5283 SLAVE_STATISTICS          
+11:59:26.003 Slow getMessage: n1-0          38 10808 SLAVE_STATISTICS          
+11:59:26.003 Slow getMessage: n5-0          39 10386 SLAVE_STATISTICS          
+11:59:26.003 Slow getMessage: n6-0          39 11387 SLAVE_STATISTICS          
+11:59:26.003 Slow getMessage: n7-0          39 12780 SLAVE_STATISTICS          
+11:59:26.004 Slow getMessage: n8-0          39  9731 SLAVE_STATISTICS          
+11:59:26.005          34    27798.0   210.53    7941   0.00    0.285    0.000    0.285     0.00   179.87    1.088    7.9   0.2   0.1
+11:59:27.003 Slow getMessage: n1-0          39 10809 SLAVE_STATISTICS          
+11:59:27.003 Slow getMessage: n2-0          40  5283 SLAVE_STATISTICS          
+11:59:27.004 Slow getMessage: n5-0          40 10386 SLAVE_STATISTICS          
+11:59:27.004 Slow getMessage: n8-0          40  9730 SLAVE_STATISTICS          
+11:59:27.004 Slow getMessage: n6-0          40 11386 SLAVE_STATISTICS          
+11:59:27.004 Slow getMessage: n7-0          40 12780 SLAVE_STATISTICS          
+11:59:27.004          35    28725.0   209.21    7636   0.00    0.276    0.000    0.276     0.00     6.89    0.155    7.9   0.2   0.1
+11:59:28.003 Slow getMessage: n2-0          41  5283 SLAVE_STATISTICS          
+11:59:28.003 Slow getMessage: n1-0          40 10808 SLAVE_STATISTICS          
+11:59:28.003 Slow getMessage: n6-0          41 11386 SLAVE_STATISTICS          
+11:59:28.003 Slow getMessage: n5-0          41 10386 SLAVE_STATISTICS          
+11:59:28.004 Slow getMessage: n8-0          41  9732 SLAVE_STATISTICS          
+11:59:28.004 Slow getMessage: n7-0          41 12780 SLAVE_STATISTICS          
+11:59:28.005          36    28807.0   214.55    7809   0.00    0.275    0.000    0.275     0.00     8.09    0.154    7.9   0.2   0.1
+11:59:29.003 Slow getMessage: n1-0          41 10808 SLAVE_STATISTICS          
+11:59:29.003 Slow getMessage: n2-0          42  5283 SLAVE_STATISTICS          
+11:59:29.004 Slow getMessage: n5-0          42 10385 SLAVE_STATISTICS          
+11:59:29.004 Slow getMessage: n6-0          42 11387 SLAVE_STATISTICS          
+11:59:29.004 Slow getMessage: n7-0          42 12780 SLAVE_STATISTICS          
+11:59:29.004 Slow getMessage: n8-0          42  9731 SLAVE_STATISTICS          
+11:59:29.005          37    28899.0   211.06    7658   0.00    0.267    0.000    0.267     0.00     3.46    0.118    7.9   0.2   0.1
+11:59:30.003 Slow getMessage: n1-0          42 10809 SLAVE_STATISTICS          
+11:59:30.003 Slow getMessage: n2-0          43  5283 SLAVE_STATISTICS          
+11:59:30.003 Slow getMessage: n6-0          43 11386 SLAVE_STATISTICS          
+11:59:30.003 Slow getMessage: n7-0          43 12780 SLAVE_STATISTICS          
+11:59:30.004 Slow getMessage: n8-0          43  9731 SLAVE_STATISTICS          
+11:59:30.004 Slow getMessage: n5-0          43 10386 SLAVE_STATISTICS          
+11:59:30.004          38    28688.0   215.41    7873   0.00    0.283    0.000    0.283     0.00   209.24    1.241    7.9   0.2   0.1
+11:59:31.002 Slow getMessage: n2-0          44  5283 SLAVE_STATISTICS          
+11:59:31.002 Slow getMessage: n1-0          43 10808 SLAVE_STATISTICS          
+11:59:31.003 Slow getMessage: n6-0          44 11386 SLAVE_STATISTICS          
+11:59:31.003 Slow getMessage: n8-0          44  9730 SLAVE_STATISTICS          
+11:59:31.003 Slow getMessage: n5-0          44 10386 SLAVE_STATISTICS          
+11:59:31.003 Slow getMessage: n7-0          44 12780 SLAVE_STATISTICS          
+11:59:31.003          39    27856.0   208.45    7846   0.00    0.284    0.000    0.284     0.00     5.18    0.167    7.9   0.2   0.1
+11:59:32.003 Slow getMessage: n1-0          44 10808 SLAVE_STATISTICS          
+11:59:32.003 Slow getMessage: n2-0          45  5283 SLAVE_STATISTICS          
+11:59:32.003 Slow getMessage: n5-0          45 10386 SLAVE_STATISTICS          
+11:59:32.003 Slow getMessage: n8-0          45  9731 SLAVE_STATISTICS          
+11:59:32.003 Slow getMessage: n7-0          45 12780 SLAVE_STATISTICS          
+11:59:32.004 Slow getMessage: n6-0          45 11387 SLAVE_STATISTICS          
+11:59:32.004          40    28216.0   212.04    7880   0.00    0.281    0.000    0.281     0.00     8.35    0.178    7.9   0.2   0.1
+11:59:33.003 Slow getMessage: n2-0          46  5282 SLAVE_STATISTICS          
+11:59:33.003 Slow getMessage: n1-0          45 10808 SLAVE_STATISTICS          
+11:59:33.004 Slow getMessage: n6-0          46 11387 SLAVE_STATISTICS          
+11:59:33.004 Slow getMessage: n8-0          46  9730 SLAVE_STATISTICS          
+11:59:33.004 Slow getMessage: n5-0          46 10386 SLAVE_STATISTICS          
+11:59:33.004 Slow getMessage: n7-0          46 12780 SLAVE_STATISTICS          
+11:59:33.005          41    28686.0   216.46    7912   0.00    0.276    0.000    0.276     0.00    74.14    0.455    7.9   0.2   0.2
+11:59:34.002 Slow getMessage: n2-0          47  5283 SLAVE_STATISTICS          
+11:59:34.002 Slow getMessage: n1-0          46 10808 SLAVE_STATISTICS          
+11:59:34.003 Slow getMessage: n5-0          47 10385 SLAVE_STATISTICS          
+11:59:34.003 Slow getMessage: n8-0          47  9731 SLAVE_STATISTICS          
+11:59:34.003 Slow getMessage: n6-0          47 11387 SLAVE_STATISTICS          
+11:59:34.004 Slow getMessage: n7-0          47 12780 SLAVE_STATISTICS          
+11:59:34.004          42    29016.0   216.84    7836   0.00    0.273    0.000    0.273     0.00     5.66    0.139    7.9   0.2   0.1
+11:59:35.002 Slow getMessage: n2-0          48  5283 SLAVE_STATISTICS          
+11:59:35.003 Slow getMessage: n1-0          47 10808 SLAVE_STATISTICS          
+11:59:35.003 Slow getMessage: n6-0          48 11386 SLAVE_STATISTICS          
+11:59:35.003 Slow getMessage: n8-0          48  9731 SLAVE_STATISTICS          
+11:59:35.003 Slow getMessage: n7-0          48 12780 SLAVE_STATISTICS          
+11:59:35.003 Slow getMessage: n5-0          48 10386 SLAVE_STATISTICS          
+11:59:35.004          43    28869.0   216.74    7872   0.00    0.275    0.000    0.275     0.00     8.76    0.154    7.9   0.2   0.1
+11:59:35.668 Slow getMessage: n2-0          49  5283 HEARTBEAT_MESSAGE         
+11:59:35.668 Slow getMessage: n1-0          48 10808 HEARTBEAT_MESSAGE         
+11:59:35.668 Slow getMessage: n8-0          49  9731 HEARTBEAT_MESSAGE         
+11:59:35.668 Slow getMessage: n5-0          49 10386 HEARTBEAT_MESSAGE         
+11:59:35.668 Slow getMessage: n7-0          49 12780 HEARTBEAT_MESSAGE         
+11:59:35.668 Slow getMessage: n6-0          49 11386 HEARTBEAT_MESSAGE         
+11:59:36.003 Slow getMessage: n2-0          50  5282 SLAVE_STATISTICS          
+11:59:36.003 Slow getMessage: n6-0          50 11386 SLAVE_STATISTICS          
+11:59:36.004 Slow getMessage: n8-0          50  9730 SLAVE_STATISTICS          
+11:59:36.004 Slow getMessage: n5-0          50 10386 SLAVE_STATISTICS          
+11:59:36.004 Slow getMessage: n7-0          50 12780 SLAVE_STATISTICS          
+11:59:36.004 Slow getMessage: n1-0          49 10809 SLAVE_STATISTICS          
+11:59:36.005          44    27011.0   201.51    7822   0.00    0.294    0.000    0.294     0.00   206.00    1.320    7.9   0.2   0.1
+11:59:37.002 Slow getMessage: n2-0          51  5283 SLAVE_STATISTICS          
+11:59:37.003 Slow getMessage: n1-0          50 10809 SLAVE_STATISTICS          
+11:59:37.003 Slow getMessage: n7-0          51 12780 SLAVE_STATISTICS          
+11:59:37.003 Slow getMessage: n8-0          51  9731 SLAVE_STATISTICS          
+11:59:37.003 Slow getMessage: n6-0          51 11387 SLAVE_STATISTICS          
+11:59:37.003 Slow getMessage: n5-0          51 10386 SLAVE_STATISTICS          
+11:59:37.004          45    28012.0   208.54    7806   0.00    0.283    0.000    0.283     0.00    52.67    0.357    7.9   0.2   0.1
+11:59:38.002 Slow getMessage: n2-0          52  5283 SLAVE_STATISTICS          
+11:59:38.003 Slow getMessage: n1-0          51 10808 SLAVE_STATISTICS          
+11:59:38.003 Slow getMessage: n5-0          52 10386 SLAVE_STATISTICS          
+11:59:38.003 Slow getMessage: n8-0          52  9731 SLAVE_STATISTICS          
+11:59:38.003 Slow getMessage: n6-0          52 11386 SLAVE_STATISTICS          
+11:59:38.003 Slow getMessage: n7-0          52 12780 SLAVE_STATISTICS          
+11:59:38.004          46    27170.0   203.32    7846   0.00    0.292    0.000    0.292     0.00   564.31    3.427    7.9   0.2   0.1
+11:59:39.002 Slow getMessage: n2-0          53  5282 SLAVE_STATISTICS          
+11:59:39.002 Slow getMessage: n1-0          52 10809 SLAVE_STATISTICS          
+11:59:39.003 Slow getMessage: n8-0          53  9731 SLAVE_STATISTICS          
+11:59:39.003 Slow getMessage: n6-0          53 11387 SLAVE_STATISTICS          
+11:59:39.003 Slow getMessage: n7-0          53 12780 SLAVE_STATISTICS          
+11:59:39.004 Slow getMessage: n5-0          53 10386 SLAVE_STATISTICS          
+11:59:39.004          47    29175.0   218.69    7859   0.00    0.272    0.000    0.272     0.00     5.51    0.142    7.9   0.2   0.1
+11:59:40.002 Slow getMessage: n2-0          54  5283 SLAVE_STATISTICS          
+11:59:40.003 Slow getMessage: n1-0          53 10808 SLAVE_STATISTICS          
+11:59:40.003 Slow getMessage: n6-0          54 11386 SLAVE_STATISTICS          
+11:59:40.003 Slow getMessage: n5-0          54 10386 SLAVE_STATISTICS          
+11:59:40.003 Slow getMessage: n7-0          54 12780 SLAVE_STATISTICS          
+11:59:40.004 Slow getMessage: n8-0          54  9731 SLAVE_STATISTICS          
+11:59:40.005          48    27928.0   211.61    7945   0.00    0.284    0.000    0.284     0.00     5.67    0.169    7.9   0.2   0.2
+11:59:41.003 Slow getMessage: n2-0          55  5283 SLAVE_STATISTICS          
+11:59:41.003 Slow getMessage: n1-0          54 10808 SLAVE_STATISTICS          
+11:59:41.003 Slow getMessage: n5-0          55 10386 SLAVE_STATISTICS          
+11:59:41.004 Slow getMessage: n7-0          55 12780 SLAVE_STATISTICS          
+11:59:41.004 Slow getMessage: n6-0          55 11387 SLAVE_STATISTICS          
+11:59:41.004 Slow getMessage: n8-0          55  9731 SLAVE_STATISTICS          
+11:59:41.005          49    24952.0   187.06    7861   0.00    0.318    0.000    0.318     0.00   519.90    4.468    7.9   0.5   0.3
+11:59:42.002 Slow getMessage: n2-0          56  5283 SLAVE_STATISTICS          
+11:59:42.002 Slow getMessage: n1-0          55 10808 SLAVE_STATISTICS          
+11:59:42.003 Slow getMessage: n7-0          56 12780 SLAVE_STATISTICS          
+11:59:42.003 Slow getMessage: n8-0          56  9731 SLAVE_STATISTICS          
+11:59:42.003 Slow getMessage: n6-0          56 11387 SLAVE_STATISTICS          
+11:59:42.003 Slow getMessage: n5-0          56 10387 SLAVE_STATISTICS          
+11:59:42.004          50    28067.0   213.26    7967   0.00    0.282    0.000    0.282     0.00   185.19    1.114    7.9   0.6   0.4
+11:59:43.002 Slow getMessage: n2-0          57  5283 SLAVE_STATISTICS          
+11:59:43.003 Slow getMessage: n1-0          56 10808 SLAVE_STATISTICS          
+11:59:43.003 Slow getMessage: n6-0          57 11386 SLAVE_STATISTICS          
+11:59:43.003 Slow getMessage: n5-0          57 10386 SLAVE_STATISTICS          
+11:59:43.003 Slow getMessage: n8-0          57  9731 SLAVE_STATISTICS          
+11:59:43.004 Slow getMessage: n7-0          57 12780 SLAVE_STATISTICS          
+11:59:43.005          51    28931.0   215.05    7794   0.00    0.274    0.000    0.274     0.00     5.57    0.157    7.9   0.4   0.3
+11:59:44.003 Slow getMessage: n1-0          57 10809 SLAVE_STATISTICS          
+11:59:44.003 Slow getMessage: n2-0          58  5283 SLAVE_STATISTICS          
+11:59:44.004 Slow getMessage: n5-0          58 10386 SLAVE_STATISTICS          
+11:59:44.004 Slow getMessage: n6-0          58 11386 SLAVE_STATISTICS          
+11:59:44.004 Slow getMessage: n7-0          58 12781 SLAVE_STATISTICS          
+11:59:44.004 Slow getMessage: n8-0          58  9731 SLAVE_STATISTICS          
+11:59:44.005          52    27777.0   205.96    7774   0.00    0.283    0.000    0.283     0.00   146.81    1.377    7.9   0.2   0.1
+11:59:45.002 Slow getMessage: n1-0          58 10808 SLAVE_STATISTICS          
+11:59:45.002 Slow getMessage: n2-0          59  5283 SLAVE_STATISTICS          
+11:59:45.003 Slow getMessage: n5-0          59 10386 SLAVE_STATISTICS          
+11:59:45.003 Slow getMessage: n7-0          59 12780 SLAVE_STATISTICS          
+11:59:45.003 Slow getMessage: n8-0          59  9731 SLAVE_STATISTICS          
+11:59:45.003 Slow getMessage: n6-0          59 11386 SLAVE_STATISTICS          
+11:59:45.004          53    23892.0   179.56    7880   0.00    0.336    0.000    0.336     0.00   497.38    3.886    7.9   0.2   0.1
+11:59:46.003 Slow getMessage: n1-0          59 10809 SLAVE_STATISTICS          
+11:59:46.003 Slow getMessage: n2-0          60  5283 SLAVE_STATISTICS          
+11:59:46.003 Slow getMessage: n5-0          60 10386 SLAVE_STATISTICS          
+11:59:46.004 Slow getMessage: n8-0          60  9730 SLAVE_STATISTICS          
+11:59:46.004 Slow getMessage: n7-0          60 12780 SLAVE_STATISTICS          
+11:59:46.004 Slow getMessage: n6-0          60 11387 SLAVE_STATISTICS          
+11:59:46.005          54    25085.0   184.44    7709   0.00    0.311    0.000    0.311     0.00   533.41    3.934    7.9   0.2   0.1
+11:59:47.002 Slow getMessage: n1-0          60 10808 SLAVE_STATISTICS          
+11:59:47.003 Slow getMessage: n5-0          61 10386 SLAVE_STATISTICS          
+11:59:47.003 Slow getMessage: n2-0          61  5283 SLAVE_STATISTICS          
+11:59:47.003 Slow getMessage: n8-0          61  9731 SLAVE_STATISTICS          
+11:59:47.003 Slow getMessage: n6-0          61 11387 SLAVE_STATISTICS          
+11:59:47.003 Slow getMessage: n7-0          61 12780 SLAVE_STATISTICS          
+11:59:47.004          55    25189.0   188.61    7851   0.00    0.311    0.000    0.311     0.00   176.61    2.479    7.9   0.2   0.1
+11:59:48.003 Slow getMessage: n1-0          61 10808 SLAVE_STATISTICS          
+11:59:48.003 Slow getMessage: n2-0          62  5282 SLAVE_STATISTICS          
+11:59:48.003 Slow getMessage: n5-0          62 10386 SLAVE_STATISTICS          
+11:59:48.003 Slow getMessage: n6-0          62 11386 SLAVE_STATISTICS          
+11:59:48.003 Slow getMessage: n8-0          62  9731 SLAVE_STATISTICS          
+11:59:48.004 Slow getMessage: n7-0          62 12779 SLAVE_STATISTICS          
+11:59:48.004          56    25583.0   188.39    7721   0.00    0.316    0.000    0.316     0.00   178.73    2.468    7.9   0.2   0.1
+11:59:49.003 Slow getMessage: n1-0          62 10808 SLAVE_STATISTICS          
+11:59:49.003 Slow getMessage: n2-0          63  5283 SLAVE_STATISTICS          
+11:59:49.004 Slow getMessage: n8-0          63  9730 SLAVE_STATISTICS          
+11:59:49.004 Slow getMessage: n6-0          63 11386 SLAVE_STATISTICS          
+11:59:49.004 Slow getMessage: n5-0          63 10386 SLAVE_STATISTICS          
+11:59:49.004 Slow getMessage: n7-0          63 12781 SLAVE_STATISTICS          
+11:59:49.005          57    26916.0   198.87    7747   0.00    0.298    0.000    0.298     0.00   211.18    2.093    7.9   0.2   0.1
+11:59:50.002 Slow getMessage: n2-0          64  5282 SLAVE_STATISTICS          
+11:59:50.002 Slow getMessage: n1-0          63 10808 SLAVE_STATISTICS          
+11:59:50.003 Slow getMessage: n5-0          64 10386 SLAVE_STATISTICS          
+11:59:50.003 Slow getMessage: n8-0          64  9731 SLAVE_STATISTICS          
+11:59:50.003 Slow getMessage: n7-0          64 12780 SLAVE_STATISTICS          
+11:59:50.003 Slow getMessage: n6-0          64 11387 SLAVE_STATISTICS          
+11:59:50.004          58    26806.0   200.90    7858   0.00    0.294    0.000    0.294     0.00   187.84    1.978    7.9   0.2   0.1
+11:59:51.003 Slow getMessage: n1-0          64 10808 SLAVE_STATISTICS          
+11:59:51.003 Slow getMessage: n2-0          65  5282 SLAVE_STATISTICS          
+11:59:51.003 Slow getMessage: n8-0          65  9731 SLAVE_STATISTICS          
+11:59:51.003 Slow getMessage: n6-0          65 11386 SLAVE_STATISTICS          
+11:59:51.004 Slow getMessage: n5-0          65 10386 SLAVE_STATISTICS          
+11:59:51.004 Slow getMessage: n7-0          65 12781 SLAVE_STATISTICS          
+11:59:51.005          59    25417.0   190.05    7840   0.00    0.314    0.000    0.314     0.00   209.01    2.777    7.9   0.3   0.2
+11:59:51.035 
+11:59:51.035 Message from slave n4-0: 
+11:59:51.035 New messages found on /var/adm/messages. Do they belong to you?
+11:59:51.035 /var/log/messages: Apr 11 12:00:01 host-10-233-233-177 systemd: Started Session 2312 of user root.
+11:59:51.035 /var/log/messages: Apr 11 12:00:01 host-10-233-233-177 systemd: Starting Session 2312 of user root.
+11:59:51.035 
+11:59:52.012 Slow getMessage: n2-0          66  5283 SLAVE_STATISTICS          
+11:59:52.012 Slow getMessage: n7-0          66 12780 SLAVE_STATISTICS          
+11:59:52.012 Slow getMessage: n1-0          65 10809 SLAVE_STATISTICS          
+11:59:52.012 Slow getMessage: n8-0          66  9732 SLAVE_STATISTICS          
+11:59:52.013 Slow getMessage: n5-0          66 10387 SLAVE_STATISTICS          
+11:59:52.013 Slow getMessage: n6-0          66 11387 SLAVE_STATISTICS          
+11:59:52.013          60    25937.0   192.75    7792   0.00    0.305    0.000    0.305     0.00   240.14    2.417    7.9   0.2   0.1
+11:59:52.020    avg_2-60    28301.5   210.86    7812   0.00    0.280    0.000    0.280     0.00   564.31    1.281    7.9   0.2   0.1
+11:59:52.130 Slow getMessage: n2-0          67  5283 SLAVE_WORK_COMPLETED      
+11:59:52.130 Slow getMessage: n6-0          67 11387 SLAVE_WORK_COMPLETED      
+11:59:52.130 Slow getMessage: n8-0          67  9731 SLAVE_WORK_COMPLETED      
+11:59:52.130 Slow getMessage: n2-0          68  5283 READY_FOR_MORE_WORK       
+11:59:52.130 Slow getMessage: n6-0          68 11387 READY_FOR_MORE_WORK       
+11:59:52.130 Slow getMessage: n8-0          68  9731 READY_FOR_MORE_WORK       
+11:59:52.230 Slow getMessage: n1-0          66 10808 SLAVE_WORK_COMPLETED      
+11:59:52.230 Slow getMessage: n1-0          67 10808 READY_FOR_MORE_WORK       
+11:59:52.230 Slow getMessage: n7-0          67 12780 SLAVE_WORK_COMPLETED      
+11:59:52.230 Slow getMessage: n7-0          68 12780 READY_FOR_MORE_WORK       
+11:59:52.230 Slow getMessage: n5-0          67 10386 SLAVE_WORK_COMPLETED      
+11:59:52.231 Slow getMessage: n5-0          68 10386 READY_FOR_MORE_WORK       
+11:59:52.329 Flushing all reports
+11:59:52.329 Java Heap in MB. max:  455.500; current:  109.500; used:   24.661; free:   84.839
+11:59:52.370 Ending Reporter
+11:59:52.956 Slow getMessage: n1-0          68 10809 ADM_MESSAGES              
+11:59:52.957 Slow getMessage: n1-0          69 10810 CLEAN_SHUTDOWN_COMPLETE   
+11:59:52.961 Slow getMessage: n7-0          69 12780 ADM_MESSAGES              
+11:59:52.961 Slow getMessage: n8-0          69  9730 ADM_MESSAGES              
+11:59:52.963 Slow getMessage: n6-0          69 11387 ADM_MESSAGES              
+11:59:52.963 Slow getMessage: n2-0          69  5283 ADM_MESSAGES              
+11:59:52.965 Slow getMessage: n7-0          70 12784 CLEAN_SHUTDOWN_COMPLETE   
+11:59:52.966 Slow getMessage: n8-0          70  9736 CLEAN_SHUTDOWN_COMPLETE   
+11:59:52.967 Slow getMessage: n5-0          69 10390 ADM_MESSAGES              
+11:59:52.967 Slow getMessage: n6-0          70 11391 CLEAN_SHUTDOWN_COMPLETE   
+11:59:52.967 Slow getMessage: n2-0          70  5287 CLEAN_SHUTDOWN_COMPLETE   
+11:59:52.969 Slow getMessage: n5-0          70 10392 CLEAN_SHUTDOWN_COMPLETE   
+11:59:53.037 Vdbench execution completed successfully. Output directory: /root/vdbench50407/test 
+
+11:59:54.039 Java Heap in MB. max:  455.500; current:  109.500; used:   25.760; free:   83.740

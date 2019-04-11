@@ -1,0 +1,52 @@
+<title>Vdbench test/n4-0.stdout.html</title><pre>
+stdout/stderr for slave=n4-0
+
+11:58:49.867 11:59:00.675 SlaveJvm execution parameter:  '-m 10.233.233.162'
+11:58:49.868 11:59:00.675 SlaveJvm execution parameter:  '-n 10.233.233.177-13-190411-11.58.49.173'
+11:58:49.868 11:59:00.675 SlaveJvm execution parameter:  '-l n4-0'
+11:58:49.868 11:59:00.675 SlaveJvm execution parameter:  '-p 5570'
+11:58:49.868 11:59:00.675 SlaveJvm positional parameter: 'SlaveJvm'
+11:58:50.102 11:59:00.908 successfully connected to master 10.233.233.162
+11:58:50.102 11:59:00.909 Connection to 10.233.233.162 using port 5570 successful
+11:58:50.771 11:59:01.574 ticks_per_second: 100
+11:58:50.792 11:59:01.599 Configuration interpretation took 0.02 seconds
+
+Link to Run Definitions:         <A HREF="#_1227229563">random_write For loops: None</A>
+
+11:58:51.014 11:59:01.821 Beginning of run setup
+11:58:51.014 11:59:01.821 **********************
+11:58:51.014 
+11:58:51.014 
+11:58:51.023 11:59:01.830 File '/var/log/messages.1' does not exist. Monitoring bypassed
+11:58:51.082 11:59:01.890 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+11:58:51.095 11:59:01.903 Started 3 Workload Generator threads.
+11:58:51.138 11:59:01.946 Started  1 i/o threads for sd_varlog
+11:58:51.138 11:59:01.946 Started a total of  1 i/o threads.
+11:58:51.138 11:59:01.946 Waiting for task synchronization
+11:58:51.139 11:59:01.946 task_wait_start_complete: IO_task /dev/dm-3 1
+11:58:51.339 11:59:02.146 Requesting full garbage collection
+11:58:51.339 11:59:02.147 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:   158 free:    93 
+11:58:51.399 11:59:02.205 GcTracker: cum:   2 intv:  2 ms:      56 mss:  0.00% Heap_MB max:   911 curr:   252 used:    17 free:   235 
+11:58:51.399 11:59:02.205 task_wait_start_complete() end
+
+<a name="_1227229563"></a><i><b>11:58:52.001 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+11:58:52.002 11:59:02.810 task_run_all(): 5 tasks
+11:58:56.028 11:59:06.835 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:58:56.028 11:59:06.835 sendMessageToConsole: /var/log/messages: Apr 11 11:59:04 host-10-233-233-177 journal: No devices in use, exit
+11:58:56.028 11:59:06.835 sendMessageToConsole: 
+11:59:51.036 12:00:01.842 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+11:59:51.036 12:00:01.843 sendMessageToConsole: /var/log/messages: Apr 11 12:00:01 host-10-233-233-177 systemd: Started Session 2312 of user root.
+11:59:51.036 12:00:01.843 sendMessageToConsole: /var/log/messages: Apr 11 12:00:01 host-10-233-233-177 systemd: Starting Session 2312 of user root.
+11:59:51.036 12:00:01.843 sendMessageToConsole: 
+11:59:52.029 12:00:02.837 Ended WT_task
+11:59:52.229 12:00:03.037 Interrupts issued for tasks WG_task: 4
+11:59:52.230 12:00:03.038 Sent 1 interrupts to 1 waiting IO_task threads
+11:59:52.230 12:00:03.038 Java Heap in MB. max:  910.500; current:  251.500; used:   20.232; free:  231.268
+11:59:52.230 12:00:03.038 Maximum native memory allocation:      131,072; Current allocation:            0
+11:59:52.230 12:00:03.038 End of run
+11:59:52.230 12:00:03.039 **********
+11:59:52.230 
+11:59:52.231 
+11:59:52.937 12:00:03.745 Master is requesting slave shutdown
+11:59:52.937 12:00:03.745 Java Heap in MB. max:  910.500; current:  251.500; used:   20.232; free:  231.268
