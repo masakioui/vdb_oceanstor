@@ -1,27 +1,27 @@
 <title>Vdbench test/config.html</title><pre>
 Output from script /root/vdbench50407/linux/config.sh: 
 
-Thu Apr 11 11:58:50 +07 2019
+Thu Apr 11 13:40:30 +07 2019
 >>>>>uname -a
 Linux host-10-233-233-162 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 x86_64 x86_64 x86_64 GNU/Linux
-Thu Apr 11 11:58:50 +07 2019
+Thu Apr 11 13:40:30 +07 2019
 >>>>>ifconfig -a
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 10.233.233.162  netmask 255.255.255.0  broadcast 10.233.233.255
         inet6 fe80::f816:3eff:fe5f:c59  prefixlen 64  scopeid 0x20<link>
         ether fa:16:3e:5f:0c:59  txqueuelen 1000  (Ethernet)
-        RX packets 1006699  bytes 4585684304 (4.2 GiB)
+        RX packets 1018928  bytes 4587466348 (4.2 GiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 768963  bytes 53653717 (51.1 MiB)
+        TX packets 781831  bytes 58611051 (55.8 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
         loop  txqueuelen 1000  (Local Loopback)
-        RX packets 620  bytes 92569 (90.3 KiB)
+        RX packets 12436  bytes 1634839 (1.5 MiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 620  bytes 92569 (90.3 KiB)
+        TX packets 12436  bytes 1634839 (1.5 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
@@ -39,10 +39,10 @@ virbr0-nic: flags=4098<BROADCAST,MULTICAST>  mtu 1500
         TX packets 0  bytes 0 (0.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-Thu Apr 11 11:58:50 +07 2019
+Thu Apr 11 13:40:30 +07 2019
 >>>>>id
 uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
-Thu Apr 11 11:58:50 +07 2019
+Thu Apr 11 13:40:30 +07 2019
 >>>>>mount
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
@@ -77,46 +77,46 @@ mqueue on /dev/mqueue type mqueue (rw,relatime,seclabel)
 /dev/mapper/rhel-var_log on /var/log type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
 sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
 tmpfs on /run/user/42 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=26397328k,mode=700,uid=42,gid=42)
-tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=26397328k,mode=700,uid=1000,gid=1000)
 /root/rhel-server-7.6-x86_64-dvd.iso on /mnt/repo-cdrom type iso9660 (ro,relatime)
-Thu Apr 11 11:58:50 +07 2019
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=26397328k,mode=700,uid=1000,gid=1000)
+Thu Apr 11 13:40:30 +07 2019
 >>>>>memory
 MemTotal:       263973264 kB
-MemFree:        256572824 kB
-MemAvailable:   260438796 kB
+MemFree:        248149988 kB
+MemAvailable:   260442940 kB
 Buffers:            4432 kB
-Cached:          4986728 kB
+Cached:         13182924 kB
 SwapCached:            0 kB
-Active:          5091856 kB
-Inactive:         372236 kB
-Active(anon):     474188 kB
-Inactive(anon):    25304 kB
-Active(file):    4617668 kB
-Inactive(file):   346932 kB
+Active:         13290896 kB
+Inactive:         366612 kB
+Active(anon):     470912 kB
+Inactive(anon):    25296 kB
+Active(file):   12819984 kB
+Inactive(file):   341316 kB
 Unevictable:           0 kB
 Mlocked:               0 kB
 SwapTotal:             0 kB
 SwapFree:              0 kB
-Dirty:               156 kB
+Dirty:               116 kB
 Writeback:             0 kB
-AnonPages:        471796 kB
-Mapped:           120188 kB
-Shmem:             26064 kB
-Slab:             313044 kB
-SReclaimable:     207396 kB
-SUnreclaim:       105648 kB
-KernelStack:       12976 kB
-PageTables:        26716 kB
+AnonPages:        419276 kB
+Mapped:           119256 kB
+Shmem:             26056 kB
+Slab:             544624 kB
+SReclaimable:     437676 kB
+SUnreclaim:       106948 kB
+KernelStack:       11616 kB
+PageTables:        24480 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
 CommitLimit:    131986632 kB
-Committed_AS:    3266576 kB
+Committed_AS:    3200892 kB
 VmallocTotal:   34359738367 kB
 VmallocUsed:      427084 kB
 VmallocChunk:   34359306240 kB
 HardwareCorrupted:     0 kB
-AnonHugePages:    206848 kB
+AnonHugePages:    159744 kB
 CmaTotal:              0 kB
 CmaFree:               0 kB
 HugePages_Total:       0
@@ -128,23 +128,16 @@ DirectMap4k:      218624 kB
 DirectMap2M:     5023744 kB
 DirectMap1G:    265289728 kB
               total        used        free      shared  buff/cache   available
-Mem:      263973264     2096236   256572824       26064     5304204   260438796
-Low:      263973264     7400440   256572824
+Mem:      263973264     2091296   248149988       26056    13731980   260442940
+Low:      263973264    15823276   248149988
 High:             0           0           0
 Swap:             0           0           0
-Thu Apr 11 11:58:50 +07 2019
+Thu Apr 11 13:40:30 +07 2019
 >>>>>ps -ef | grep -i vdb
-root     16565 15387  0 11:58 pts/0    00:00:00 /bin/bash ./vdbench -f sd_oceanstor.param -o test
-root     16567 16565 39 11:58 pts/0    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f sd_oceanstor.param -o test
-root     16618 16567  0 11:58 pts/0    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.162-10-190411-11.58.49.173 -l n1-0 -p 5570
-root     16622 16618 41 11:58 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m 10.233.233.162 -n 10.233.233.162-10-190411-11.58.49.173 -l n1-0 -p 5570
-root     16648 16567  5 11:58 pts/0    00:00:00 ssh 10.233.233.225 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.225-11-190411-11.58.49.173 -l n2-0 -p 5570
-root     16654 16567  5 11:58 pts/0    00:00:00 ssh 10.233.233.26 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.26-12-190411-11.58.49.173 -l n3-0 -p 5570
-root     16661 16567  5 11:58 pts/0    00:00:00 ssh 10.233.233.177 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.177-13-190411-11.58.49.173 -l n4-0 -p 5570
-root     16684 16567  6 11:58 pts/0    00:00:00 ssh 10.233.233.166 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.166-14-190411-11.58.49.173 -l n5-0 -p 5570
-root     16689 16567  5 11:58 pts/0    00:00:00 ssh 10.233.233.136 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.136-15-190411-11.58.49.173 -l n6-0 -p 5570
-root     16694 16567  5 11:58 pts/0    00:00:00 ssh 10.233.233.192 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.192-16-190411-11.58.49.173 -l n7-0 -p 5570
-root     16699 16567  5 11:58 pts/0    00:00:00 ssh 10.233.233.193 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.193-17-190411-11.58.49.173 -l n8-0 -p 5570
-root     16719 16567  0 11:58 pts/0    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/test n1 n2 n3 n4 n5 n6 n7 n8
-root     16735 16719  0 11:58 pts/0    00:00:00 grep -i vdb
+root     25126 24344  0 13:40 pts/0    00:00:00 /bin/bash ./vdbench -f sd_oceanstor.param -o test
+root     25128 25126  0 13:40 pts/0    00:00:00 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f sd_oceanstor.param -o test
+root     25179 25128  0 13:40 pts/0    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.162 -n 10.233.233.162-10-190411-13.40.29.493 -l n1-0 -p 5570
+root     25183 25179  0 13:40 pts/0    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m 10.233.233.162 -n 10.233.233.162-10-190411-13.40.29.493 -l n1-0 -p 5570
+root     25238 25128  0 13:40 pts/0    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/test n1
+root     25254 25238  0 13:40 pts/0    00:00:00 grep -i vdb
 

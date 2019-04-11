@@ -1,0 +1,1029 @@
+<title>Vdbench sd_all_10sec_20190411/n1-0.stdout.html</title><pre>
+stdout/stderr for slave=n1-0
+
+13:52:55.334 13:52:55.333 SlaveJvm execution parameter:  '-m 10.233.233.162'
+13:52:55.334 13:52:55.334 SlaveJvm execution parameter:  '-n 10.233.233.162-10-190411-13.52.54.959'
+13:52:55.334 13:52:55.334 SlaveJvm execution parameter:  '-l n1-0'
+13:52:55.334 13:52:55.334 SlaveJvm execution parameter:  '-p 5570'
+13:52:55.334 13:52:55.334 SlaveJvm positional parameter: 'SlaveJvm'
+13:52:55.435 13:52:55.433 successfully connected to master 10.233.233.162
+13:52:55.435 13:52:55.434 Connection to 10.233.233.162 using port 5570 successful
+13:52:56.014 13:52:56.014 ticks_per_second: 100
+13:52:56.028 13:52:56.028 Configuration interpretation took 0.01 seconds
+
+Link to Run Definitions:         <A HREF="#_1993134103">ran_write_various For loops: None</A>
+                                 <A HREF="#_405662939">ran_read_various For loops: None</A>
+                                 <A HREF="#_653305407">ran_write_4k For loops: None</A>
+                                 <A HREF="#_1130478920">ran_write_8k For loops: None</A>
+                                 <A HREF="#_1404928347">ran_write_16k For loops: None</A>
+                                 <A HREF="#_604107971">ran_write_32k For loops: None</A>
+                                 <A HREF="#_123961122">ran_write_64k For loops: None</A>
+                                 <A HREF="#_1227229563">ran_write_128k For loops: None</A>
+                                 <A HREF="#_1982791261">ran_write_512k For loops: None</A>
+                                 <A HREF="#_1562557367">ran_write_1m For loops: None</A>
+                                 <A HREF="#_1101288798">ran_write_2m For loops: None</A>
+                                 <A HREF="#_942731712">ran_read_4k For loops: None</A>
+                                 <A HREF="#_971848845">ran_read_8k For loops: None</A>
+                                 <A HREF="#_1910163204">ran_read_16k For loops: None</A>
+                                 <A HREF="#_305623748">ran_read_32k For loops: None</A>
+                                 <A HREF="#_758529971">ran_read_64k For loops: None</A>
+                                 <A HREF="#_2104457164">ran_read_128k For loops: None</A>
+                                 <A HREF="#_1521118594">ran_read_512k For loops: None</A>
+                                 <A HREF="#_1940030785">ran_read_1m For loops: None</A>
+                                 <A HREF="#_1869997857">ran_read_2m For loops: None</A>
+                                 <A HREF="#_1763847188">seq_write_4k For loops: None</A>
+                                 <A HREF="#_1617791695">seq_write_8k For loops: None</A>
+                                 <A HREF="#_125993742">seq_write_16k For loops: None</A>
+                                 <A HREF="#_1192108080">seq_write_32k For loops: None</A>
+                                 <A HREF="#_1068824137">seq_write_64k For loops: None</A>
+                                 <A HREF="#_864237698">seq_write_128k For loops: None</A>
+                                 <A HREF="#_537548559">seq_write_512k For loops: None</A>
+                                 <A HREF="#_380894366">seq_write_1m For loops: None</A>
+                                 <A HREF="#_237852351">seq_write_2m For loops: None</A>
+                                 <A HREF="#_608188624">seq_read_4k For loops: None</A>
+                                 <A HREF="#_1451270520">seq_read_8k For loops: None</A>
+                                 <A HREF="#_1608446010">seq_read_16k For loops: None</A>
+                                 <A HREF="#_992136656">seq_read_32k For loops: None</A>
+                                 <A HREF="#_511833308">seq_read_64k For loops: None</A>
+                                 <A HREF="#_1297685781">seq_read_128k For loops: None</A>
+                                 <A HREF="#_1705929636">seq_read_512k For loops: None</A>
+                                 <A HREF="#_1221555852">seq_read_1m For loops: None</A>
+                                 <A HREF="#_1509514333">seq_read_2m For loops: None</A>
+
+13:52:56.306 13:52:56.306 Beginning of run setup
+13:52:56.306 13:52:56.306 **********************
+13:52:56.306 
+13:52:56.306 
+13:52:56.317 13:52:56.317 File '/var/log/messages.1' does not exist. Monitoring bypassed
+13:52:56.376 13:52:56.376 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:52:56.391 13:52:56.391 Started 3 Workload Generator threads.
+13:52:56.472 13:52:56.471 Started  1 i/o threads for sd_varlog
+13:52:56.472 13:52:56.471 Started a total of  1 i/o threads.
+13:52:56.472 13:52:56.471 Waiting for task synchronization
+13:52:56.472 13:52:56.471 task_wait_start_complete: IO_task /dev/dm-3 1
+13:52:56.672 13:52:56.672 Requesting full garbage collection
+13:52:56.672 13:52:56.672 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:   160 free:    91 
+13:52:56.705 13:52:56.705 GcTracker: cum:   2 intv:  2 ms:      30 mss:  0.00% Heap_MB max:   911 curr:   252 used:    19 free:   233 
+13:52:56.705 13:52:56.705 task_wait_start_complete() end
+
+<a name="_1993134103"></a><i><b>13:52:57.001 Starting RD=ran_write_various; I/O rate: Controlled MAX; elapsed=10; For loops: None</b></i>
+
+13:52:57.002 13:52:57.002 task_run_all(): 5 tasks
+13:53:07.022 13:53:07.022 Ended WT_task
+13:53:07.123 13:53:07.122 Sent 1 interrupts to 1 waiting IO_task threads
+13:53:07.124 13:53:07.123 Java Heap in MB. max:  910.500; current:  251.500; used:   27.840; free:  223.660
+13:53:07.124 13:53:07.123 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:53:07.124 13:53:07.123 End of run
+13:53:07.124 13:53:07.123 **********
+13:53:07.124 
+13:53:07.124 
+13:53:07.376 13:53:07.376 Beginning of run setup
+13:53:07.377 13:53:07.376 **********************
+13:53:07.377 
+13:53:07.377 
+13:53:07.383 13:53:07.377 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:53:07.383 13:53:07.383 Started 3 Workload Generator threads.
+13:53:07.453 13:53:07.453 Started  1 i/o threads for sd_varlog
+13:53:07.453 13:53:07.453 Started a total of  1 i/o threads.
+13:53:07.453 13:53:07.453 Waiting for task synchronization
+13:53:07.453 13:53:07.453 task_wait_start_complete: IO_task /dev/dm-3 1
+13:53:07.654 13:53:07.653 Requesting full garbage collection
+13:53:07.654 13:53:07.654 GcTracker: cum:   2 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    32 free:   219 
+13:53:07.686 13:53:07.686 GcTracker: cum:   4 intv:  2 ms:      31 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:53:07.686 13:53:07.686 task_wait_start_complete() end
+
+<a name="_405662939"></a><i><b>13:53:08.001 Starting RD=ran_read_various; I/O rate: Controlled MAX; elapsed=10; For loops: None</b></i>
+
+13:53:08.003 13:53:08.002 task_run_all(): 5 tasks
+13:53:18.217 13:53:18.217 Interrupts issued for tasks WG_task: 6
+13:53:18.217 13:53:18.217 WT Task interrupted at put
+13:53:18.217 13:53:18.217 Ended WT_task
+13:53:18.317 13:53:18.317 Sent 1 interrupts to 1 waiting IO_task threads
+13:53:18.317 13:53:18.317 Java Heap in MB. max:  910.500; current:  251.500; used:   21.402; free:  230.098
+13:53:18.317 13:53:18.317 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:53:18.318 13:53:18.318 End of run
+13:53:18.318 13:53:18.318 **********
+13:53:18.318 
+13:53:18.318 
+13:53:18.455 13:53:18.454 Beginning of run setup
+13:53:18.455 13:53:18.454 **********************
+13:53:18.455 
+13:53:18.455 
+13:53:18.455 13:53:18.454 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:53:18.461 13:53:18.460 Started 1 Workload Generator threads.
+13:53:18.524 13:53:18.523 Started  1 i/o threads for sd_varlog
+13:53:18.524 13:53:18.524 Started a total of  1 i/o threads.
+13:53:18.524 13:53:18.524 Waiting for task synchronization
+13:53:18.524 13:53:18.524 task_wait_start_complete: IO_task /dev/dm-3 1
+13:53:18.724 13:53:18.724 Requesting full garbage collection
+13:53:18.724 13:53:18.724 GcTracker: cum:   4 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    26 free:   226 
+13:53:18.740 13:53:18.739 GcTracker: cum:   6 intv:  2 ms:      15 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:53:18.740 13:53:18.739 task_wait_start_complete() end
+
+<a name="_653305407"></a><i><b>13:53:19.001 Starting RD=ran_write_4k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:53:19.002 13:53:19.002 task_run_all(): 2 tasks
+13:53:29.111 13:53:29.110 Sent 1 interrupts to 1 waiting IO_task threads
+13:53:29.111 13:53:29.111 Java Heap in MB. max:  910.500; current:  251.500; used:   23.832; free:  227.668
+13:53:29.112 13:53:29.111 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:53:29.112 13:53:29.112 End of run
+13:53:29.112 13:53:29.112 **********
+13:53:29.112 
+13:53:29.112 
+13:53:29.241 13:53:29.240 Beginning of run setup
+13:53:29.241 13:53:29.240 **********************
+13:53:29.241 
+13:53:29.241 
+13:53:29.241 13:53:29.241 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:53:29.247 13:53:29.247 Started 1 Workload Generator threads.
+13:53:29.311 13:53:29.311 Started  1 i/o threads for sd_varlog
+13:53:29.311 13:53:29.311 Started a total of  1 i/o threads.
+13:53:29.311 13:53:29.311 Waiting for task synchronization
+13:53:29.311 13:53:29.311 task_wait_start_complete: IO_task /dev/dm-3 1
+13:53:29.511 13:53:29.511 Requesting full garbage collection
+13:53:29.511 13:53:29.511 GcTracker: cum:   6 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    28 free:   223 
+13:53:29.526 13:53:29.526 GcTracker: cum:   8 intv:  2 ms:      13 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:53:29.526 13:53:29.526 task_wait_start_complete() end
+
+<a name="_1130478920"></a><i><b>13:53:30.000 Starting RD=ran_write_8k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:53:30.002 13:53:30.002 task_run_all(): 2 tasks
+13:53:40.110 13:53:40.109 Sent 1 interrupts to 1 waiting IO_task threads
+13:53:40.110 13:53:40.110 Java Heap in MB. max:  910.500; current:  251.500; used:   23.262; free:  228.238
+13:53:40.110 13:53:40.110 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:53:40.110 13:53:40.110 End of run
+13:53:40.110 13:53:40.110 **********
+13:53:40.110 
+13:53:40.110 
+13:53:40.239 13:53:40.239 Beginning of run setup
+13:53:40.239 13:53:40.239 **********************
+13:53:40.239 
+13:53:40.239 
+13:53:40.245 13:53:40.239 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:53:40.246 13:53:40.245 Started 1 Workload Generator threads.
+13:53:40.309 13:53:40.308 Started  1 i/o threads for sd_varlog
+13:53:40.309 13:53:40.308 Started a total of  1 i/o threads.
+13:53:40.309 13:53:40.308 Waiting for task synchronization
+13:53:40.309 13:53:40.309 task_wait_start_complete: IO_task /dev/dm-3 1
+13:53:40.509 13:53:40.509 Requesting full garbage collection
+13:53:40.509 13:53:40.509 GcTracker: cum:   8 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    27 free:   224 
+13:53:40.523 13:53:40.523 GcTracker: cum:  10 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:53:40.523 13:53:40.523 task_wait_start_complete() end
+
+<a name="_1404928347"></a><i><b>13:53:41.001 Starting RD=ran_write_16k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:53:41.002 13:53:41.002 task_run_all(): 2 tasks
+13:53:51.110 13:53:51.110 Sent 1 interrupts to 1 waiting IO_task threads
+13:53:51.110 13:53:51.110 Java Heap in MB. max:  910.500; current:  251.500; used:   21.574; free:  229.926
+13:53:51.110 13:53:51.110 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:53:51.111 13:53:51.110 End of run
+13:53:51.111 13:53:51.111 **********
+13:53:51.111 
+13:53:51.111 
+13:53:51.236 13:53:51.236 Beginning of run setup
+13:53:51.236 13:53:51.236 **********************
+13:53:51.236 
+13:53:51.236 
+13:53:51.236 13:53:51.236 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:53:51.243 13:53:51.242 Started 1 Workload Generator threads.
+13:53:51.306 13:53:51.306 Started  1 i/o threads for sd_varlog
+13:53:51.306 13:53:51.306 Started a total of  1 i/o threads.
+13:53:51.306 13:53:51.306 Waiting for task synchronization
+13:53:51.306 13:53:51.306 task_wait_start_complete: IO_task /dev/dm-3 1
+13:53:51.507 13:53:51.506 Requesting full garbage collection
+13:53:51.507 13:53:51.507 GcTracker: cum:  10 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    26 free:   226 
+13:53:51.521 13:53:51.521 GcTracker: cum:  12 intv:  2 ms:      13 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:53:51.521 13:53:51.521 task_wait_start_complete() end
+
+<a name="_604107971"></a><i><b>13:53:52.000 Starting RD=ran_write_32k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:53:52.002 13:53:52.001 task_run_all(): 2 tasks
+13:54:02.110 13:54:02.109 Sent 1 interrupts to 1 waiting IO_task threads
+13:54:02.110 13:54:02.109 Java Heap in MB. max:  910.500; current:  251.500; used:   21.070; free:  230.430
+13:54:02.110 13:54:02.109 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:54:02.110 13:54:02.110 End of run
+13:54:02.110 13:54:02.110 **********
+13:54:02.110 
+13:54:02.110 
+13:54:02.238 13:54:02.238 Beginning of run setup
+13:54:02.238 13:54:02.238 **********************
+13:54:02.238 
+13:54:02.238 
+13:54:02.240 13:54:02.239 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:54:02.256 13:54:02.245 Started 1 Workload Generator threads.
+13:54:02.309 13:54:02.309 Started  1 i/o threads for sd_varlog
+13:54:02.309 13:54:02.309 Started a total of  1 i/o threads.
+13:54:02.309 13:54:02.309 Waiting for task synchronization
+13:54:02.309 13:54:02.309 task_wait_start_complete: IO_task /dev/dm-3 1
+13:54:02.509 13:54:02.509 Requesting full garbage collection
+13:54:02.509 13:54:02.509 GcTracker: cum:  12 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    25 free:   226 
+13:54:02.524 13:54:02.524 GcTracker: cum:  14 intv:  2 ms:      13 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:54:02.524 13:54:02.524 task_wait_start_complete() end
+
+<a name="_123961122"></a><i><b>13:54:03.001 Starting RD=ran_write_64k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:54:03.002 13:54:03.002 task_run_all(): 2 tasks
+13:54:13.209 13:54:13.209 Interrupts issued for tasks WG_task: 2
+13:54:13.209 13:54:13.209 Sent 1 interrupts to 1 waiting IO_task threads
+13:54:13.210 13:54:13.210 Java Heap in MB. max:  910.500; current:  251.500; used:   19.706; free:  231.794
+13:54:13.210 13:54:13.210 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:54:13.210 13:54:13.210 End of run
+13:54:13.210 13:54:13.210 **********
+13:54:13.210 
+13:54:13.210 
+13:54:13.334 13:54:13.334 Beginning of run setup
+13:54:13.334 13:54:13.334 **********************
+13:54:13.334 
+13:54:13.334 
+13:54:13.334 13:54:13.334 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:54:13.340 13:54:13.340 Started 1 Workload Generator threads.
+13:54:13.404 13:54:13.403 Started  1 i/o threads for sd_varlog
+13:54:13.404 13:54:13.404 Started a total of  1 i/o threads.
+13:54:13.404 13:54:13.404 Waiting for task synchronization
+13:54:13.404 13:54:13.404 task_wait_start_complete: IO_task /dev/dm-3 1
+13:54:13.604 13:54:13.604 Requesting full garbage collection
+13:54:13.604 13:54:13.604 GcTracker: cum:  14 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   227 
+13:54:13.638 13:54:13.638 GcTracker: cum:  16 intv:  2 ms:      34 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:54:13.638 13:54:13.638 task_wait_start_complete() end
+
+<a name="_1227229563"></a><i><b>13:54:14.001 Starting RD=ran_write_128k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:54:14.002 13:54:14.002 task_run_all(): 2 tasks
+13:54:24.208 13:54:24.208 Interrupts issued for tasks WG_task: 2
+13:54:24.208 13:54:24.208 Sent 1 interrupts to 1 waiting IO_task threads
+13:54:24.208 13:54:24.208 Java Heap in MB. max:  910.500; current:  251.500; used:   19.346; free:  232.154
+13:54:24.209 13:54:24.208 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:54:24.209 13:54:24.209 End of run
+13:54:24.209 13:54:24.209 **********
+13:54:24.209 
+13:54:24.209 
+13:54:24.334 13:54:24.333 Beginning of run setup
+13:54:24.334 13:54:24.333 **********************
+13:54:24.334 
+13:54:24.334 
+13:54:24.334 13:54:24.334 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:54:24.340 13:54:24.340 Started 1 Workload Generator threads.
+13:54:24.403 13:54:24.403 Started  1 i/o threads for sd_varlog
+13:54:24.403 13:54:24.403 Started a total of  1 i/o threads.
+13:54:24.403 13:54:24.403 Waiting for task synchronization
+13:54:24.403 13:54:24.403 task_wait_start_complete: IO_task /dev/dm-3 1
+13:54:24.604 13:54:24.603 Requesting full garbage collection
+13:54:24.604 13:54:24.604 GcTracker: cum:  16 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:54:24.652 13:54:24.652 GcTracker: cum:  18 intv:  2 ms:      47 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:54:24.652 13:54:24.652 task_wait_start_complete() end
+
+<a name="_1982791261"></a><i><b>13:54:25.000 Starting RD=ran_write_512k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:54:25.002 13:54:25.002 task_run_all(): 2 tasks
+13:54:35.208 13:54:35.208 Interrupts issued for tasks WG_task: 2
+13:54:35.209 13:54:35.208 Sent 1 interrupts to 1 waiting IO_task threads
+13:54:35.209 13:54:35.208 Java Heap in MB. max:  910.500; current:  251.500; used:   19.670; free:  231.830
+13:54:35.209 13:54:35.208 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:54:35.209 13:54:35.208 End of run
+13:54:35.209 13:54:35.208 **********
+13:54:35.209 
+13:54:35.209 
+13:54:35.343 13:54:35.343 Beginning of run setup
+13:54:35.343 13:54:35.343 **********************
+13:54:35.343 
+13:54:35.343 
+13:54:35.343 13:54:35.343 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:54:35.349 13:54:35.349 Started 1 Workload Generator threads.
+13:54:35.413 13:54:35.412 Started  1 i/o threads for sd_varlog
+13:54:35.413 13:54:35.413 Started a total of  1 i/o threads.
+13:54:35.413 13:54:35.413 Waiting for task synchronization
+13:54:35.413 13:54:35.413 task_wait_start_complete: IO_task /dev/dm-3 1
+13:54:35.613 13:54:35.613 Requesting full garbage collection
+13:54:35.613 13:54:35.613 GcTracker: cum:  18 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:54:35.631 13:54:35.631 GcTracker: cum:  20 intv:  2 ms:      17 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:54:35.631 13:54:35.631 task_wait_start_complete() end
+
+<a name="_1562557367"></a><i><b>13:54:36.001 Starting RD=ran_write_1m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:54:36.002 13:54:36.002 task_run_all(): 2 tasks
+13:54:46.209 13:54:46.208 Interrupts issued for tasks WG_task: 2
+13:54:46.209 13:54:46.208 Sent 1 interrupts to 1 waiting IO_task threads
+13:54:46.209 13:54:46.209 Java Heap in MB. max:  910.500; current:  251.500; used:   19.626; free:  231.874
+13:54:46.209 13:54:46.209 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:54:46.209 13:54:46.209 End of run
+13:54:46.209 13:54:46.209 **********
+13:54:46.209 
+13:54:46.209 
+13:54:46.341 13:54:46.340 Beginning of run setup
+13:54:46.341 13:54:46.341 **********************
+13:54:46.341 
+13:54:46.341 
+13:54:46.341 13:54:46.341 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:54:46.358 13:54:46.347 Started 1 Workload Generator threads.
+13:54:46.410 13:54:46.410 Started  1 i/o threads for sd_varlog
+13:54:46.410 13:54:46.410 Started a total of  1 i/o threads.
+13:54:46.410 13:54:46.410 Waiting for task synchronization
+13:54:46.410 13:54:46.410 task_wait_start_complete: IO_task /dev/dm-3 1
+13:54:46.610 13:54:46.610 Requesting full garbage collection
+13:54:46.611 13:54:46.611 GcTracker: cum:  20 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:54:46.629 13:54:46.629 GcTracker: cum:  22 intv:  2 ms:      17 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:54:46.629 13:54:46.629 task_wait_start_complete() end
+
+<a name="_1101288798"></a><i><b>13:54:47.000 Starting RD=ran_write_2m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:54:47.001 13:54:47.001 task_run_all(): 2 tasks
+13:54:57.209 13:54:57.209 Interrupts issued for tasks WG_task: 2
+13:54:57.209 13:54:57.209 Sent 1 interrupts to 1 waiting IO_task threads
+13:54:57.209 13:54:57.209 Java Heap in MB. max:  910.500; current:  251.500; used:   19.627; free:  231.873
+13:54:57.210 13:54:57.209 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:54:57.210 13:54:57.210 End of run
+13:54:57.210 13:54:57.210 **********
+13:54:57.210 
+13:54:57.210 
+13:54:57.338 13:54:57.338 Beginning of run setup
+13:54:57.338 13:54:57.338 **********************
+13:54:57.338 
+13:54:57.338 
+13:54:57.339 13:54:57.338 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:54:57.345 13:54:57.345 Started 1 Workload Generator threads.
+13:54:57.408 13:54:57.408 Started  1 i/o threads for sd_varlog
+13:54:57.409 13:54:57.408 Started a total of  1 i/o threads.
+13:54:57.409 13:54:57.409 Waiting for task synchronization
+13:54:57.409 13:54:57.409 task_wait_start_complete: IO_task /dev/dm-3 1
+13:54:57.609 13:54:57.609 Requesting full garbage collection
+13:54:57.609 13:54:57.609 GcTracker: cum:  22 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:54:57.626 13:54:57.626 GcTracker: cum:  24 intv:  2 ms:      18 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:54:57.626 13:54:57.626 task_wait_start_complete() end
+
+<a name="_942731712"></a><i><b>13:54:58.000 Starting RD=ran_read_4k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:54:58.001 13:54:58.001 task_run_all(): 2 tasks
+13:55:08.210 13:55:08.210 Interrupts issued for tasks WG_task: 2
+13:55:08.210 13:55:08.210 Sent 1 interrupts to 1 waiting IO_task threads
+13:55:08.210 13:55:08.210 Java Heap in MB. max:  910.500; current:  251.500; used:   19.630; free:  231.870
+13:55:08.210 13:55:08.210 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:55:08.210 13:55:08.210 End of run
+13:55:08.210 13:55:08.210 **********
+13:55:08.210 
+13:55:08.210 
+13:55:09.340 13:55:09.337 Beginning of run setup
+13:55:09.340 13:55:09.338 **********************
+13:55:09.340 
+13:55:09.340 
+13:55:09.340 13:55:09.338 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:55:09.344 13:55:09.344 Started 1 Workload Generator threads.
+13:55:09.407 13:55:09.407 Started  1 i/o threads for sd_varlog
+13:55:09.407 13:55:09.407 Started a total of  1 i/o threads.
+13:55:09.407 13:55:09.407 Waiting for task synchronization
+13:55:09.407 13:55:09.407 task_wait_start_complete: IO_task /dev/dm-3 1
+13:55:09.608 13:55:09.607 Requesting full garbage collection
+13:55:09.608 13:55:09.608 GcTracker: cum:  24 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:55:09.625 13:55:09.625 GcTracker: cum:  26 intv:  2 ms:      16 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:55:09.625 13:55:09.625 task_wait_start_complete() end
+
+<a name="_971848845"></a><i><b>13:55:10.001 Starting RD=ran_read_8k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:55:10.002 13:55:10.002 task_run_all(): 2 tasks
+13:55:20.208 13:55:20.208 Interrupts issued for tasks WG_task: 2
+13:55:20.208 13:55:20.208 Sent 0 interrupts to 1 waiting IO_task threads
+13:55:20.407 13:55:20.407 Java Heap in MB. max:  910.500; current:  251.500; used:   19.955; free:  231.545
+13:55:20.407 13:55:20.407 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:55:20.407 13:55:20.407 End of run
+13:55:20.407 13:55:20.407 **********
+13:55:20.407 
+13:55:20.407 
+13:55:21.036 13:55:21.036 Beginning of run setup
+13:55:21.036 13:55:21.036 **********************
+13:55:21.036 
+13:55:21.036 
+13:55:21.036 13:55:21.036 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:55:21.053 13:55:21.042 Started 1 Workload Generator threads.
+13:55:21.106 13:55:21.106 Started  1 i/o threads for sd_varlog
+13:55:21.106 13:55:21.106 Started a total of  1 i/o threads.
+13:55:21.106 13:55:21.106 Waiting for task synchronization
+13:55:21.106 13:55:21.106 task_wait_start_complete: IO_task /dev/dm-3 1
+13:55:21.306 13:55:21.306 Requesting full garbage collection
+13:55:21.306 13:55:21.306 GcTracker: cum:  26 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   227 
+13:55:21.332 13:55:21.332 GcTracker: cum:  28 intv:  2 ms:      24 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:55:21.332 13:55:21.332 task_wait_start_complete() end
+
+<a name="_1910163204"></a><i><b>13:55:22.001 Starting RD=ran_read_16k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:55:22.002 13:55:22.002 task_run_all(): 2 tasks
+13:55:32.208 13:55:32.208 Interrupts issued for tasks WG_task: 2
+13:55:32.208 13:55:32.208 Sent 0 interrupts to 1 waiting IO_task threads
+13:55:33.199 13:55:33.199 Java Heap in MB. max:  910.500; current:  251.500; used:   19.305; free:  232.195
+13:55:33.199 13:55:33.199 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:55:33.199 13:55:33.199 End of run
+13:55:33.199 13:55:33.199 **********
+13:55:33.199 
+13:55:33.199 
+13:55:33.236 13:55:33.236 Beginning of run setup
+13:55:33.236 13:55:33.236 **********************
+13:55:33.236 
+13:55:33.236 
+13:55:33.236 13:55:33.236 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:55:33.242 13:55:33.242 Started 1 Workload Generator threads.
+13:55:33.305 13:55:33.305 Started  1 i/o threads for sd_varlog
+13:55:33.305 13:55:33.305 Started a total of  1 i/o threads.
+13:55:33.305 13:55:33.305 Waiting for task synchronization
+13:55:33.305 13:55:33.305 task_wait_start_complete: IO_task /dev/dm-3 1
+13:55:33.506 13:55:33.505 Requesting full garbage collection
+13:55:33.506 13:55:33.505 GcTracker: cum:  28 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:55:33.539 13:55:33.538 GcTracker: cum:  30 intv:  2 ms:      33 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:55:33.539 13:55:33.538 task_wait_start_complete() end
+
+<a name="_305623748"></a><i><b>13:55:34.000 Starting RD=ran_read_32k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:55:34.002 13:55:34.001 task_run_all(): 2 tasks
+13:55:44.208 13:55:44.207 Interrupts issued for tasks WG_task: 2
+13:55:44.208 13:55:44.207 Sent 1 interrupts to 1 waiting IO_task threads
+13:55:44.208 13:55:44.208 Java Heap in MB. max:  910.500; current:  251.500; used:   19.630; free:  231.870
+13:55:44.208 13:55:44.208 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:55:44.208 13:55:44.208 End of run
+13:55:44.208 13:55:44.208 **********
+13:55:44.208 
+13:55:44.208 
+13:55:44.737 13:55:44.736 Beginning of run setup
+13:55:44.737 13:55:44.737 **********************
+13:55:44.737 
+13:55:44.737 
+13:55:44.743 13:55:44.737 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:55:44.745 13:55:44.743 Started 1 Workload Generator threads.
+13:55:44.806 13:55:44.806 Started  1 i/o threads for sd_varlog
+13:55:44.806 13:55:44.806 Started a total of  1 i/o threads.
+13:55:44.806 13:55:44.806 Waiting for task synchronization
+13:55:44.806 13:55:44.806 task_wait_start_complete: IO_task /dev/dm-3 1
+13:55:45.006 13:55:45.006 Requesting full garbage collection
+13:55:45.006 13:55:45.006 GcTracker: cum:  30 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:55:45.052 13:55:45.052 GcTracker: cum:  32 intv:  2 ms:      44 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:55:45.052 13:55:45.052 task_wait_start_complete() end
+
+<a name="_758529971"></a><i><b>13:55:46.000 Starting RD=ran_read_64k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:55:46.001 13:55:46.001 task_run_all(): 2 tasks
+13:55:56.208 13:55:56.207 Interrupts issued for tasks WG_task: 2
+13:55:56.208 13:55:56.207 Sent 1 interrupts to 1 waiting IO_task threads
+13:55:56.208 13:55:56.208 Java Heap in MB. max:  910.500; current:  251.500; used:   19.414; free:  232.086
+13:55:56.208 13:55:56.208 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:55:56.208 13:55:56.208 End of run
+13:55:56.208 13:55:56.208 **********
+13:55:56.208 
+13:55:56.208 
+13:55:56.340 13:55:56.340 Beginning of run setup
+13:55:56.340 13:55:56.340 **********************
+13:55:56.340 
+13:55:56.340 
+13:55:56.344 13:55:56.340 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:55:56.357 13:55:56.346 Started 1 Workload Generator threads.
+13:55:56.409 13:55:56.409 Started  1 i/o threads for sd_varlog
+13:55:56.409 13:55:56.409 Started a total of  1 i/o threads.
+13:55:56.409 13:55:56.409 Waiting for task synchronization
+13:55:56.409 13:55:56.409 task_wait_start_complete: IO_task /dev/dm-3 1
+13:55:56.609 13:55:56.609 Requesting full garbage collection
+13:55:56.609 13:55:56.609 GcTracker: cum:  32 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:55:56.661 13:55:56.661 GcTracker: cum:  34 intv:  2 ms:      51 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:55:56.661 13:55:56.661 task_wait_start_complete() end
+
+<a name="_2104457164"></a><i><b>13:55:57.001 Starting RD=ran_read_128k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:55:57.002 13:55:57.002 task_run_all(): 2 tasks
+13:56:07.208 13:56:07.207 Interrupts issued for tasks WG_task: 2
+13:56:07.208 13:56:07.207 Sent 1 interrupts to 1 waiting IO_task threads
+13:56:07.208 13:56:07.207 Java Heap in MB. max:  910.500; current:  251.500; used:   19.414; free:  232.086
+13:56:07.208 13:56:07.207 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:56:07.208 13:56:07.207 End of run
+13:56:07.208 13:56:07.207 **********
+13:56:07.208 
+13:56:07.208 
+13:56:07.337 13:56:07.337 Beginning of run setup
+13:56:07.337 13:56:07.337 **********************
+13:56:07.337 
+13:56:07.337 
+13:56:07.343 13:56:07.337 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:56:07.345 13:56:07.343 Started 1 Workload Generator threads.
+13:56:07.407 13:56:07.407 Started  1 i/o threads for sd_varlog
+13:56:07.407 13:56:07.407 Started a total of  1 i/o threads.
+13:56:07.407 13:56:07.407 Waiting for task synchronization
+13:56:07.407 13:56:07.407 task_wait_start_complete: IO_task /dev/dm-3 1
+13:56:07.607 13:56:07.607 Requesting full garbage collection
+13:56:07.607 13:56:07.607 GcTracker: cum:  34 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:56:07.655 13:56:07.654 GcTracker: cum:  36 intv:  2 ms:      47 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:56:07.655 13:56:07.654 task_wait_start_complete() end
+
+<a name="_1521118594"></a><i><b>13:56:08.000 Starting RD=ran_read_512k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:56:08.001 13:56:08.001 task_run_all(): 2 tasks
+13:56:18.208 13:56:18.208 Interrupts issued for tasks WG_task: 2
+13:56:18.208 13:56:18.208 Sent 1 interrupts to 1 waiting IO_task threads
+13:56:18.208 13:56:18.208 Java Heap in MB. max:  910.500; current:  251.500; used:   19.414; free:  232.086
+13:56:18.208 13:56:18.208 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:56:18.208 13:56:18.208 End of run
+13:56:18.208 13:56:18.208 **********
+13:56:18.208 
+13:56:18.208 
+13:56:18.335 13:56:18.335 Beginning of run setup
+13:56:18.335 13:56:18.335 **********************
+13:56:18.335 
+13:56:18.335 
+13:56:18.335 13:56:18.335 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:56:18.352 13:56:18.341 Started 1 Workload Generator threads.
+13:56:18.405 13:56:18.405 Started  1 i/o threads for sd_varlog
+13:56:18.405 13:56:18.405 Started a total of  1 i/o threads.
+13:56:18.405 13:56:18.405 Waiting for task synchronization
+13:56:18.405 13:56:18.405 task_wait_start_complete: IO_task /dev/dm-3 1
+13:56:18.605 13:56:18.605 Requesting full garbage collection
+13:56:18.605 13:56:18.605 GcTracker: cum:  36 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:56:18.621 13:56:18.620 GcTracker: cum:  38 intv:  2 ms:      15 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:56:18.621 13:56:18.621 task_wait_start_complete() end
+
+<a name="_1940030785"></a><i><b>13:56:19.000 Starting RD=ran_read_1m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:56:19.001 13:56:19.001 task_run_all(): 2 tasks
+13:56:29.209 13:56:29.209 Interrupts issued for tasks WG_task: 2
+13:56:29.209 13:56:29.209 Sent 1 interrupts to 1 waiting IO_task threads
+13:56:29.209 13:56:29.209 Java Heap in MB. max:  910.500; current:  251.500; used:   19.697; free:  231.803
+13:56:29.209 13:56:29.209 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:56:29.209 13:56:29.209 End of run
+13:56:29.209 13:56:29.209 **********
+13:56:29.209 
+13:56:29.209 
+13:56:29.335 13:56:29.334 Beginning of run setup
+13:56:29.335 13:56:29.334 **********************
+13:56:29.335 
+13:56:29.335 
+13:56:29.335 13:56:29.334 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:56:29.351 13:56:29.340 Started 1 Workload Generator threads.
+13:56:29.404 13:56:29.404 Started  1 i/o threads for sd_varlog
+13:56:29.404 13:56:29.404 Started a total of  1 i/o threads.
+13:56:29.404 13:56:29.404 Waiting for task synchronization
+13:56:29.404 13:56:29.404 task_wait_start_complete: IO_task /dev/dm-3 1
+13:56:29.604 13:56:29.604 Requesting full garbage collection
+13:56:29.604 13:56:29.604 GcTracker: cum:  38 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   227 
+13:56:29.619 13:56:29.619 GcTracker: cum:  40 intv:  2 ms:      13 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:56:29.619 13:56:29.619 task_wait_start_complete() end
+
+<a name="_1869997857"></a><i><b>13:56:30.000 Starting RD=ran_read_2m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:56:30.001 13:56:30.001 task_run_all(): 2 tasks
+13:56:40.207 13:56:40.206 Interrupts issued for tasks WG_task: 2
+13:56:40.207 13:56:40.207 Sent 0 interrupts to 1 waiting IO_task threads
+13:56:40.405 13:56:40.405 Java Heap in MB. max:  910.500; current:  251.500; used:   19.696; free:  231.804
+13:56:40.405 13:56:40.405 Maximum native memory allocation:    4,194,304; Current allocation:            0
+13:56:40.405 13:56:40.405 End of run
+13:56:40.405 13:56:40.405 **********
+13:56:40.405 
+13:56:40.405 
+13:56:40.432 13:56:40.432 Beginning of run setup
+13:56:40.432 13:56:40.432 **********************
+13:56:40.432 
+13:56:40.432 
+13:56:40.432 13:56:40.432 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:56:40.438 13:56:40.438 Started 1 Workload Generator threads.
+13:56:40.503 13:56:40.502 Started  8 i/o threads for sd_varlog
+13:56:40.503 13:56:40.503 Started a total of  8 i/o threads.
+13:56:40.503 13:56:40.503 Waiting for task synchronization
+13:56:40.503 13:56:40.503 task_wait_start_complete: IO_task /dev/dm-3 1
+13:56:40.703 13:56:40.703 Requesting full garbage collection
+13:56:40.703 13:56:40.703 GcTracker: cum:  40 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    25 free:   226 
+13:56:40.718 13:56:40.718 GcTracker: cum:  42 intv:  2 ms:      15 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:56:40.718 13:56:40.718 task_wait_start_complete() end
+
+<a name="_1763847188"></a><i><b>13:56:41.000 Starting RD=seq_write_4k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:56:41.001 13:56:41.001 task_run_all(): 9 tasks
+13:56:51.106 13:56:51.106 Sent 8 interrupts to 8 waiting IO_task threads
+13:56:51.106 13:56:51.106 Java Heap in MB. max:  910.500; current:  251.500; used:   34.192; free:  217.308
+13:56:51.106 13:56:51.106 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:56:51.106 13:56:51.106 End of run
+13:56:51.106 13:56:51.106 **********
+13:56:51.106 
+13:56:51.106 
+13:56:51.236 13:56:51.230 Beginning of run setup
+13:56:51.236 13:56:51.230 **********************
+13:56:51.236 
+13:56:51.236 
+13:56:51.236 13:56:51.230 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:56:51.238 13:56:51.236 Started 1 Workload Generator threads.
+13:56:51.301 13:56:51.301 Started  8 i/o threads for sd_varlog
+13:56:51.301 13:56:51.301 Started a total of  8 i/o threads.
+13:56:51.301 13:56:51.301 Waiting for task synchronization
+13:56:51.301 13:56:51.301 task_wait_start_complete: IO_task /dev/dm-3 1
+13:56:51.501 13:56:51.501 Requesting full garbage collection
+13:56:51.502 13:56:51.501 GcTracker: cum:  42 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    39 free:   212 
+13:56:51.517 13:56:51.517 GcTracker: cum:  44 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:56:51.517 13:56:51.517 task_wait_start_complete() end
+
+<a name="_1617791695"></a><i><b>13:56:52.001 Starting RD=seq_write_8k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:56:52.002 13:56:52.002 task_run_all(): 9 tasks
+13:57:02.106 13:57:02.105 Sent 8 interrupts to 8 waiting IO_task threads
+13:57:02.106 13:57:02.106 Java Heap in MB. max:  910.500; current:  251.500; used:   31.533; free:  219.967
+13:57:02.106 13:57:02.106 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:57:02.106 13:57:02.106 End of run
+13:57:02.106 13:57:02.106 **********
+13:57:02.106 
+13:57:02.106 
+13:57:02.233 13:57:02.230 Beginning of run setup
+13:57:02.233 13:57:02.230 **********************
+13:57:02.233 
+13:57:02.233 
+13:57:02.233 13:57:02.230 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:57:02.236 13:57:02.236 Started 1 Workload Generator threads.
+13:57:02.300 13:57:02.300 Started  8 i/o threads for sd_varlog
+13:57:02.300 13:57:02.300 Started a total of  8 i/o threads.
+13:57:02.300 13:57:02.300 Waiting for task synchronization
+13:57:02.300 13:57:02.300 task_wait_start_complete: IO_task /dev/dm-3 1
+13:57:02.500 13:57:02.500 Requesting full garbage collection
+13:57:02.500 13:57:02.500 GcTracker: cum:  44 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    36 free:   215 
+13:57:02.516 13:57:02.515 GcTracker: cum:  46 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:57:02.516 13:57:02.516 task_wait_start_complete() end
+
+<a name="_125993742"></a><i><b>13:57:03.001 Starting RD=seq_write_16k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:57:03.002 13:57:03.002 task_run_all(): 9 tasks
+13:57:13.107 13:57:13.107 Sent 8 interrupts to 8 waiting IO_task threads
+13:57:13.107 13:57:13.107 Java Heap in MB. max:  910.500; current:  251.500; used:   29.188; free:  222.312
+13:57:13.107 13:57:13.107 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:57:13.107 13:57:13.107 End of run
+13:57:13.107 13:57:13.107 **********
+13:57:13.107 
+13:57:13.107 
+13:57:13.236 13:57:13.230 Beginning of run setup
+13:57:13.236 13:57:13.230 **********************
+13:57:13.236 
+13:57:13.236 
+13:57:13.236 13:57:13.230 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:57:13.239 13:57:13.236 Started 1 Workload Generator threads.
+13:57:13.300 13:57:13.300 Started  8 i/o threads for sd_varlog
+13:57:13.300 13:57:13.300 Started a total of  8 i/o threads.
+13:57:13.300 13:57:13.300 Waiting for task synchronization
+13:57:13.300 13:57:13.300 task_wait_start_complete: IO_task /dev/dm-3 1
+13:57:13.500 13:57:13.500 Requesting full garbage collection
+13:57:13.500 13:57:13.500 GcTracker: cum:  46 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    34 free:   218 
+13:57:13.515 13:57:13.515 GcTracker: cum:  48 intv:  2 ms:      15 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:57:13.515 13:57:13.515 task_wait_start_complete() end
+
+<a name="_1192108080"></a><i><b>13:57:14.000 Starting RD=seq_write_32k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:57:14.001 13:57:14.001 task_run_all(): 9 tasks
+13:57:24.106 13:57:24.105 Sent 8 interrupts to 8 waiting IO_task threads
+13:57:24.106 13:57:24.105 Java Heap in MB. max:  910.500; current:  251.500; used:   26.743; free:  224.757
+13:57:24.106 13:57:24.105 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:57:24.106 13:57:24.106 End of run
+13:57:24.106 13:57:24.106 **********
+13:57:24.106 
+13:57:24.106 
+13:57:24.235 13:57:24.228 Beginning of run setup
+13:57:24.235 13:57:24.229 **********************
+13:57:24.235 
+13:57:24.235 
+13:57:24.235 13:57:24.229 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:57:24.243 13:57:24.235 Started 1 Workload Generator threads.
+13:57:24.299 13:57:24.299 Started  8 i/o threads for sd_varlog
+13:57:24.299 13:57:24.299 Started a total of  8 i/o threads.
+13:57:24.299 13:57:24.299 Waiting for task synchronization
+13:57:24.299 13:57:24.299 task_wait_start_complete: IO_task /dev/dm-3 1
+13:57:24.499 13:57:24.499 Requesting full garbage collection
+13:57:24.499 13:57:24.499 GcTracker: cum:  48 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    31 free:   220 
+13:57:24.514 13:57:24.514 GcTracker: cum:  50 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:57:24.514 13:57:24.514 task_wait_start_complete() end
+
+<a name="_1068824137"></a><i><b>13:57:25.000 Starting RD=seq_write_64k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:57:25.001 13:57:25.001 task_run_all(): 9 tasks
+13:57:35.105 13:57:35.105 Sent 8 interrupts to 8 waiting IO_task threads
+13:57:35.105 13:57:35.105 Java Heap in MB. max:  910.500; current:  251.500; used:   24.928; free:  226.572
+13:57:35.105 13:57:35.105 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:57:35.106 13:57:35.105 End of run
+13:57:35.106 13:57:35.105 **********
+13:57:35.106 
+13:57:35.106 
+13:57:35.229 13:57:35.229 Beginning of run setup
+13:57:35.229 13:57:35.229 **********************
+13:57:35.229 
+13:57:35.229 
+13:57:35.229 13:57:35.229 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:57:35.235 13:57:35.235 Started 1 Workload Generator threads.
+13:57:35.299 13:57:35.299 Started  8 i/o threads for sd_varlog
+13:57:35.299 13:57:35.299 Started a total of  8 i/o threads.
+13:57:35.299 13:57:35.299 Waiting for task synchronization
+13:57:35.299 13:57:35.299 task_wait_start_complete: IO_task /dev/dm-3 1
+13:57:35.499 13:57:35.499 Requesting full garbage collection
+13:57:35.499 13:57:35.499 GcTracker: cum:  50 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    30 free:   222 
+13:57:35.514 13:57:35.514 GcTracker: cum:  52 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:57:35.514 13:57:35.514 task_wait_start_complete() end
+
+<a name="_864237698"></a><i><b>13:57:36.001 Starting RD=seq_write_128k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:57:36.002 13:57:36.002 task_run_all(): 9 tasks
+13:57:46.106 13:57:46.106 Sent 8 interrupts to 8 waiting IO_task threads
+13:57:46.106 13:57:46.106 Java Heap in MB. max:  910.500; current:  251.500; used:   23.686; free:  227.814
+13:57:46.106 13:57:46.106 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:57:46.106 13:57:46.106 End of run
+13:57:46.106 13:57:46.106 **********
+13:57:46.106 
+13:57:46.106 
+13:57:46.253 13:57:46.252 Beginning of run setup
+13:57:46.253 13:57:46.252 **********************
+13:57:46.253 
+13:57:46.253 
+13:57:46.253 13:57:46.252 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:57:46.269 13:57:46.258 Started 1 Workload Generator threads.
+13:57:46.324 13:57:46.323 Started  8 i/o threads for sd_varlog
+13:57:46.324 13:57:46.323 Started a total of  8 i/o threads.
+13:57:46.324 13:57:46.323 Waiting for task synchronization
+13:57:46.324 13:57:46.323 task_wait_start_complete: IO_task /dev/dm-3 1
+13:57:46.524 13:57:46.524 Requesting full garbage collection
+13:57:46.524 13:57:46.524 GcTracker: cum:  52 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    28 free:   223 
+13:57:46.550 13:57:46.549 GcTracker: cum:  54 intv:  2 ms:      26 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:57:46.550 13:57:46.549 task_wait_start_complete() end
+
+<a name="_537548559"></a><i><b>13:57:47.000 Starting RD=seq_write_512k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:57:47.001 13:57:47.001 task_run_all(): 9 tasks
+13:57:57.105 13:57:57.105 Sent 8 interrupts to 8 waiting IO_task threads
+13:57:57.105 13:57:57.105 Java Heap in MB. max:  910.500; current:  251.500; used:   20.164; free:  231.336
+13:57:57.105 13:57:57.105 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:57:57.105 13:57:57.105 End of run
+13:57:57.105 13:57:57.105 **********
+13:57:57.105 
+13:57:57.105 
+13:57:57.252 13:57:57.251 Beginning of run setup
+13:57:57.252 13:57:57.251 **********************
+13:57:57.252 
+13:57:57.252 
+13:57:57.252 13:57:57.251 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:57:57.268 13:57:57.257 Started 1 Workload Generator threads.
+13:57:57.322 13:57:57.322 Started  8 i/o threads for sd_varlog
+13:57:57.322 13:57:57.322 Started a total of  8 i/o threads.
+13:57:57.322 13:57:57.322 Waiting for task synchronization
+13:57:57.322 13:57:57.322 task_wait_start_complete: IO_task /dev/dm-3 1
+13:57:57.522 13:57:57.522 Requesting full garbage collection
+13:57:57.522 13:57:57.522 GcTracker: cum:  54 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    25 free:   227 
+13:57:57.541 13:57:57.541 GcTracker: cum:  56 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:57:57.541 13:57:57.541 task_wait_start_complete() end
+
+<a name="_380894366"></a><i><b>13:57:58.000 Starting RD=seq_write_1m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:57:58.001 13:57:58.001 task_run_all(): 9 tasks
+13:58:08.206 13:58:08.205 Interrupts issued for tasks WG_task: 2
+13:58:08.206 13:58:08.205 Sent 8 interrupts to 8 waiting IO_task threads
+13:58:08.206 13:58:08.206 Java Heap in MB. max:  910.500; current:  251.500; used:   19.501; free:  231.999
+13:58:08.206 13:58:08.206 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:58:08.206 13:58:08.206 End of run
+13:58:08.206 13:58:08.206 **********
+13:58:08.206 
+13:58:08.206 
+13:58:08.362 13:58:08.360 Beginning of run setup
+13:58:08.362 13:58:08.360 **********************
+13:58:08.362 
+13:58:08.362 
+13:58:08.362 13:58:08.360 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:58:08.375 13:58:08.366 Started 1 Workload Generator threads.
+13:58:08.430 13:58:08.430 Started  8 i/o threads for sd_varlog
+13:58:08.430 13:58:08.430 Started a total of  8 i/o threads.
+13:58:08.430 13:58:08.430 Waiting for task synchronization
+13:58:08.430 13:58:08.430 task_wait_start_complete: IO_task /dev/dm-3 1
+13:58:08.630 13:58:08.630 Requesting full garbage collection
+13:58:08.630 13:58:08.630 GcTracker: cum:  56 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   227 
+13:58:08.656 13:58:08.655 GcTracker: cum:  58 intv:  2 ms:      25 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:58:08.656 13:58:08.656 task_wait_start_complete() end
+
+<a name="_237852351"></a><i><b>13:58:09.000 Starting RD=seq_write_2m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:58:09.001 13:58:09.001 task_run_all(): 9 tasks
+13:58:19.206 13:58:19.205 Interrupts issued for tasks WG_task: 2
+13:58:19.206 13:58:19.205 Sent 8 interrupts to 8 waiting IO_task threads
+13:58:19.206 13:58:19.206 Java Heap in MB. max:  910.500; current:  251.500; used:   18.983; free:  232.517
+13:58:19.206 13:58:19.206 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:58:19.206 13:58:19.206 End of run
+13:58:19.206 13:58:19.206 **********
+13:58:19.206 
+13:58:19.206 
+13:58:19.342 13:58:19.341 Beginning of run setup
+13:58:19.342 13:58:19.341 **********************
+13:58:19.342 
+13:58:19.342 
+13:58:19.342 13:58:19.341 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:58:19.358 13:58:19.347 Started 1 Workload Generator threads.
+13:58:19.411 13:58:19.411 Started  8 i/o threads for sd_varlog
+13:58:19.411 13:58:19.411 Started a total of  8 i/o threads.
+13:58:19.411 13:58:19.411 Waiting for task synchronization
+13:58:19.411 13:58:19.411 task_wait_start_complete: IO_task /dev/dm-3 1
+13:58:19.611 13:58:19.611 Requesting full garbage collection
+13:58:19.612 13:58:19.611 GcTracker: cum:  58 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:58:19.649 13:58:19.649 GcTracker: cum:  60 intv:  2 ms:      37 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:58:19.649 13:58:19.649 task_wait_start_complete() end
+
+<a name="_608188624"></a><i><b>13:58:20.000 Starting RD=seq_read_4k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:58:20.001 13:58:20.001 task_run_all(): 9 tasks
+13:58:30.106 13:58:30.106 Sent 8 interrupts to 8 waiting IO_task threads
+13:58:30.106 13:58:30.106 Java Heap in MB. max:  910.500; current:  251.500; used:   36.923; free:  214.577
+13:58:30.106 13:58:30.106 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:58:30.106 13:58:30.106 End of run
+13:58:30.106 13:58:30.106 **********
+13:58:30.106 
+13:58:30.106 
+13:58:30.231 13:58:30.230 Beginning of run setup
+13:58:30.231 13:58:30.230 **********************
+13:58:30.231 
+13:58:30.231 
+13:58:30.231 13:58:30.230 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:58:30.240 13:58:30.237 Started 1 Workload Generator threads.
+13:58:30.300 13:58:30.300 Started  8 i/o threads for sd_varlog
+13:58:30.300 13:58:30.300 Started a total of  8 i/o threads.
+13:58:30.300 13:58:30.300 Waiting for task synchronization
+13:58:30.300 13:58:30.300 task_wait_start_complete: IO_task /dev/dm-3 1
+13:58:30.501 13:58:30.500 Requesting full garbage collection
+13:58:30.501 13:58:30.500 GcTracker: cum:  60 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    41 free:   210 
+13:58:30.531 13:58:30.531 GcTracker: cum:  62 intv:  2 ms:      30 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:58:30.531 13:58:30.531 task_wait_start_complete() end
+
+<a name="_1451270520"></a><i><b>13:58:31.000 Starting RD=seq_read_8k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:58:31.001 13:58:31.001 task_run_all(): 9 tasks
+13:58:41.106 13:58:41.105 Sent 8 interrupts to 8 waiting IO_task threads
+13:58:41.106 13:58:41.106 Java Heap in MB. max:  910.500; current:  251.500; used:   30.170; free:  221.330
+13:58:41.106 13:58:41.106 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:58:41.106 13:58:41.106 End of run
+13:58:41.106 13:58:41.106 **********
+13:58:41.106 
+13:58:41.106 
+13:58:41.241 13:58:41.241 Beginning of run setup
+13:58:41.241 13:58:41.241 **********************
+13:58:41.241 
+13:58:41.241 
+13:58:41.241 13:58:41.241 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:58:41.258 13:58:41.247 Started 1 Workload Generator threads.
+13:58:41.311 13:58:41.310 Started  8 i/o threads for sd_varlog
+13:58:41.311 13:58:41.311 Started a total of  8 i/o threads.
+13:58:41.311 13:58:41.311 Waiting for task synchronization
+13:58:41.311 13:58:41.311 task_wait_start_complete: IO_task /dev/dm-3 1
+13:58:41.511 13:58:41.511 Requesting full garbage collection
+13:58:41.511 13:58:41.511 GcTracker: cum:  62 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    35 free:   217 
+13:58:41.526 13:58:41.526 GcTracker: cum:  64 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:58:41.526 13:58:41.526 task_wait_start_complete() end
+
+<a name="_1608446010"></a><i><b>13:58:42.000 Starting RD=seq_read_16k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:58:42.001 13:58:42.001 task_run_all(): 9 tasks
+13:58:52.105 13:58:52.105 Sent 8 interrupts to 8 waiting IO_task threads
+13:58:52.105 13:58:52.105 Java Heap in MB. max:  910.500; current:  251.500; used:   26.170; free:  225.330
+13:58:52.105 13:58:52.105 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:58:52.105 13:58:52.105 End of run
+13:58:52.105 13:58:52.105 **********
+13:58:52.105 
+13:58:52.106 
+13:58:52.249 13:58:52.249 Beginning of run setup
+13:58:52.249 13:58:52.249 **********************
+13:58:52.249 
+13:58:52.249 
+13:58:52.255 13:58:52.249 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:58:52.263 13:58:52.255 Started 1 Workload Generator threads.
+13:58:52.318 13:58:52.318 Started  8 i/o threads for sd_varlog
+13:58:52.318 13:58:52.318 Started a total of  8 i/o threads.
+13:58:52.318 13:58:52.318 Waiting for task synchronization
+13:58:52.318 13:58:52.318 task_wait_start_complete: IO_task /dev/dm-3 1
+13:58:52.518 13:58:52.518 Requesting full garbage collection
+13:58:52.519 13:58:52.518 GcTracker: cum:  64 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    31 free:   221 
+13:58:52.533 13:58:52.533 GcTracker: cum:  66 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:58:52.533 13:58:52.533 task_wait_start_complete() end
+
+<a name="_992136656"></a><i><b>13:58:53.001 Starting RD=seq_read_32k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:58:53.002 13:58:53.002 task_run_all(): 9 tasks
+13:59:03.106 13:59:03.105 Sent 8 interrupts to 8 waiting IO_task threads
+13:59:03.106 13:59:03.105 Java Heap in MB. max:  910.500; current:  251.500; used:   23.443; free:  228.057
+13:59:03.106 13:59:03.105 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:59:03.106 13:59:03.106 End of run
+13:59:03.106 13:59:03.106 **********
+13:59:03.106 
+13:59:03.106 
+13:59:03.231 13:59:03.230 Beginning of run setup
+13:59:03.231 13:59:03.231 **********************
+13:59:03.231 
+13:59:03.231 
+13:59:03.232 13:59:03.231 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:59:03.237 13:59:03.237 Started 1 Workload Generator threads.
+13:59:03.301 13:59:03.301 Started  8 i/o threads for sd_varlog
+13:59:03.301 13:59:03.301 Started a total of  8 i/o threads.
+13:59:03.301 13:59:03.301 Waiting for task synchronization
+13:59:03.301 13:59:03.301 task_wait_start_complete: IO_task /dev/dm-3 1
+13:59:03.501 13:59:03.501 Requesting full garbage collection
+13:59:03.501 13:59:03.501 GcTracker: cum:  66 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    28 free:   223 
+13:59:03.517 13:59:03.516 GcTracker: cum:  68 intv:  2 ms:      15 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:59:03.517 13:59:03.516 task_wait_start_complete() end
+
+<a name="_511833308"></a><i><b>13:59:04.000 Starting RD=seq_read_64k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:59:04.001 13:59:04.001 task_run_all(): 9 tasks
+13:59:14.106 13:59:14.105 Sent 8 interrupts to 8 waiting IO_task threads
+13:59:14.106 13:59:14.106 Java Heap in MB. max:  910.500; current:  251.500; used:   21.396; free:  230.104
+13:59:14.106 13:59:14.106 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:59:14.106 13:59:14.106 End of run
+13:59:14.106 13:59:14.106 **********
+13:59:14.106 
+13:59:14.106 
+13:59:14.241 13:59:14.235 Beginning of run setup
+13:59:14.241 13:59:14.235 **********************
+13:59:14.241 
+13:59:14.241 
+13:59:14.241 13:59:14.235 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:59:14.252 13:59:14.241 Started 1 Workload Generator threads.
+13:59:14.305 13:59:14.305 Started  8 i/o threads for sd_varlog
+13:59:14.305 13:59:14.305 Started a total of  8 i/o threads.
+13:59:14.305 13:59:14.305 Waiting for task synchronization
+13:59:14.305 13:59:14.305 task_wait_start_complete: IO_task /dev/dm-3 1
+13:59:14.505 13:59:14.505 Requesting full garbage collection
+13:59:14.505 13:59:14.505 GcTracker: cum:  68 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    26 free:   225 
+13:59:14.524 13:59:14.524 GcTracker: cum:  70 intv:  2 ms:      15 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:59:14.524 13:59:14.524 task_wait_start_complete() end
+
+<a name="_1297685781"></a><i><b>13:59:15.000 Starting RD=seq_read_128k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:59:15.001 13:59:15.001 task_run_all(): 9 tasks
+13:59:25.204 13:59:25.204 Interrupts issued for tasks WG_task: 2
+13:59:25.204 13:59:25.204 Sent 0 interrupts to 8 waiting IO_task threads
+13:59:26.195 13:59:26.195 Java Heap in MB. max:  910.500; current:  251.500; used:   20.149; free:  231.351
+13:59:26.195 13:59:26.195 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:59:26.196 13:59:26.195 End of run
+13:59:26.196 13:59:26.195 **********
+13:59:26.196 
+13:59:26.196 
+13:59:26.240 13:59:26.239 Beginning of run setup
+13:59:26.240 13:59:26.239 **********************
+13:59:26.240 
+13:59:26.240 
+13:59:26.240 13:59:26.240 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:59:26.257 13:59:26.246 Started 1 Workload Generator threads.
+13:59:26.310 13:59:26.310 Started  8 i/o threads for sd_varlog
+13:59:26.310 13:59:26.310 Started a total of  8 i/o threads.
+13:59:26.310 13:59:26.310 Waiting for task synchronization
+13:59:26.310 13:59:26.310 task_wait_start_complete: IO_task /dev/dm-3 1
+13:59:26.510 13:59:26.510 Requesting full garbage collection
+13:59:26.510 13:59:26.510 GcTracker: cum:  70 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    25 free:   227 
+13:59:26.529 13:59:26.529 GcTracker: cum:  72 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:59:26.529 13:59:26.529 task_wait_start_complete() end
+
+<a name="_1705929636"></a><i><b>13:59:27.000 Starting RD=seq_read_512k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:59:27.001 13:59:27.001 task_run_all(): 9 tasks
+13:59:37.205 13:59:37.205 Interrupts issued for tasks WG_task: 2
+13:59:37.205 13:59:37.205 Sent 8 interrupts to 8 waiting IO_task threads
+13:59:37.205 13:59:37.205 Java Heap in MB. max:  910.500; current:  251.500; used:   19.335; free:  232.165
+13:59:37.205 13:59:37.205 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:59:37.205 13:59:37.205 End of run
+13:59:37.205 13:59:37.205 **********
+13:59:37.205 
+13:59:37.206 
+13:59:37.337 13:59:37.336 Beginning of run setup
+13:59:37.337 13:59:37.336 **********************
+13:59:37.337 
+13:59:37.337 
+13:59:37.337 13:59:37.336 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:59:37.343 13:59:37.342 Started 1 Workload Generator threads.
+13:59:37.406 13:59:37.406 Started  8 i/o threads for sd_varlog
+13:59:37.406 13:59:37.406 Started a total of  8 i/o threads.
+13:59:37.406 13:59:37.406 Waiting for task synchronization
+13:59:37.406 13:59:37.406 task_wait_start_complete: IO_task /dev/dm-3 1
+13:59:37.606 13:59:37.606 Requesting full garbage collection
+13:59:37.606 13:59:37.606 GcTracker: cum:  72 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   227 
+13:59:37.622 13:59:37.622 GcTracker: cum:  74 intv:  2 ms:      15 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:59:37.622 13:59:37.622 task_wait_start_complete() end
+
+<a name="_1221555852"></a><i><b>13:59:38.000 Starting RD=seq_read_1m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:59:38.001 13:59:38.001 task_run_all(): 9 tasks
+13:59:48.205 13:59:48.205 Interrupts issued for tasks WG_task: 2
+13:59:48.205 13:59:48.205 Sent 8 interrupts to 8 waiting IO_task threads
+13:59:48.205 13:59:48.205 Java Heap in MB. max:  910.500; current:  251.500; used:   18.999; free:  232.501
+13:59:48.205 13:59:48.205 Maximum native memory allocation:   33,554,432; Current allocation:            0
+13:59:48.205 13:59:48.205 End of run
+13:59:48.205 13:59:48.205 **********
+13:59:48.205 
+13:59:48.205 
+13:59:48.342 13:59:48.341 Beginning of run setup
+13:59:48.342 13:59:48.341 **********************
+13:59:48.342 
+13:59:48.342 
+13:59:48.342 13:59:48.341 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+13:59:48.347 13:59:48.347 Started 1 Workload Generator threads.
+13:59:48.411 13:59:48.411 Started  8 i/o threads for sd_varlog
+13:59:48.411 13:59:48.411 Started a total of  8 i/o threads.
+13:59:48.411 13:59:48.411 Waiting for task synchronization
+13:59:48.411 13:59:48.411 task_wait_start_complete: IO_task /dev/dm-3 1
+13:59:48.611 13:59:48.611 Requesting full garbage collection
+13:59:48.611 13:59:48.611 GcTracker: cum:  74 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    24 free:   228 
+13:59:48.628 13:59:48.627 GcTracker: cum:  76 intv:  2 ms:      16 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+13:59:48.628 13:59:48.628 task_wait_start_complete() end
+
+<a name="_1509514333"></a><i><b>13:59:49.001 Starting RD=seq_read_2m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:59:49.002 13:59:49.002 task_run_all(): 9 tasks
+13:59:59.205 13:59:59.205 Interrupts issued for tasks WG_task: 2
+13:59:59.205 13:59:59.205 Sent 0 interrupts to 8 waiting IO_task threads
+14:00:00.196 14:00:00.196 Java Heap in MB. max:  910.500; current:  251.500; used:   18.819; free:  232.681
+14:00:00.196 14:00:00.196 Maximum native memory allocation:   33,554,432; Current allocation:            0
+14:00:00.196 14:00:00.196 End of run
+14:00:00.196 14:00:00.196 **********
+14:00:00.196 
+14:00:00.196 
+14:00:00.269 14:00:00.269 Master is requesting slave shutdown
+14:00:00.278 14:00:00.270 Java Heap in MB. max:  910.500; current:  251.500; used:   18.819; free:  232.681

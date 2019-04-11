@@ -2,12 +2,57 @@
 Run totals
 
 
-Link to Run Definitions:         <A HREF="#_1227229563">random_write For loops: None</A>
+Link to Run Definitions:         <A HREF="#_1793329556">ran_write_various For loops: None</A>
+                                 <A HREF="#_445884362">seq_read_4k For loops: None</A>
+                                 <A HREF="#_1031980531">seq_read_8k For loops: None</A>
+                                 <A HREF="#_721748895">seq_read_16k For loops: None</A>
+                                 <A HREF="#_1642534850">seq_read_32k For loops: None</A>
+                                 <A HREF="#_1724731843">seq_read_64k For loops: None</A>
+                                 <A HREF="#_1305193908">seq_read_128k For loops: None</A>
+                                 <A HREF="#_1313953385">seq_read_512k For loops: None</A>
+                                 <A HREF="#_399573350">seq_read_1m For loops: None</A>
+                                 <A HREF="#_463345942">seq_read_2m For loops: None</A>
 
 
-<a name="_1227229563"></a><i><b>11:58:52.001 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+<a name="_1793329556"></a><i><b>13:40:31.001 Starting RD=ran_write_various; I/O rate: Controlled MAX; elapsed=10; For loops: None</b></i>
 
 
 Apr 11, 2019    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue  cpu%  cpu%
                                rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth sys+u   sys
-11:59:52.020    avg_2-60    28301.5   210.86    7812   0.00    0.280    0.000    0.280     0.00   564.31    1.281    7.9   0.2   0.1
+13:40:41.015    avg_2-10    23094.2   172.71    7841   0.00    0.342    0.000    0.342     0.00    84.55    0.322    7.9   1.1   0.6
+
+<a name="_445884362"></a><i><b>13:40:42.000 Starting RD=seq_read_4k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:40:52.007    avg_2-10    20655.8    80.69    4096 100.00    0.384    0.384    0.000   533.11     0.00    3.976    8.0   0.7   0.4
+
+<a name="_1031980531"></a><i><b>13:40:53.000 Starting RD=seq_read_8k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:03.008    avg_2-10    15518.1   121.24    8192 100.00    0.515    0.515    0.000   201.87     0.00    2.473    8.0   0.5   0.3
+
+<a name="_721748895"></a><i><b>13:41:04.000 Starting RD=seq_read_16k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:14.005    avg_2-10    11071.3   172.99   16384 100.00    0.722    0.722    0.000    16.92     0.00    0.311    8.0   0.5   0.3
+
+<a name="_1642534850"></a><i><b>13:41:15.001 Starting RD=seq_read_32k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:25.005    avg_2-10     6725.1   210.16   32768 100.00    1.189    1.189    0.000    39.39     0.00    0.714    8.0   0.3   0.2
+
+<a name="_1724731843"></a><i><b>13:41:26.001 Starting RD=seq_read_64k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:36.006    avg_2-10     3595.0   224.69   65536 100.00    2.281    2.281    0.000  1390.02     0.00   22.063    8.0   0.2   0.1
+
+<a name="_1305193908"></a><i><b>13:41:37.000 Starting RD=seq_read_128k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:47.006    avg_2-10     1609.7   201.21  131072 100.00    5.280    5.280    0.000  1725.91     0.00   61.427    8.0   0.1   0.1
+
+<a name="_1313953385"></a><i><b>13:41:48.001 Starting RD=seq_read_512k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:58.006    avg_2-10      748.4   374.22  524288 100.00   10.689   10.689    0.000   255.24     0.00   22.021    8.0   0.1   0.1
+
+<a name="_399573350"></a><i><b>13:41:59.001 Starting RD=seq_read_1m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:42:09.005    avg_2-10      230.9   230.89 1048576 100.00   31.421   31.421    0.000  1814.27     0.00  145.348    8.0   0.1   0.0
+
+<a name="_463345942"></a><i><b>13:42:11.000 Starting RD=seq_read_2m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:42:21.006    avg_2-10      153.2   306.44 2097152 100.00   52.195   52.195    0.000  1901.89     0.00  195.092    8.0   0.1   0.1

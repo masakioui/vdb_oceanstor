@@ -9,77 +9,106 @@ Skew information will only be generated if:
 (Though these rules may be ignored from time to time).
 
 
-Link to Run Definitions:         <A HREF="#_1227229563">random_write For loops: None</A>
+Link to Run Definitions:         <A HREF="#_1793329556">ran_write_various For loops: None</A>
+                                 <A HREF="#_445884362">seq_read_4k For loops: None</A>
+                                 <A HREF="#_1031980531">seq_read_8k For loops: None</A>
+                                 <A HREF="#_721748895">seq_read_16k For loops: None</A>
+                                 <A HREF="#_1642534850">seq_read_32k For loops: None</A>
+                                 <A HREF="#_1724731843">seq_read_64k For loops: None</A>
+                                 <A HREF="#_1305193908">seq_read_128k For loops: None</A>
+                                 <A HREF="#_1313953385">seq_read_512k For loops: None</A>
+                                 <A HREF="#_399573350">seq_read_1m For loops: None</A>
+                                 <A HREF="#_463345942">seq_read_2m For loops: None</A>
 
 
-<a name="_1227229563"></a><i><b>11:58:52.001 Starting RD=random_write; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+<a name="_1793329556"></a><i><b>13:40:31.001 Starting RD=ran_write_various; I/O rate: Controlled MAX; elapsed=10; For loops: None</b></i>
 
-11:59:52.023 
-11:59:52.023 Counts reported below are for non-warmup intervals.
-11:59:52.023 
-11:59:52.023                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.023 Slave:          rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.023 n1-0         3474.88    25.95    7831   0.00    0.285    0.000    0.285  210.736    1.258   1.0 
-11:59:52.023 Total        3474.88    25.95    7831   0.00    0.285    0.000    0.285  210.736    1.258   1.0 
-11:59:52.023 
-11:59:52.023                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.023 Slave:          rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.023 n2-0         3640.56    27.08    7799   0.00    0.272    0.000    0.272  497.377    1.169   1.0 
-11:59:52.023 Total        3640.56    27.08    7799   0.00    0.272    0.000    0.272  497.377    1.169   1.0 
-11:59:52.023 
-11:59:52.023                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.023 Slave:          rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.023 n3-0         3587.73    26.59    7771   0.00    0.276    0.000    0.276  240.144    0.897   1.0 
-11:59:52.023 Total        3587.73    26.59    7771   0.00    0.276    0.000    0.276  240.144    0.897   1.0 
-11:59:52.023 
-11:59:52.023                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.023 Slave:          rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.023 n4-0         3397.24    25.16    7766   0.00    0.291    0.000    0.291  533.407    2.068   1.0 
-11:59:52.023 Total        3397.24    25.16    7766   0.00    0.291    0.000    0.291  533.407    2.068   1.0 
-11:59:52.023 
-11:59:52.023                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.023 Slave:          rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.023 n5-0         3529.34    26.38    7838   0.00    0.281    0.000    0.281  198.638    0.977   1.0 
-11:59:52.023 Total        3529.34    26.38    7838   0.00    0.281    0.000    0.281  198.638    0.977   1.0 
-11:59:52.023 
-11:59:52.023                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.023 Slave:          rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.023 n6-0         3467.61    25.84    7813   0.00    0.285    0.000    0.285  564.312    1.910   1.0 
-11:59:52.024 Total        3467.61    25.84    7813   0.00    0.285    0.000    0.285  564.312    1.910   1.0 
-11:59:52.024 
-11:59:52.024                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.024 Slave:          rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.024 n7-0         3581.68    26.79    7843   0.00    0.276    0.000    0.276  165.126    0.750   1.0 
-11:59:52.024 Total        3581.68    26.79    7843   0.00    0.276    0.000    0.276  165.126    0.750   1.0 
-11:59:52.024 
-11:59:52.024                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.024 Slave:          rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.024 n8-0         3622.51    27.06    7833   0.00    0.273    0.000    0.273   90.052    0.391   1.0 
-11:59:52.024 Total        3622.51    27.06    7833   0.00    0.273    0.000    0.273   90.052    0.391   1.0 
-11:59:52.024 
-11:59:52.024                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue    cpu
-11:59:52.024 Host:           rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth  sys+u
-11:59:52.024 n1           3474.88    25.95    7831   0.00    0.285    0.000    0.285  210.736    1.258   1.0    0.3
-11:59:52.024 n2           3640.56    27.08    7799   0.00    0.272    0.000    0.272  497.377    1.169   1.0    0.2
-11:59:52.024 n3           3587.73    26.59    7771   0.00    0.276    0.000    0.276  240.144    0.897   1.0    0.2
-11:59:52.024 n4           3397.24    25.16    7766   0.00    0.291    0.000    0.291  533.407    2.068   1.0    0.2
-11:59:52.024 n5           3529.34    26.38    7838   0.00    0.281    0.000    0.281  198.638    0.977   1.0    0.2
-11:59:52.024 n6           3467.61    25.84    7813   0.00    0.285    0.000    0.285  564.312    1.910   1.0    0.2
-11:59:52.024 n7           3581.68    26.79    7843   0.00    0.276    0.000    0.276  165.126    0.750   1.0    0.2
-11:59:52.024 n8           3622.51    27.06    7833   0.00    0.273    0.000    0.273   90.052    0.391   1.0    0.2
-11:59:52.024 Total       28301.54   210.86    7812   0.00    0.280    0.000    0.280  564.312    1.281   7.9    0.2
-11:59:52.024 
-11:59:52.024                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
-11:59:52.024 SD:             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
-11:59:52.024 sd_varlog   28301.54   210.86    7812   0.00    0.280    0.000    0.280  564.312    1.281   7.9 
-11:59:52.024 Total       28301.54   210.86    7812   0.00    0.280    0.000    0.280  564.312    1.281   7.9 
-11:59:52.024 
-11:59:52.024 Calculated versus requested workload skew. (Delta only shown if > 0.10% absolute)
-11:59:52.024 Note that for an Uncontrolled MAX run workload skew is irrelevant.
-11:59:52.024 
-11:59:52.024                  i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue       skew     skew    skew 
-11:59:52.024 WD:             rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth  requested observed   delta 
-11:59:52.024 wd1         14162.39   105.31    7797   0.00    0.283    0.000    0.283  519.904    1.403   4.0     50.00%   50.04% 
-11:59:52.024 wd2          8467.64    63.15    7820   0.00    0.279    0.000    0.279  564.312    1.477   2.4     30.00%   29.92% 
-11:59:52.025 wd3          5671.51    42.40    7838   0.00    0.272    0.000    0.272   11.366    0.151   1.5     20.00%   20.04% 
-11:59:52.025 Total       28301.54   210.86    7812   0.00    0.280    0.000    0.280  564.312    1.281   7.9    100.00%  100.00%
+13:40:41.017 
+13:40:41.017 Counts reported below are for non-warmup intervals.
+13:40:41.017 
+13:40:41.017                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:40:41.017 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:40:41.017 sd_varlog        23094.22   172.71    7841   0.00    0.342    0.000    0.342   84.553    0.322   7.9 
+13:40:41.017 Total            23094.22   172.71    7841   0.00    0.342    0.000    0.342   84.553    0.322   7.9 
+13:40:41.017 
+13:40:41.017 Calculated versus requested workload skew. (Delta only shown if > 0.10% absolute)
+13:40:41.017 Note that for an Uncontrolled MAX run workload skew is irrelevant.
+13:40:41.017 
+13:40:41.017                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue       skew     skew    skew 
+13:40:41.017 WD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth  requested observed   delta 
+13:40:41.017 ran_write_v1     11537.33    86.45    7856   0.00    0.342    0.000    0.342   84.553    0.335   3.9     50.00%   49.96% 
+13:40:41.017 ran_write_v2      6943.67    51.93    7842   0.00    0.343    0.000    0.343   76.473    0.362   2.4     30.00%   30.07% 
+13:40:41.017 ran_write_v3      4613.22    34.33    7802   0.00    0.342    0.000    0.342   12.046    0.202   1.6     20.00%   19.98% 
+13:40:41.017 Total            23094.22   172.71    7841   0.00    0.342    0.000    0.342   84.553    0.322   7.9    100.00%  100.00%
+
+<a name="_445884362"></a><i><b>13:40:42.000 Starting RD=seq_read_4k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:40:52.007 
+13:40:52.007                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:40:52.007 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:40:52.007 sd_varlog        20655.78    80.69    4096 100.00    0.384    0.384    0.000  533.109    3.976   8.0 
+13:40:52.007 Total            20655.78    80.69    4096 100.00    0.384    0.384    0.000  533.109    3.976   8.0 
+
+<a name="_1031980531"></a><i><b>13:40:53.001 Starting RD=seq_read_8k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:03.009 
+13:41:03.009                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:41:03.009 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:41:03.009 sd_varlog        15518.11   121.24    8192 100.00    0.515    0.515    0.000  201.865    2.473   8.0 
+13:41:03.009 Total            15518.11   121.24    8192 100.00    0.515    0.515    0.000  201.865    2.473   8.0 
+
+<a name="_721748895"></a><i><b>13:41:04.000 Starting RD=seq_read_16k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:14.005 
+13:41:14.005                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:41:14.005 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:41:14.005 sd_varlog        11071.33   172.99   16384 100.00    0.722    0.722    0.000   16.919    0.311   8.0 
+13:41:14.006 Total            11071.33   172.99   16384 100.00    0.722    0.722    0.000   16.919    0.311   8.0 
+
+<a name="_1642534850"></a><i><b>13:41:15.001 Starting RD=seq_read_32k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:25.005 
+13:41:25.005                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:41:25.005 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:41:25.005 sd_varlog         6725.11   210.16   32768 100.00    1.189    1.189    0.000   39.390    0.714   8.0 
+13:41:25.005 Total             6725.11   210.16   32768 100.00    1.189    1.189    0.000   39.390    0.714   8.0 
+
+<a name="_1724731843"></a><i><b>13:41:26.001 Starting RD=seq_read_64k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:36.006 
+13:41:36.006                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:41:36.006 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:41:36.006 sd_varlog         3595.00   224.69   65536 100.00    2.281    2.281    0.000 1390.016   22.063   8.0 
+13:41:36.006 Total             3595.00   224.69   65536 100.00    2.281    2.281    0.000 1390.016   22.063   8.0 
+
+<a name="_1305193908"></a><i><b>13:41:37.000 Starting RD=seq_read_128k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:47.006 
+13:41:47.006                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:41:47.006 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:41:47.006 sd_varlog         1609.67   201.21  131072 100.00    5.280    5.280    0.000 1725.912   61.427   8.0 
+13:41:47.006 Total             1609.67   201.21  131072 100.00    5.280    5.280    0.000 1725.912   61.427   8.0 
+
+<a name="_1313953385"></a><i><b>13:41:48.001 Starting RD=seq_read_512k; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:41:58.006 
+13:41:58.006                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:41:58.006 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:41:58.006 sd_varlog          748.44   374.22  524288 100.00   10.689   10.689    0.000  255.236   22.021   8.0 
+13:41:58.006 Total              748.44   374.22  524288 100.00   10.689   10.689    0.000  255.236   22.021   8.0 
+
+<a name="_399573350"></a><i><b>13:41:59.001 Starting RD=seq_read_1m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:42:09.005 
+13:42:09.005                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:42:09.005 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:42:09.005 sd_varlog          230.89   230.89 1048576 100.00   31.421   31.421    0.000 1814.270  145.348   8.0 
+13:42:09.005 Total              230.89   230.89 1048576 100.00   31.421   31.421    0.000 1814.270  145.348   8.0 
+
+<a name="_463345942"></a><i><b>13:42:11.000 Starting RD=seq_read_2m; I/O rate: Uncontrolled MAX; elapsed=10; For loops: None</b></i>
+
+13:42:21.006 
+13:42:21.006                       i/o   MB/sec   bytes   read     resp     read    write     resp     resp queue 
+13:42:21.006 SD:                  rate  1024**2     i/o    pct     time     resp     resp      max   stddev depth 
+13:42:21.006 sd_varlog          153.22   306.44 2097152 100.00   52.195   52.195    0.000 1901.887  195.092   8.0 
+13:42:21.006 Total              153.22   306.44 2097152 100.00   52.195   52.195    0.000 1901.887  195.092   8.0 
