@@ -1,0 +1,225 @@
+<title>Vdbench sd_all_60sec_20190418-2/ran_write_v1.html</title><pre>
+Workload Report for wd=ran_write_v1
+
+Link to response time histogram: <A HREF="ran_write_v1.histogram.html">histogram</A>
+
+Link to Run Definitions:         <A HREF="#_1993134103">ran_write_various For loops: None</A>
+                                 <A HREF="#_405662939">ran_read_various For loops: None</A>
+                                 <A HREF="#_653305407">ran_write_4k For loops: None</A>
+                                 <A HREF="#_1130478920">ran_write_8k For loops: None</A>
+                                 <A HREF="#_1404928347">ran_write_16k For loops: None</A>
+                                 <A HREF="#_604107971">ran_write_32k For loops: None</A>
+                                 <A HREF="#_123961122">ran_write_64k For loops: None</A>
+                                 <A HREF="#_1227229563">ran_write_128k For loops: None</A>
+                                 <A HREF="#_1982791261">ran_write_512k For loops: None</A>
+                                 <A HREF="#_1562557367">ran_write_1m For loops: None</A>
+                                 <A HREF="#_1101288798">ran_write_2m For loops: None</A>
+                                 <A HREF="#_942731712">ran_read_4k For loops: None</A>
+                                 <A HREF="#_971848845">ran_read_8k For loops: None</A>
+                                 <A HREF="#_1910163204">ran_read_16k For loops: None</A>
+                                 <A HREF="#_305623748">ran_read_32k For loops: None</A>
+                                 <A HREF="#_758529971">ran_read_64k For loops: None</A>
+                                 <A HREF="#_2104457164">ran_read_128k For loops: None</A>
+                                 <A HREF="#_1521118594">ran_read_512k For loops: None</A>
+                                 <A HREF="#_1940030785">ran_read_1m For loops: None</A>
+                                 <A HREF="#_1869997857">ran_read_2m For loops: None</A>
+                                 <A HREF="#_1763847188">seq_write_4k For loops: None</A>
+                                 <A HREF="#_1617791695">seq_write_8k For loops: None</A>
+                                 <A HREF="#_125993742">seq_write_16k For loops: None</A>
+                                 <A HREF="#_1192108080">seq_write_32k For loops: None</A>
+                                 <A HREF="#_1068824137">seq_write_64k For loops: None</A>
+                                 <A HREF="#_864237698">seq_write_128k For loops: None</A>
+                                 <A HREF="#_537548559">seq_write_512k For loops: None</A>
+                                 <A HREF="#_380894366">seq_write_1m For loops: None</A>
+                                 <A HREF="#_237852351">seq_write_2m For loops: None</A>
+                                 <A HREF="#_608188624">seq_read_4k For loops: None</A>
+                                 <A HREF="#_1451270520">seq_read_8k For loops: None</A>
+                                 <A HREF="#_1608446010">seq_read_16k For loops: None</A>
+                                 <A HREF="#_992136656">seq_read_32k For loops: None</A>
+                                 <A HREF="#_511833308">seq_read_64k For loops: None</A>
+                                 <A HREF="#_1297685781">seq_read_128k For loops: None</A>
+                                 <A HREF="#_1705929636">seq_read_512k For loops: None</A>
+                                 <A HREF="#_1221555852">seq_read_1m For loops: None</A>
+                                 <A HREF="#_1509514333">seq_read_2m For loops: None</A>
+
+
+<a name="_1993134103"></a><i><b>15:21:16.001 Starting RD=ran_write_various; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+
+Apr 18, 2019    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue  cpu%  cpu%
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth sys+u   sys
+15:21:17.049           1    11702.0    86.95    7791   0.00    0.258    0.000    0.258     0.00    10.83    0.223    3.0   1.2   0.2
+15:21:18.010           2    15770.0   116.10    7719   0.00    0.247    0.000    0.247     0.00     4.97    0.126    3.9   0.7   0.2
+15:21:19.008           3    15904.0   118.31    7800   0.00    0.248    0.000    0.248     0.00     3.39    0.104    3.9   0.3   0.2
+15:21:20.007           4    14473.0   108.30    7846   0.00    0.272    0.000    0.272     0.00    11.17    0.219    3.9   0.3   0.2
+15:21:21.009           5    14842.0   111.51    7877   0.00    0.265    0.000    0.265     0.00     4.25    0.133    3.9   0.3   0.2
+15:21:22.006           6    14932.0   110.21    7739   0.00    0.266    0.000    0.266     0.00     7.37    0.125    4.0   0.3   0.2
+15:21:23.008           7    13854.0   102.98    7794   0.00    0.287    0.000    0.287     0.00    75.82    0.683    4.0   0.2   0.1
+15:21:24.006           8    14870.0   111.06    7831   0.00    0.266    0.000    0.266     0.00     4.26    0.113    4.0   0.3   0.2
+15:21:25.007           9    14289.0   108.90    7991   0.00    0.277    0.000    0.277     0.00     4.87    0.162    4.0   0.2   0.1
+15:21:26.006          10    14243.0   106.63    7850   0.00    0.279    0.000    0.279     0.00     4.84    0.160    4.0   0.3   0.2
+15:21:27.006          11    13937.0   103.12    7758   0.00    0.285    0.000    0.285     0.00     4.47    0.207    4.0   0.2   0.1
+15:21:28.006          12    14571.0   111.41    8017   0.00    0.269    0.000    0.269     0.00     3.52    0.121    3.9   0.2   0.1
+15:21:29.006          13    14398.0   109.29    7959   0.00    0.274    0.000    0.274     0.00     6.06    0.137    3.9   0.3   0.2
+15:21:30.007          14    14010.0   105.08    7864   0.00    0.286    0.000    0.286     0.00    54.06    0.527    4.0   0.4   0.2
+15:21:31.007          15    14635.0   108.89    7802   0.00    0.270    0.000    0.270     0.00     4.28    0.135    4.0   0.2   0.1
+15:21:32.010          16    14314.0   108.04    7914   0.00    0.278    0.000    0.278     0.00     9.47    0.191    4.0   0.3   0.1
+15:21:33.005          17    13921.0   102.91    7751   0.00    0.286    0.000    0.286     0.00    12.19    0.226    4.0   0.2   0.1
+15:21:34.006          18    14293.0   107.33    7873   0.00    0.276    0.000    0.276     0.00     3.48    0.140    3.9   0.2   0.1
+15:21:35.006          19    14550.0   109.18    7868   0.00    0.275    0.000    0.275     0.00     4.58    0.136    4.0   0.2   0.1
+15:21:36.005          20    14213.0   105.51    7783   0.00    0.289    0.000    0.289     0.00   329.88    2.769    4.1   0.2   0.1
+15:21:37.006          21    14495.0   107.27    7759   0.00    0.278    0.000    0.278     0.00   129.90    1.084    4.0   0.2   0.1
+15:21:38.006          22    14604.0   106.92    7677   0.00    0.268    0.000    0.268     0.00     3.50    0.128    3.9   0.3   0.2
+15:21:39.006          23    14001.0   101.80    7623   0.00    0.278    0.000    0.278     0.00     4.51    0.154    3.9   0.3   0.2
+15:21:40.005          24    14729.0   110.53    7868   0.00    0.270    0.000    0.270     0.00     3.66    0.123    4.0   0.2   0.1
+15:21:41.007          25    14742.0   111.56    7935   0.00    0.269    0.000    0.269     0.00     5.89    0.135    4.0   0.2   0.1
+15:21:42.006          26    14698.0   111.09    7925   0.00    0.271    0.000    0.271     0.00     5.15    0.148    4.0   0.2   0.1
+15:21:43.006          27    14711.0   110.60    7883   0.00    0.268    0.000    0.268     0.00     4.48    0.124    3.9   0.3   0.2
+15:21:44.006          28    14270.0   109.41    8039   0.00    0.280    0.000    0.280     0.00    53.53    0.465    4.0   0.2   0.1
+15:21:45.006          29    13817.0   103.37    7844   0.00    0.289    0.000    0.289     0.00    92.47    0.798    4.0   0.3   0.2
+15:21:46.006          30    14516.0   108.46    7834   0.00    0.272    0.000    0.272     0.00     4.82    0.134    3.9   0.2   0.1
+
+Apr 18, 2019    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue  cpu%  cpu%
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth sys+u   sys
+15:21:47.007          31    14583.0   108.17    7777   0.00    0.273    0.000    0.273     0.00     3.27    0.124    4.0   0.2   0.1
+15:21:48.007          32    14385.0   107.75    7854   0.00    0.276    0.000    0.276     0.00     4.02    0.142    4.0   0.2   0.1
+15:21:49.005          33    14398.0   108.15    7876   0.00    0.277    0.000    0.277     0.00     6.03    0.148    4.0   0.3   0.2
+15:21:50.005          34    14086.0   105.63    7863   0.00    0.276    0.000    0.276     0.00     4.37    0.143    3.9   0.2   0.1
+15:21:51.005          35    13711.0   103.33    7902   0.00    0.281    0.000    0.281     0.00     5.38    0.148    3.9   0.2   0.1
+15:21:52.004          36    13279.0    98.57    7783   0.00    0.274    0.000    0.274     0.00     4.90    0.145    4.3   0.2   0.1
+15:21:53.015          37    13701.0   103.22    7899   0.00    0.359    0.000    0.359     0.00  1191.86   10.181    4.3   0.2   0.1
+15:21:54.005          38    14314.0   107.28    7858   0.00    0.276    0.000    0.276     0.00     4.44    0.132    4.0   0.3   0.1
+15:21:55.004          39    14111.0   104.83    7789   0.00    0.278    0.000    0.278     0.00     9.02    0.168    3.9   0.2   0.1
+15:21:56.005          40    13987.0   103.57    7764   0.00    0.288    0.000    0.288     0.00   178.41    1.511    4.0   0.2   0.1
+15:21:57.004          41    14185.0   104.53    7726   0.00    0.278    0.000    0.278     0.00     5.44    0.140    3.9   0.2   0.1
+15:21:58.005          42    13688.0   101.52    7776   0.00    0.305    0.000    0.305     0.00   406.06    3.471    4.2   0.2   0.1
+15:21:59.005          43    14475.0   105.69    7656   0.00    0.273    0.000    0.273     0.00     4.13    0.128    4.0   0.2   0.1
+15:22:00.005          44    14360.0   106.93    7807   0.00    0.274    0.000    0.274     0.00     6.54    0.152    3.9   0.3   0.1
+15:22:01.004          45    14577.0   108.23    7785   0.00    0.275    0.000    0.275     0.00     7.02    0.163    4.0   0.2   0.1
+15:22:02.005          46    13812.0   103.95    7891   0.00    0.282    0.000    0.282     0.00     7.76    0.168    4.1   0.2   0.1
+15:22:03.005          47    13142.0    97.93    7813   0.00    0.353    0.000    0.353     0.00   682.60    6.635    4.4   0.2   0.1
+15:22:04.005          48    14765.0   110.68    7860   0.00    0.272    0.000    0.272     0.00     4.27    0.142    4.0   0.2   0.1
+15:22:05.005          49    14544.0   111.99    8073   0.00    0.273    0.000    0.273     0.00     8.81    0.185    4.0   0.2   0.1
+15:22:06.004          50    14632.0   108.94    7806   0.00    0.268    0.000    0.268     0.00     2.99    0.112    3.9   0.2   0.2
+15:22:07.004          51    14307.0   106.25    7787   0.00    0.278    0.000    0.278     0.00     3.69    0.140    4.0   0.2   0.1
+15:22:08.005          52    14236.0   107.95    7951   0.00    0.279    0.000    0.279     0.00    49.64    0.702    4.0   0.2   0.1
+15:22:09.004          53    12766.0    92.24    7576   0.00    0.320    0.000    0.320     0.00   130.88    2.379    4.2   0.2   0.1
+15:22:10.005          54    12646.0    92.06    7633   0.00    0.339    0.000    0.339     0.00   189.38    3.086    4.5   0.2   0.1
+15:22:11.005          55    11754.0    88.01    7851   0.00    0.413    0.000    0.413     0.00   236.24    4.684    4.6   0.2   0.1
+15:22:12.005          56    11703.0    85.53    7663   0.00    0.326    0.000    0.326     0.00   153.96    2.842    4.7   0.2   0.1
+15:22:13.006          57    12518.0    93.96    7870   0.00    0.435    0.000    0.435     0.00   886.18    8.867    4.5   0.2   0.1
+15:22:14.005          58    13505.0   101.45    7877   0.00    0.307    0.000    0.307     0.00   159.51    2.092    4.2   0.2   0.1
+15:22:15.007          59    12825.0    94.29    7709   0.00    0.351    0.000    0.351     0.00   165.83    3.231    4.5   0.2   0.1
+15:22:16.010          60    12553.0    95.95    8014   0.00    0.355    0.000    0.355     0.00   180.42    3.384    4.6   0.2   0.1
+15:22:16.012    avg_2-60    14104.2   105.33    7830   0.00    0.287    0.000    0.287     0.00  1191.86    2.255    4.1   0.2   0.1
+
+<a name="_405662939"></a><i><b>15:22:17.001 Starting RD=ran_read_various; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_653305407"></a><i><b>15:23:19.001 Starting RD=ran_write_4k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1130478920"></a><i><b>15:24:20.001 Starting RD=ran_write_8k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1404928347"></a><i><b>15:25:21.001 Starting RD=ran_write_16k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_604107971"></a><i><b>15:26:22.000 Starting RD=ran_write_32k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_123961122"></a><i><b>15:27:23.000 Starting RD=ran_write_64k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1227229563"></a><i><b>15:28:24.001 Starting RD=ran_write_128k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1982791261"></a><i><b>15:29:25.001 Starting RD=ran_write_512k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1562557367"></a><i><b>15:30:26.001 Starting RD=ran_write_1m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1101288798"></a><i><b>15:31:27.001 Starting RD=ran_write_2m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_942731712"></a><i><b>15:32:28.001 Starting RD=ran_read_4k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_971848845"></a><i><b>15:33:29.001 Starting RD=ran_read_8k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1910163204"></a><i><b>15:34:30.000 Starting RD=ran_read_16k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_305623748"></a><i><b>15:35:31.001 Starting RD=ran_read_32k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_758529971"></a><i><b>15:36:32.001 Starting RD=ran_read_64k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_2104457164"></a><i><b>15:37:33.000 Starting RD=ran_read_128k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1521118594"></a><i><b>15:38:34.000 Starting RD=ran_read_512k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1940030785"></a><i><b>15:39:36.000 Starting RD=ran_read_1m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1869997857"></a><i><b>15:40:38.000 Starting RD=ran_read_2m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1763847188"></a><i><b>15:41:41.000 Starting RD=seq_write_4k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1617791695"></a><i><b>15:42:42.001 Starting RD=seq_write_8k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_125993742"></a><i><b>15:43:43.000 Starting RD=seq_write_16k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1192108080"></a><i><b>15:44:44.000 Starting RD=seq_write_32k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1068824137"></a><i><b>15:45:45.000 Starting RD=seq_write_64k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_864237698"></a><i><b>15:46:46.000 Starting RD=seq_write_128k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_537548559"></a><i><b>15:47:47.001 Starting RD=seq_write_512k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_380894366"></a><i><b>15:48:48.000 Starting RD=seq_write_1m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_237852351"></a><i><b>15:49:49.000 Starting RD=seq_write_2m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_608188624"></a><i><b>15:50:50.001 Starting RD=seq_read_4k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1451270520"></a><i><b>15:51:51.001 Starting RD=seq_read_8k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1608446010"></a><i><b>15:52:52.000 Starting RD=seq_read_16k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_992136656"></a><i><b>15:53:53.001 Starting RD=seq_read_32k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_511833308"></a><i><b>15:54:54.000 Starting RD=seq_read_64k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1297685781"></a><i><b>15:55:55.000 Starting RD=seq_read_128k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1705929636"></a><i><b>15:56:56.000 Starting RD=seq_read_512k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1221555852"></a><i><b>15:57:57.001 Starting RD=seq_read_1m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+
+<a name="_1509514333"></a><i><b>15:58:58.001 Starting RD=seq_read_2m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
