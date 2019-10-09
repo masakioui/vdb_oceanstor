@@ -1,0 +1,39 @@
+<title>Vdbench sd_all_60sec_2019/n1-0.stdout.html</title><pre>
+stdout/stderr for slave=n1-0
+
+17:43:20.029 17:43:20.028 SlaveJvm execution parameter:  '-m 10.233.233.162'
+17:43:20.029 17:43:20.028 SlaveJvm execution parameter:  '-n 10.233.233.63-10-191007-17.43.19.549'
+17:43:20.029 17:43:20.029 SlaveJvm execution parameter:  '-l n1-0'
+17:43:20.029 17:43:20.029 SlaveJvm execution parameter:  '-p 5570'
+17:43:20.029 17:43:20.029 SlaveJvm positional parameter: 'SlaveJvm'
+17:43:23.104 java.net.NoRouteToHostException: No route to host (Host unreachable)
+17:43:23.104 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+17:43:23.104 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+17:43:23.104 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+17:43:23.104 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+17:43:23.104 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+17:43:23.105 	at java.net.Socket.connect(Socket.java:589)
+17:43:23.105 	at java.net.Socket.connect(Socket.java:538)
+17:43:23.105 	at java.net.Socket.<init>(Socket.java:434)
+17:43:23.105 	at java.net.Socket.<init>(Socket.java:211)
+17:43:23.105 	at Vdb.SlaveSocket.<init>(SlaveSocket.java:61)
+17:43:23.105 	at Vdb.SlaveJvm.connectToMaster(SlaveJvm.java:98)
+17:43:23.105 	at Vdb.SlaveJvm.main(SlaveJvm.java:425)
+17:43:23.105 17:43:23.103 
+17:43:23.106 17:43:23.104 common.failure(): 
+17:43:23.106 		java.net.NoRouteToHostException: No route to host (Host unreachable)
+17:43:23.106 java.net.NoRouteToHostException: No route to host (Host unreachable)
+17:43:23.106 	at java.net.PlainSocketImpl.socketConnect(Native Method)
+17:43:23.106 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+17:43:23.106 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+17:43:23.106 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+17:43:23.106 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+17:43:23.106 	at java.net.Socket.connect(Socket.java:589)
+17:43:23.106 	at java.net.Socket.connect(Socket.java:538)
+17:43:23.106 	at java.net.Socket.<init>(Socket.java:434)
+17:43:23.106 	at java.net.Socket.<init>(Socket.java:211)
+17:43:23.106 	at Vdb.SlaveSocket.<init>(SlaveSocket.java:61)
+17:43:23.106 	at Vdb.SlaveJvm.connectToMaster(SlaveJvm.java:98)
+17:43:23.106 	at Vdb.SlaveJvm.main(SlaveJvm.java:425)
+17:43:23.112 17:43:23.112 Trying to send message 'No route to host (Host unreachable)' to master, but we have no socket yet: 
+17:43:23.112 17:43:23.112 common.failure(): System.exit(-99)

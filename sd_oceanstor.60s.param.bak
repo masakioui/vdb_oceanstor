@@ -1,0 +1,164 @@
+#hd=default,vdbench=/root/vdbench50407,user=root
+hd=default,vdbench=/root/vdbench50407,user=root,shell=ssh,master=10.233.233.162
+
+
+hd=n1,system=10.233.233.63
+hd=n2,system=10.233.233.64
+hd=n3,system=10.233.233.65
+hd=n4,system=10.233.233.66
+hd=n5,system=10.233.233.67
+hd=n6,system=10.233.233.68
+hd=n7,system=10.233.233.69
+hd=n8,system=10.233.233.70
+hd=n9,system=10.233.233.71
+hd=n10,system=10.233.233.72
+hd=n11,system=10.233.233.73
+hd=n12,system=10.233.225.63
+hd=n13,system=10.233.225.64
+hd=n14,system=10.233.225.65
+hd=n15,system=10.233.225.66
+hd=n16,system=10.233.225.67
+hd=n17,system=10.233.225.68
+hd=n18,system=10.233.225.69
+hd=n19,system=10.233.225.70
+hd=n20,system=10.233.225.71
+hd=n21,system=10.233.225.72
+hd=n22,system=10.233.225.73
+hd=n23,system=10.233.233.52
+hd=n24,system=10.233.233.53
+hd=n25,system=10.233.233.54
+hd=n26,system=10.233.233.55
+hd=n27,system=10.233.233.56
+hd=n28,system=10.233.233.57
+hd=n29,system=10.233.233.58
+hd=n30,system=10.233.233.59
+hd=n31,system=10.233.233.60
+hd=n32,system=10.233.233.61
+hd=n33,system=10.233.233.62
+hd=n34,system=10.233.233.52
+hd=n35,system=10.233.233.53
+hd=n36,system=10.233.233.54
+hd=n37,system=10.233.233.55
+hd=n38,system=10.233.233.56
+hd=n39,system=10.233.233.57
+hd=n40,system=10.233.233.58
+hd=n41,system=10.233.233.59
+hd=n42,system=10.233.233.60
+hd=n43,system=10.233.233.61
+hd=n44,system=10.233.233.62
+
+
+#sd=sd_var,host=*,lun=/dev/vda3,align=4k,openflags=directio
+#sd=sd_varlog,host=*,lun=/dev/dm-3,align=4k,openflags=directio
+sd=sd_varlog,host=*,lun=/dev/dm-3,align=4k,openflags=o_direct
+
+# Random Write various block-size
+wd=ran_write_v1,sd=sd*,rdpct=0,seek=100,xfersize=(512,4,1k,1,1.5k,1,2k,1,2.5k,1,3k,1,3.5k,1,4k,67,8k,10,16k,7,32k,3,64k,3),range=(1,5),skew=50
+wd=ran_write_v2,sd=sd*,rdpct=0,seek=100,xfersize=(512,4,1k,1,1.5k,1,2k,1,2.5k,1,3k,1,3.5k,1,4k,67,8k,10,16k,7,32k,3,64k,3),range=(6,20),skew=30
+wd=ran_write_v3,sd=sd*,rdpct=0,seek=100,xfersize=(512,4,1k,1,1.5k,1,2k,1,2.5k,1,3k,1,3.5k,1,4k,67,8k,10,16k,7,32k,3,64k,3),range=(21,100),skew=20
+
+# Random Read various block-size
+wd=ran_read_v1,sd=sd*,rdpct=100,seek=100,xfersize=(512,4,1k,1,1.5k,1,2k,1,2.5k,1,3k,1,3.5k,1,4k,67,8k,10,16k,7,32k,3,64k,3),range=(1,5),skew=50
+wd=ran_read_v2,sd=sd*,rdpct=100,seek=100,xfersize=(512,4,1k,1,1.5k,1,2k,1,2.5k,1,3k,1,3.5k,1,4k,67,8k,10,16k,7,32k,3,64k,3),range=(6,20),skew=30
+wd=ran_read_v3,sd=sd*,rdpct=100,seek=100,xfersize=(512,4,1k,1,1.5k,1,2k,1,2.5k,1,3k,1,3.5k,1,4k,67,8k,10,16k,7,32k,3,64k,3),range=(21,100),skew=20
+
+# Random Write 4K-2M Blocksize
+wd=ran_write_4k,sd=sd*,rdpct=0,seek=100,xfersize=4k
+wd=ran_write_8k,sd=sd*,rdpct=0,seek=100,xfersize=8k
+wd=ran_write_16k,sd=sd*,rdpct=0,seek=100,xfersize=16k
+wd=ran_write_32k,sd=sd*,rdpct=0,seek=100,xfersize=32k
+wd=ran_write_64k,sd=sd*,rdpct=0,seek=100,xfersize=64k
+wd=ran_write_128k,sd=sd*,rdpct=0,seek=100,xfersize=128k
+wd=ran_write_512k,sd=sd*,rdpct=0,seek=100,xfersize=512k
+wd=ran_write_1m,sd=sd*,rdpct=0,seek=100,xfersize=1m
+wd=ran_write_2m,sd=sd*,rdpct=0,seek=100,xfersize=2m
+
+# Random Read 4K-2M Blocksize
+wd=ran_read_4k,sd=sd*,rdpct=100,seek=100,xfersize=4k
+wd=ran_read_8k,sd=sd*,rdpct=100,seek=100,xfersize=8k
+wd=ran_read_16k,sd=sd*,rdpct=100,seek=100,xfersize=16k
+wd=ran_read_32k,sd=sd*,rdpct=100,seek=100,xfersize=32k
+wd=ran_read_64k,sd=sd*,rdpct=100,seek=100,xfersize=64k
+wd=ran_read_128k,sd=sd*,rdpct=100,seek=100,xfersize=128k
+wd=ran_read_512k,sd=sd*,rdpct=100,seek=100,xfersize=512k
+wd=ran_read_1m,sd=sd*,rdpct=100,seek=100,xfersize=1m
+wd=ran_read_2m,sd=sd*,rdpct=100,seek=100,xfersize=2m
+
+#rdpct= The percentage number of read transactions in the workload
+#xfersize = blocksize
+#seek = The percentage of random seeks in the workload. 0 or sequential indicates zero random seeks. 100 or random means every I/O goes to a random seek address.
+# Seq write 4K-2M Blocksize
+wd=seq_write_4k,sd=sd*,seek=0,rdpct=0,xfersize=4k
+wd=seq_write_8k,sd=sd*,seek=0,rdpct=0,xfersize=8k
+wd=seq_write_16k,sd=sd*,seek=0,rdpct=0,xfersize=16k
+wd=seq_write_32k,sd=sd*,seek=0,rdpct=0,xfersize=32k
+wd=seq_write_64k,sd=sd*,seek=0,rdpct=0,xfersize=64k
+wd=seq_write_128k,sd=sd*,seek=0,rdpct=0,xfersize=128k
+wd=seq_write_512k,sd=sd*,seek=0,rdpct=0,xfersize=512k
+wd=seq_write_1m,sd=sd*,seek=0,rdpct=0,xfersize=1m
+wd=seq_write_2m,sd=sd*,seek=0,rdpct=0,xfersize=2m
+
+# Seq Read 4K-2M Blocksize
+wd=seq_read_4k,sd=sd*,seek=0,rdpct=100,xfersize=4k
+wd=seq_read_8k,sd=sd*,seek=0,rdpct=100,xfersize=8k
+wd=seq_read_16k,sd=sd*,seek=0,rdpct=100,xfersize=16k
+wd=seq_read_32k,sd=sd*,seek=0,rdpct=100,xfersize=32k
+wd=seq_read_64k,sd=sd*,seek=0,rdpct=100,xfersize=64k
+wd=seq_read_128k,sd=sd*,seek=0,rdpct=100,xfersize=128k
+wd=seq_read_512k,sd=sd*,seek=0,rdpct=100,xfersize=512k
+wd=seq_read_1m,sd=sd*,seek=0,rdpct=100,xfersize=1m
+wd=seq_read_2m,sd=sd*,seek=0,rdpct=100,xfersize=2m
+
+
+
+
+#rd=random_write,wd=wd*,iorate=max,elapsed=40h,interval=60
+#Random Write various blocksize
+rd=ran_write_various,wd=ran_write_v*,iorate=max,elapsed=60,interval=1
+
+#Random Read various blocksize
+rd=ran_read_various,wd=ran_read_v*,iorate=max,elapsed=60,interval=1
+
+#Random Write 4k-2M
+rd=ran_write_4k,wd=ran_write_4k*,iorate=max,elapsed=60,interval=1
+rd=ran_write_8k,wd=ran_write_8k*,iorate=max,elapsed=60,interval=1
+rd=ran_write_16k,wd=ran_write_16k*,iorate=max,elapsed=60,interval=1
+rd=ran_write_32k,wd=ran_write_32k*,iorate=max,elapsed=60,interval=1
+rd=ran_write_64k,wd=ran_write_64k*,iorate=max,elapsed=60,interval=1
+rd=ran_write_128k,wd=ran_write_128k*,iorate=max,elapsed=60,interval=1
+rd=ran_write_512k,wd=ran_write_512k*,iorate=max,elapsed=60,interval=1
+rd=ran_write_1m,wd=ran_write_1m*,iorate=max,elapsed=60,interval=1
+rd=ran_write_2m,wd=ran_write_2m*,iorate=max,elapsed=60,interval=1
+
+#Random read 4k-2M
+rd=ran_read_4k,wd=ran_read_4k*,iorate=max,elapsed=60,interval=1
+rd=ran_read_8k,wd=ran_read_8k*,iorate=max,elapsed=60,interval=1
+rd=ran_read_16k,wd=ran_read_16k*,iorate=max,elapsed=60,interval=1
+rd=ran_read_32k,wd=ran_read_32k*,iorate=max,elapsed=60,interval=1
+rd=ran_read_64k,wd=ran_read_64k*,iorate=max,elapsed=60,interval=1
+rd=ran_read_128k,wd=ran_read_128k*,iorate=max,elapsed=60,interval=1
+rd=ran_read_512k,wd=ran_read_512k*,iorate=max,elapsed=60,interval=1
+rd=ran_read_1m,wd=ran_read_1m*,iorate=max,elapsed=60,interval=1
+rd=ran_read_2m,wd=ran_read_2m*,iorate=max,elapsed=60,interval=1
+
+#Seq write 4k-2M
+rd=seq_write_4k,wd=seq_write_4k*,iorate=max,elapsed=60,interval=1
+rd=seq_write_8k,wd=seq_write_8k*,iorate=max,elapsed=60,interval=1
+rd=seq_write_16k,wd=seq_write_16k*,iorate=max,elapsed=60,interval=1
+rd=seq_write_32k,wd=seq_write_32k*,iorate=max,elapsed=60,interval=1
+rd=seq_write_64k,wd=seq_write_64k*,iorate=max,elapsed=60,interval=1
+rd=seq_write_128k,wd=seq_write_128k*,iorate=max,elapsed=60,interval=1
+rd=seq_write_512k,wd=seq_write_512k*,iorate=max,elapsed=60,interval=1
+rd=seq_write_1m,wd=seq_write_1m*,iorate=max,elapsed=60,interval=1
+rd=seq_write_2m,wd=seq_write_2m*,iorate=max,elapsed=60,interval=1
+
+#Seq Read 4k-2M
+rd=seq_read_4k,wd=seq_read_4k*,iorate=max,elapsed=60,interval=1
+rd=seq_read_8k,wd=seq_read_8k*,iorate=max,elapsed=60,interval=1
+rd=seq_read_16k,wd=seq_read_16k*,iorate=max,elapsed=60,interval=1
+rd=seq_read_32k,wd=seq_read_32k*,iorate=max,elapsed=60,interval=1
+rd=seq_read_64k,wd=seq_read_64k*,iorate=max,elapsed=60,interval=1
+rd=seq_read_128k,wd=seq_read_128k*,iorate=max,elapsed=60,interval=1
+rd=seq_read_512k,wd=seq_read_512k*,iorate=max,elapsed=60,interval=1
+rd=seq_read_1m,wd=seq_read_1m*,iorate=max,elapsed=60,interval=1
+rd=seq_read_2m,wd=seq_read_2m*,iorate=max,elapsed=60,interval=1

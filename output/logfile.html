@@ -1,0 +1,60 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+09:42:35.648 input argument scanned: '-f/tmp/parmfile'
+09:42:35.649 java.vendor                   Oracle Corporation
+09:42:35.650 java.home                     /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.181-7.b13.el7.x86_64/jre
+09:42:35.650 java.vm.specification.version 1.8
+09:42:35.650 java.vm.version               25.181-b13
+09:42:35.650 java.vm.vendor                Oracle Corporation
+09:42:35.650 java.specification.version    1.8
+09:42:35.650 java.class.version            52.0
+09:42:35.650 user.name                     root
+09:42:35.650 user.dir                      /root/vdbench50407
+09:42:35.650 java.io.tmpdir                /tmp
+09:42:35.650 java.class.path               ./:./classes:./vdbench.jar
+09:42:35.650 os.name                       Linux
+09:42:35.650 os.arch                       amd64
+09:42:35.650 os.version                    3.10.0-957.el7.x86_64
+09:42:35.650 sun.arch.data.model           64
+09:42:35.653 Flushing all reports
+09:42:35.705 Starting slave: /root/vdbench50407/vdbench SlaveJvm -m localhost -n localhost-10-191009-09.42.35.530 -l localhost-0 -p 5570   
+09:42:35.967 Slave localhost-0 (pid  22368) connected to master 22341
+09:42:35.990 All slaves are now connected
+09:42:36.033 sd=sd1,lun=/tmp/quick_vdbench_test lun size: 41,943,040 bytes; 0.0391 GB (1024**3); 0.0419 GB (1000**3)
+
+Link to Run Definitions:         <A HREF="#_1724731843">rd1 For loops: None</A>
+
+09:42:36.123 Flushing all reports
+09:42:36.152 Waiting for synchronization of all slaves
+09:42:36.652 Synchronization of all slaves complete
+
+<a name="_1724731843"></a><i><b>09:42:37.002 Starting RD=rd1; I/O rate: 100; elapsed=5; For loops: None</b></i>
+
+
+Oct 09, 2019    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue  cpu%  cpu%
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth sys+u   sys
+09:42:38.046           1       63.0     0.06    1024  46.03    0.011    0.008    0.013     0.03     0.03    0.006    0.0   9.7   2.7
+09:42:39.006           2       96.0     0.09    1024  53.13    0.009    0.007    0.011     0.03     0.03    0.005    0.0   3.1   1.0
+09:42:40.007           3       96.0     0.09    1024  52.08    0.009    0.007    0.010     0.07     0.02    0.008    0.0   1.5   0.3
+09:42:41.006           4      112.0     0.11    1024  51.79    0.007    0.005    0.009     0.02     0.03    0.004    0.0   1.0   0.3
+09:42:41.279 
+09:42:41.279 Message from slave localhost-0: 
+09:42:41.279 New messages found on /var/adm/messages. Do they belong to you?
+09:42:41.279 /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:zabbix-agent.service holdoff time over, scheduling restart.
+09:42:41.279 /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:Stopped Zabbix Agent.
+09:42:41.279 /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:Starting Zabbix Agent...
+09:42:41.279 /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:PID file /run/zabbix/zabbix_agentd.pid not readable (yet?) after start.
+09:42:41.279 /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:Failed to start Zabbix Agent.
+09:42:41.279 /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:Unit zabbix-agent.service entered failed state.
+09:42:41.279 /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:zabbix-agent.service failed.
+09:42:41.279 
+09:42:42.011           5       87.0     0.08    1024  57.47    0.008    0.006    0.011     0.03     0.02    0.005    0.0   3.0   0.3
+09:42:42.024     avg_2-5       97.8     0.10    1024  53.45    0.008    0.006    0.010     0.07     0.03    0.006    0.0   2.1   0.4
+09:42:42.238 Flushing all reports
+09:42:42.238 Java Heap in MB. max:  455.500; current:   61.500; used:   27.974; free:   33.526
+09:42:42.272 Ending Reporter
+09:42:43.225 Vdbench execution completed successfully. Output directory: /root/vdbench50407/output 
+
+09:42:44.229 Java Heap in MB. max:  455.500; current:   77.500; used:   18.080; free:   59.420

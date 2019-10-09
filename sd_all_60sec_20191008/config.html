@@ -1,0 +1,142 @@
+<title>Vdbench sd_all_60sec_20191008/config.html</title><pre>
+Output from script /root/vdbench50407/linux/config.sh: 
+
+Wed Oct 9 10:06:33 +07 2019
+>>>>>uname -a
+Linux IPIGNAT901G 3.10.0-957.el7.x86_64 #1 SMP Thu Oct 4 20:48:51 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+Wed Oct 9 10:06:33 +07 2019
+>>>>>ifconfig -a
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.233.233.63  netmask 255.255.255.0  broadcast 10.233.233.255
+        inet6 fe80::f816:3eff:fe7b:11f4  prefixlen 64  scopeid 0x20<link>
+        ether fa:16:3e:7b:11:f4  txqueuelen 1000  (Ethernet)
+        RX packets 3275477  bytes 359420761 (342.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1706793  bytes 1115843101 (1.0 GiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.143.112.11  netmask 255.255.255.0  broadcast 10.143.112.255
+        inet6 fe80::f816:3eff:fee7:ce04  prefixlen 64  scopeid 0x20<link>
+        ether fa:16:3e:e7:ce:04  txqueuelen 1000  (Ethernet)
+        RX packets 9996366  bytes 774826555 (738.9 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7728394  bytes 568660134 (542.3 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1841586  bytes 308785241 (294.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1841586  bytes 308785241 (294.4 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Wed Oct 9 10:06:33 +07 2019
+>>>>>id
+uid=0(root) gid=0(root) groups=0(root),898(varnish) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+Wed Oct 9 10:06:33 +07 2019
+>>>>>mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,seclabel,size=3987292k,nr_inodes=996823,mode=755)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,noexec,seclabel)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,perf_event)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,hugetlb)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,pids)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,devices)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,freezer)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuacct,cpu)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,net_prio,net_cls)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,memory)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,blkio)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuset)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+/dev/mapper/rhel-root on / type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+selinuxfs on /sys/fs/selinux type selinuxfs (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=26,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=18523)
+mqueue on /dev/mqueue type mqueue (rw,relatime,seclabel)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,seclabel)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+/dev/vda1 on /boot type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/mapper/rhel-home on /home type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/mapper/rhel-var on /var type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+tmpfs on /var/lib/varnish type tmpfs (rw,nosuid,noatime,nodiratime,rootcontext=system_u:object_r:varnishd_var_lib_t:s0,seclabel,size=1048576k)
+/dev/mapper/rhel-root on /var/tmp type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/mapper/rhel-var_log on /var/log type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+/etc/auto.centralizelogs on /centralizelogs type autofs (rw,relatime,fd=5,pgrp=4841,timeout=180,minproto=5,maxproto=5,direct,pipe_ino=35764)
+/etc/auto.iso on /mnt type autofs (rw,relatime,fd=10,pgrp=4841,timeout=300,minproto=5,maxproto=5,indirect,pipe_ino=33610)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=800852k,mode=700,uid=1000,gid=900)
+tmpfs on /run/user/1009 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=800852k,mode=700,uid=1009,gid=900)
+tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=800852k,mode=700)
+Wed Oct 9 10:06:33 +07 2019
+>>>>>memory
+MemTotal:        8008496 kB
+MemFree:         5533104 kB
+MemAvailable:    6319844 kB
+Buffers:            3140 kB
+Cached:          1212528 kB
+SwapCached:            0 kB
+Active:           984156 kB
+Inactive:         536348 kB
+Active(anon):     619116 kB
+Inactive(anon):   175980 kB
+Active(file):     365040 kB
+Inactive(file):   360368 kB
+Unevictable:       82176 kB
+Mlocked:           82180 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               168 kB
+Writeback:             0 kB
+AnonPages:        386912 kB
+Mapped:           130600 kB
+Shmem:            490260 kB
+Slab:             515548 kB
+SReclaimable:     359036 kB
+SUnreclaim:       156512 kB
+KernelStack:      164736 kB
+PageTables:        14500 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     4004248 kB
+Committed_AS:    3132788 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       26892 kB
+VmallocChunk:   34359692288 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      163328 kB
+DirectMap2M:     5079040 kB
+DirectMap1G:     5242880 kB
+              total        used        free      shared  buff/cache   available
+Mem:        8008496      744396     5532884      490260     1731216     6319624
+Low:        8008496     2475612     5532884
+High:             0           0           0
+Swap:             0           0           0
+Wed Oct 9 10:06:33 +07 2019
+>>>>>ps -ef | grep -i vdb
+root     27505 25083  0 10:06 pts/2    00:00:00 /bin/bash ./vdbench -f sd_oceanstor.60s.param -o sd_all_60sec_20191008
+root     27507 27505 99 10:06 pts/2    00:00:01 java -client -Xmx512m -Xms64m -cp ./:./classes:./vdbench.jar Vdb.Vdbmain -f sd_oceanstor.60s.param -o sd_all_60sec_20191008
+root     27527 27507  0 10:06 pts/2    00:00:00 /bin/bash /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.63 -n 10.233.233.63-10-191009-10.06.32.087 -l n1-0 -p 5570
+root     27532 27507  5 10:06 pts/2    00:00:00 ssh 10.233.233.64 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.63 -n 10.233.233.64-11-191009-10.06.32.087 -l n2-0 -p 5570
+root     27533 27527 40 10:06 pts/2    00:00:00 java -client -Xmx1024m -Xms128m -cp /root/vdbench50407/:/root/vdbench50407/classes:/root/vdbench50407/vdbench.jar Vdb.SlaveJvm SlaveJvm -m 10.233.233.63 -n 10.233.233.63-10-191009-10.06.32.087 -l n1-0 -p 5570
+root     27561 27507  0 10:06 pts/2    00:00:00 /bin/bash /root/vdbench50407/linux/config.sh -o /root/vdbench50407/sd_all_60sec_20191008 n1 n2
+root     27577 27561  0 10:06 pts/2    00:00:00 grep -i vdb
+

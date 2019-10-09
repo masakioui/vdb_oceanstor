@@ -1,0 +1,79 @@
+<title>Vdbench sd_all_60sec_20191008/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+10:06:32.128 input argument scanned: '-fsd_oceanstor.60s.param'
+10:06:32.129 input argument scanned: '-osd_all_60sec_20191008'
+10:06:32.129 java.vendor                   Oracle Corporation
+10:06:32.129 java.home                     /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.181-7.b13.el7.x86_64/jre
+10:06:32.129 java.vm.specification.version 1.8
+10:06:32.129 java.vm.version               25.181-b13
+10:06:32.129 java.vm.vendor                Oracle Corporation
+10:06:32.130 java.specification.version    1.8
+10:06:32.130 java.class.version            52.0
+10:06:32.130 user.name                     root
+10:06:32.130 user.dir                      /root/vdbench50407
+10:06:32.130 java.io.tmpdir                /tmp
+10:06:32.130 java.class.path               ./:./classes:./vdbench.jar
+10:06:32.130 os.name                       Linux
+10:06:32.130 os.arch                       amd64
+10:06:32.130 os.version                    3.10.0-957.el7.x86_64
+10:06:32.130 sun.arch.data.model           64
+10:06:32.133 Flushing all reports
+10:06:32.364 Starting slave: /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.63 -n 10.233.233.63-10-191009-10.06.32.087 -l n1-0 -p 5570   
+10:06:32.368 Starting slave: ssh 10.233.233.64 -l root /root/vdbench50407/vdbench SlaveJvm -m 10.233.233.63 -n 10.233.233.64-11-191009-10.06.32.087 -l n2-0 -p 5570   
+10:06:32.622 Slave n1-0 (pid  27533) connected to master 27507
+10:06:33.039 Slave n2-0 (pid   5147) connected to master 27507
+10:06:33.081 All slaves are now connected
+10:06:33.150 sd=sd_varlog,lun=/dev/dm-3 lun size: 214,748,364,800 bytes; 200.0000 GB (1024**3); 214.7484 GB (1000**3)
+
+Link to Run Definitions:         <A HREF="#_1973336893">ran_write_various For loops: None</A>
+                                 <A HREF="#_1212899836">ran_read_various For loops: None</A>
+                                 <A HREF="#_1174290147">ran_write_4k For loops: None</A>
+                                 <A HREF="#_1289696681">ran_write_8k For loops: None</A>
+                                 <A HREF="#_1285044316">ran_write_16k For loops: None</A>
+                                 <A HREF="#_1607460018">ran_write_32k For loops: None</A>
+                                 <A HREF="#_1811075214">ran_write_64k For loops: None</A>
+                                 <A HREF="#_1588970020">ran_write_128k For loops: None</A>
+                                 <A HREF="#_1407343478">ran_write_512k For loops: None</A>
+                                 <A HREF="#_1940447180">ran_write_1m For loops: None</A>
+                                 <A HREF="#_245565335">ran_write_2m For loops: None</A>
+                                 <A HREF="#_2121744517">ran_read_4k For loops: None</A>
+                                 <A HREF="#_1066376662">ran_read_8k For loops: None</A>
+                                 <A HREF="#_183264084">ran_read_16k For loops: None</A>
+                                 <A HREF="#_476402209">ran_read_32k For loops: None</A>
+                                 <A HREF="#_1490180672">ran_read_64k For loops: None</A>
+                                 <A HREF="#_460332449">ran_read_128k For loops: None</A>
+                                 <A HREF="#_1919892312">ran_read_512k For loops: None</A>
+                                 <A HREF="#_1143839598">ran_read_1m For loops: None</A>
+                                 <A HREF="#_250075633">ran_read_2m For loops: None</A>
+                                 <A HREF="#_358699161">seq_write_4k For loops: None</A>
+                                 <A HREF="#_517938326">seq_write_8k For loops: None</A>
+                                 <A HREF="#_914424520">seq_write_16k For loops: None</A>
+                                 <A HREF="#_110718392">seq_write_32k For loops: None</A>
+                                 <A HREF="#_425918570">seq_write_64k For loops: None</A>
+                                 <A HREF="#_2143192188">seq_write_128k For loops: None</A>
+                                 <A HREF="#_1100439041">seq_write_512k For loops: None</A>
+                                 <A HREF="#_204349222">seq_write_1m For loops: None</A>
+                                 <A HREF="#_231685785">seq_write_2m For loops: None</A>
+                                 <A HREF="#_114935352">seq_read_4k For loops: None</A>
+                                 <A HREF="#_2110121908">seq_read_8k For loops: None</A>
+                                 <A HREF="#_32374789">seq_read_16k For loops: None</A>
+                                 <A HREF="#_1973538135">seq_read_32k For loops: None</A>
+                                 <A HREF="#_1023487453">seq_read_64k For loops: None</A>
+                                 <A HREF="#_1865127310">seq_read_128k For loops: None</A>
+                                 <A HREF="#_515132998">seq_read_512k For loops: None</A>
+                                 <A HREF="#_1694819250">seq_read_1m For loops: None</A>
+                                 <A HREF="#_1365202186">seq_read_2m For loops: None</A>
+
+10:06:33.331 Flushing all reports
+10:06:33.368 Waiting for synchronization of all slaves
+10:06:33.975 Synchronization of all slaves complete
+
+<a name="_1973336893"></a><i><b>10:06:34.001 Starting RD=ran_write_various; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+
+Oct 09, 2019    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue  cpu%  cpu%
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth sys+u   sys
+10:06:35.067           1    22606.0   167.08    7750   0.00    0.293    0.000    0.293     0.00     5.83    0.168    6.6  18.8   4.2
+10:06:36.011           2    24318.0   179.22    7727   0.00    0.317    0.000    0.317     0.00    14.47    0.215    7.7   8.2   4.2

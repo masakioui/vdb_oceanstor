@@ -1,0 +1,71 @@
+<title>Vdbench sd_all_60sec_20191008/n1-0.stdout.html</title><pre>
+stdout/stderr for slave=n1-0
+
+10:06:32.474 10:06:32.473 SlaveJvm execution parameter:  '-m 10.233.233.63'
+10:06:32.475 10:06:32.474 SlaveJvm execution parameter:  '-n 10.233.233.63-10-191009-10.06.32.087'
+10:06:32.475 10:06:32.474 SlaveJvm execution parameter:  '-l n1-0'
+10:06:32.475 10:06:32.474 SlaveJvm execution parameter:  '-p 5570'
+10:06:32.475 10:06:32.474 SlaveJvm positional parameter: 'SlaveJvm'
+10:06:32.592 10:06:32.591 successfully connected to master 10.233.233.63
+10:06:32.592 10:06:32.592 Connection to 10.233.233.63 using port 5570 successful
+10:06:33.121 10:06:33.120 ticks_per_second: 100
+10:06:33.137 10:06:33.136 Configuration interpretation took 0.01 seconds
+
+Link to Run Definitions:         <A HREF="#_1973336893">ran_write_various For loops: None</A>
+                                 <A HREF="#_1212899836">ran_read_various For loops: None</A>
+                                 <A HREF="#_1174290147">ran_write_4k For loops: None</A>
+                                 <A HREF="#_1289696681">ran_write_8k For loops: None</A>
+                                 <A HREF="#_1285044316">ran_write_16k For loops: None</A>
+                                 <A HREF="#_1607460018">ran_write_32k For loops: None</A>
+                                 <A HREF="#_1811075214">ran_write_64k For loops: None</A>
+                                 <A HREF="#_1588970020">ran_write_128k For loops: None</A>
+                                 <A HREF="#_1407343478">ran_write_512k For loops: None</A>
+                                 <A HREF="#_1940447180">ran_write_1m For loops: None</A>
+                                 <A HREF="#_245565335">ran_write_2m For loops: None</A>
+                                 <A HREF="#_2121744517">ran_read_4k For loops: None</A>
+                                 <A HREF="#_1066376662">ran_read_8k For loops: None</A>
+                                 <A HREF="#_183264084">ran_read_16k For loops: None</A>
+                                 <A HREF="#_476402209">ran_read_32k For loops: None</A>
+                                 <A HREF="#_1490180672">ran_read_64k For loops: None</A>
+                                 <A HREF="#_460332449">ran_read_128k For loops: None</A>
+                                 <A HREF="#_1919892312">ran_read_512k For loops: None</A>
+                                 <A HREF="#_1143839598">ran_read_1m For loops: None</A>
+                                 <A HREF="#_250075633">ran_read_2m For loops: None</A>
+                                 <A HREF="#_358699161">seq_write_4k For loops: None</A>
+                                 <A HREF="#_517938326">seq_write_8k For loops: None</A>
+                                 <A HREF="#_914424520">seq_write_16k For loops: None</A>
+                                 <A HREF="#_110718392">seq_write_32k For loops: None</A>
+                                 <A HREF="#_425918570">seq_write_64k For loops: None</A>
+                                 <A HREF="#_2143192188">seq_write_128k For loops: None</A>
+                                 <A HREF="#_1100439041">seq_write_512k For loops: None</A>
+                                 <A HREF="#_204349222">seq_write_1m For loops: None</A>
+                                 <A HREF="#_231685785">seq_write_2m For loops: None</A>
+                                 <A HREF="#_114935352">seq_read_4k For loops: None</A>
+                                 <A HREF="#_2110121908">seq_read_8k For loops: None</A>
+                                 <A HREF="#_32374789">seq_read_16k For loops: None</A>
+                                 <A HREF="#_1973538135">seq_read_32k For loops: None</A>
+                                 <A HREF="#_1023487453">seq_read_64k For loops: None</A>
+                                 <A HREF="#_1865127310">seq_read_128k For loops: None</A>
+                                 <A HREF="#_515132998">seq_read_512k For loops: None</A>
+                                 <A HREF="#_1694819250">seq_read_1m For loops: None</A>
+                                 <A HREF="#_1365202186">seq_read_2m For loops: None</A>
+
+10:06:33.417 10:06:33.417 Beginning of run setup
+10:06:33.418 10:06:33.417 **********************
+10:06:33.418 
+10:06:33.418 
+10:06:33.476 10:06:33.475 File '/var/log/messages.1' does not exist. Monitoring bypassed
+10:06:33.551 10:06:33.551 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+10:06:33.566 10:06:33.566 Started 3 Workload Generator threads.
+10:06:33.666 10:06:33.666 Started  4 i/o threads for sd_varlog
+10:06:33.666 10:06:33.666 Started a total of  4 i/o threads.
+10:06:33.666 10:06:33.666 Waiting for task synchronization
+10:06:33.666 10:06:33.666 task_wait_start_complete: IO_task /dev/dm-3 1
+10:06:33.867 10:06:33.866 Requesting full garbage collection
+10:06:33.867 10:06:33.867 GcTracker: cum:   1 intv:  1 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:   148 free:   103 
+10:06:33.891 10:06:33.891 GcTracker: cum:   3 intv:  2 ms:      22 mss:  0.00% Heap_MB max:   911 curr:   284 used:    19 free:   265 
+10:06:33.891 10:06:33.891 task_wait_start_complete() end
+
+<a name="_1973336893"></a><i><b>10:06:34.001 Starting RD=ran_write_various; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+10:06:34.003 10:06:34.003 task_run_all(): 8 tasks

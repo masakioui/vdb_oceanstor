@@ -1,0 +1,53 @@
+<title>Vdbench output/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+09:42:35.816 09:42:35.815 SlaveJvm execution parameter:  '-m localhost'
+09:42:35.816 09:42:35.816 SlaveJvm execution parameter:  '-n localhost-10-191009-09.42.35.530'
+09:42:35.816 09:42:35.816 SlaveJvm execution parameter:  '-l localhost-0'
+09:42:35.816 09:42:35.816 SlaveJvm execution parameter:  '-p 5570'
+09:42:35.817 09:42:35.816 SlaveJvm positional parameter: 'SlaveJvm'
+09:42:35.938 09:42:35.937 successfully connected to master localhost
+09:42:35.938 09:42:35.938 Connection to localhost using port 5570 successful
+09:42:36.021 09:42:36.021 ticks_per_second: 100
+09:42:36.031 09:42:36.031 Configuration interpretation took 0.01 seconds
+
+Link to Run Definitions:         <A HREF="#_1724731843">rd1 For loops: None</A>
+
+09:42:36.202 09:42:36.202 Beginning of run setup
+09:42:36.202 09:42:36.202 **********************
+09:42:36.202 
+09:42:36.202 
+09:42:36.249 09:42:36.248 File '/var/log/messages.1' does not exist. Monitoring bypassed
+09:42:36.329 09:42:36.329 Opening sd=sd1,lun=/tmp/quick_vdbench_test; write: true; flags: OpenFlags: 0x00000000 OtherFlags: 0x00000000
+09:42:36.344 09:42:36.343 Started 1 Workload Generator threads.
+09:42:36.393 09:42:36.392 Started  8 i/o threads for sd1
+09:42:36.393 09:42:36.393 Started a total of  8 i/o threads.
+09:42:36.393 09:42:36.393 Waiting for task synchronization
+09:42:36.393 09:42:36.393 task_wait_start_complete: IO_task /tmp/quick_vdbench_test 1
+09:42:36.618 09:42:36.618 Requesting full garbage collection
+09:42:36.619 09:42:36.619 GcTracker: cum:   1 intv:  1 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   252 used:   152 free:    99 
+09:42:36.644 09:42:36.643 GcTracker: cum:   3 intv:  2 ms:      23 mss:  0.00% Heap_MB max:   911 curr:   284 used:    17 free:   267 
+09:42:36.644 09:42:36.643 task_wait_start_complete() end
+
+<a name="_1724731843"></a><i><b>09:42:37.002 Starting RD=rd1; I/O rate: 100; elapsed=5; For loops: None</b></i>
+
+09:42:37.003 09:42:37.003 task_run_all(): 10 tasks
+09:42:41.277 09:42:41.276 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+09:42:41.277 09:42:41.276 sendMessageToConsole: /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:zabbix-agent.service holdoff time over, scheduling restart.
+09:42:41.277 09:42:41.276 sendMessageToConsole: /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:Stopped Zabbix Agent.
+09:42:41.277 09:42:41.277 sendMessageToConsole: /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:Starting Zabbix Agent...
+09:42:41.277 09:42:41.277 sendMessageToConsole: /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:PID file /run/zabbix/zabbix_agentd.pid not readable (yet?) after start.
+09:42:41.277 09:42:41.277 sendMessageToConsole: /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:Failed to start Zabbix Agent.
+09:42:41.277 09:42:41.277 sendMessageToConsole: /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:Unit zabbix-agent.service entered failed state.
+09:42:41.277 09:42:41.277 sendMessageToConsole: /var/log/messages: 2019-10-09 09:42:38 IPIGNAT901G systemd:zabbix-agent.service failed.
+09:42:41.277 09:42:41.277 sendMessageToConsole: 
+09:42:42.050 09:42:42.050 Ended WT_task
+09:42:42.138 09:42:42.138 Sent 8 interrupts to 8 waiting IO_task threads
+09:42:42.139 09:42:42.138 Java Heap in MB. max:  910.500; current:  284.000; used:   35.833; free:  248.167
+09:42:42.139 09:42:42.139 Maximum native memory allocation:       16,384; Current allocation:            0
+09:42:42.139 09:42:42.139 End of run
+09:42:42.139 09:42:42.139 **********
+09:42:42.139 
+09:42:42.139 
+09:42:43.125 09:42:43.124 Master is requesting slave shutdown
+09:42:43.125 09:42:43.125 Java Heap in MB. max:  910.500; current:  284.000; used:   35.833; free:  248.167

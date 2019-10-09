@@ -1,0 +1,1025 @@
+<title>Vdbench sd_all_60sec_20191009/n5-0.stdout.html</title><pre>
+stdout/stderr for slave=n5-0
+
+14:40:00.688 14:40:00.687 SlaveJvm execution parameter:  '-m 10.233.233.63'
+14:40:00.688 14:40:00.687 SlaveJvm execution parameter:  '-n 10.233.233.67-14-191009-14.39.58.996'
+14:40:00.688 14:40:00.687 SlaveJvm execution parameter:  '-l n5-0'
+14:40:00.688 14:40:00.687 SlaveJvm execution parameter:  '-p 5570'
+14:40:00.688 14:40:00.688 SlaveJvm positional parameter: 'SlaveJvm'
+14:40:00.794 14:40:00.793 successfully connected to master 10.233.233.63
+14:40:00.794 14:40:00.793 Connection to 10.233.233.63 using port 5570 successful
+14:40:20.607 14:40:20.602 ticks_per_second: 100
+14:40:20.618 14:40:20.617 Configuration interpretation took 0.01 seconds
+
+Link to Run Definitions:         <A HREF="#_1785210046">ran_write_various For loops: None</A>
+                                 <A HREF="#_1552787810">ran_read_various For loops: None</A>
+                                 <A HREF="#_1361960727">ran_write_4k For loops: None</A>
+                                 <A HREF="#_739498517">ran_write_8k For loops: None</A>
+                                 <A HREF="#_125130493">ran_write_16k For loops: None</A>
+                                 <A HREF="#_914504136">ran_write_32k For loops: None</A>
+                                 <A HREF="#_166239592">ran_write_64k For loops: None</A>
+                                 <A HREF="#_991505714">ran_write_128k For loops: None</A>
+                                 <A HREF="#_385242642">ran_write_512k For loops: None</A>
+                                 <A HREF="#_824009085">ran_write_1m For loops: None</A>
+                                 <A HREF="#_2085857771">ran_write_2m For loops: None</A>
+                                 <A HREF="#_248609774">ran_read_4k For loops: None</A>
+                                 <A HREF="#_708049632">ran_read_8k For loops: None</A>
+                                 <A HREF="#_1887400018">ran_read_16k For loops: None</A>
+                                 <A HREF="#_285377351">ran_read_32k For loops: None</A>
+                                 <A HREF="#_344560770">ran_read_64k For loops: None</A>
+                                 <A HREF="#_559450121">ran_read_128k For loops: None</A>
+                                 <A HREF="#_716083600">ran_read_512k For loops: None</A>
+                                 <A HREF="#_791885625">ran_read_1m For loops: None</A>
+                                 <A HREF="#_2001112025">ran_read_2m For loops: None</A>
+                                 <A HREF="#_314265080">seq_write_4k For loops: None</A>
+                                 <A HREF="#_1288141870">seq_write_8k For loops: None</A>
+                                 <A HREF="#_2054881392">seq_write_16k For loops: None</A>
+                                 <A HREF="#_966808741">seq_write_32k For loops: None</A>
+                                 <A HREF="#_1908153060">seq_write_64k For loops: None</A>
+                                 <A HREF="#_116211441">seq_write_128k For loops: None</A>
+                                 <A HREF="#_607635164">seq_write_512k For loops: None</A>
+                                 <A HREF="#_529116035">seq_write_1m For loops: None</A>
+                                 <A HREF="#_242481580">seq_write_2m For loops: None</A>
+                                 <A HREF="#_1627800613">seq_read_4k For loops: None</A>
+                                 <A HREF="#_2065530879">seq_read_8k For loops: None</A>
+                                 <A HREF="#_697960108">seq_read_16k For loops: None</A>
+                                 <A HREF="#_943010986">seq_read_32k For loops: None</A>
+                                 <A HREF="#_1807837413">seq_read_64k For loops: None</A>
+                                 <A HREF="#_2066940133">seq_read_128k For loops: None</A>
+                                 <A HREF="#_48612937">seq_read_512k For loops: None</A>
+                                 <A HREF="#_325333723">seq_read_1m For loops: None</A>
+                                 <A HREF="#_1937962514">seq_read_2m For loops: None</A>
+
+14:40:21.040 14:40:21.038 Beginning of run setup
+14:40:21.040 14:40:21.039 **********************
+14:40:21.040 
+14:40:21.040 
+14:40:21.136 14:40:21.133 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:40:21.144 14:40:21.143 File '/var/log/messages.1' does not exist. Monitoring bypassed
+14:40:21.151 14:40:21.148 Started 3 Workload Generator threads.
+14:40:21.243 14:40:21.243 Started  1 i/o threads for sd_varlog
+14:40:21.243 14:40:21.243 Started a total of  1 i/o threads.
+14:40:21.243 14:40:21.243 Waiting for task synchronization
+14:40:21.243 14:40:21.243 task_wait_start_complete: IO_task /dev/dm-3 1
+14:40:21.444 14:40:21.443 Requesting full garbage collection
+14:40:21.444 14:40:21.444 GcTracker: cum:   1 intv:  1 ms:      11 mss:  0.00% Heap_MB max:   911 curr:   252 used:   149 free:   103 
+14:40:21.466 14:40:21.465 GcTracker: cum:   3 intv:  2 ms:      20 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   233 
+14:40:21.466 14:40:21.465 task_wait_start_complete() end
+
+<a name="_1785210046"></a><i><b>14:40:22.002 Starting RD=ran_write_various; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+14:40:22.005 14:40:22.005 task_run_all(): 5 tasks
+14:41:01.159 14:41:01.157 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:41:01.159 14:41:01.157 sendMessageToConsole: /var/log/messages: 2019-10-09 14:41:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:41:01.159 14:41:01.157 sendMessageToConsole: /var/log/messages: 2019-10-09 14:41:01 IPIGNAT905G systemd:Started Session 193095 of user zabbix.
+14:41:01.159 14:41:01.157 sendMessageToConsole: /var/log/messages: 2019-10-09 14:41:01 IPIGNAT905G systemd:Started Session 193094 of user zabbix.
+14:41:01.159 14:41:01.157 sendMessageToConsole: /var/log/messages: 2019-10-09 14:41:01 IPIGNAT905G systemd:Started Session 193096 of user zabbix.
+14:41:01.159 14:41:01.157 sendMessageToConsole: 
+14:41:06.174 14:41:06.174 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:41:06.174 14:41:06.174 sendMessageToConsole: /var/log/messages: 2019-10-09 14:41:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:41:06.174 14:41:06.174 sendMessageToConsole: 
+14:41:22.026 14:41:22.025 Ended WT_task
+14:41:22.130 14:41:22.125 Sent 1 interrupts to 1 waiting IO_task threads
+14:41:22.130 14:41:22.125 Java Heap in MB. max:  910.500; current:  251.500; used:   34.628; free:  216.872
+14:41:22.130 14:41:22.125 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:41:22.130 14:41:22.126 End of run
+14:41:22.130 14:41:22.126 **********
+14:41:22.130 
+14:41:22.130 
+14:41:22.443 14:41:22.432 Beginning of run setup
+14:41:22.443 14:41:22.432 **********************
+14:41:22.443 
+14:41:22.443 
+14:41:22.443 14:41:22.432 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:41:22.443 14:41:22.438 Started 3 Workload Generator threads.
+14:41:22.514 14:41:22.513 Started  1 i/o threads for sd_varlog
+14:41:22.514 14:41:22.513 Started a total of  1 i/o threads.
+14:41:22.514 14:41:22.513 Waiting for task synchronization
+14:41:22.514 14:41:22.513 task_wait_start_complete: IO_task /dev/dm-3 1
+14:41:22.714 14:41:22.713 Requesting full garbage collection
+14:41:22.714 14:41:22.714 GcTracker: cum:   4 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    40 free:   212 
+14:41:22.732 14:41:22.732 GcTracker: cum:   6 intv:  2 ms:      17 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+14:41:22.732 14:41:22.732 task_wait_start_complete() end
+
+<a name="_1552787810"></a><i><b>14:41:23.001 Starting RD=ran_read_various; I/O rate: Controlled MAX; elapsed=60; For loops: None</b></i>
+
+14:41:23.003 14:41:23.003 task_run_all(): 5 tasks
+14:42:01.191 14:42:01.185 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:42:01.191 14:42:01.185 sendMessageToConsole: /var/log/messages: 2019-10-09 14:42:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:42:01.191 14:42:01.185 sendMessageToConsole: /var/log/messages: 2019-10-09 14:42:01 IPIGNAT905G systemd:Started Session 193098 of user zabbix.
+14:42:01.191 14:42:01.185 sendMessageToConsole: /var/log/messages: 2019-10-09 14:42:01 IPIGNAT905G systemd:Started Session 193097 of user zabbix.
+14:42:01.191 14:42:01.185 sendMessageToConsole: /var/log/messages: 2019-10-09 14:42:01 IPIGNAT905G systemd:Started Session 193099 of user zabbix.
+14:42:01.191 14:42:01.185 sendMessageToConsole: 
+14:42:11.202 14:42:11.201 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:42:11.202 14:42:11.201 sendMessageToConsole: /var/log/messages: 2019-10-09 14:42:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:42:11.202 14:42:11.201 sendMessageToConsole: 
+14:42:23.015 14:42:23.015 Ended WT_task
+14:42:23.216 14:42:23.214 Interrupts issued for tasks WG_task: 5
+14:42:23.216 14:42:23.215 Sent 1 interrupts to 1 waiting IO_task threads
+14:42:23.217 14:42:23.215 Java Heap in MB. max:  910.500; current:  251.500; used:   24.385; free:  227.115
+14:42:23.217 14:42:23.215 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:42:23.217 14:42:23.215 End of run
+14:42:23.217 14:42:23.215 **********
+14:42:23.217 
+14:42:23.217 
+14:42:23.374 14:42:23.370 Beginning of run setup
+14:42:23.374 14:42:23.371 **********************
+14:42:23.374 
+14:42:23.374 
+14:42:23.374 14:42:23.371 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:42:23.377 14:42:23.376 Started 1 Workload Generator threads.
+14:42:23.444 14:42:23.444 Started  1 i/o threads for sd_varlog
+14:42:23.445 14:42:23.444 Started a total of  1 i/o threads.
+14:42:23.445 14:42:23.444 Waiting for task synchronization
+14:42:23.445 14:42:23.444 task_wait_start_complete: IO_task /dev/dm-3 1
+14:42:23.645 14:42:23.644 Requesting full garbage collection
+14:42:23.645 14:42:23.645 GcTracker: cum:   7 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    29 free:   223 
+14:42:23.659 14:42:23.658 GcTracker: cum:   9 intv:  2 ms:      13 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+14:42:23.659 14:42:23.658 task_wait_start_complete() end
+
+<a name="_1361960727"></a><i><b>14:42:24.002 Starting RD=ran_write_4k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:42:24.004 14:42:24.003 task_run_all(): 2 tasks
+14:43:06.214 14:43:06.213 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:43:06.214 14:43:06.213 sendMessageToConsole: /var/log/messages: 2019-10-09 14:43:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:43:06.214 14:43:06.213 sendMessageToConsole: /var/log/messages: 2019-10-09 14:43:01 IPIGNAT905G systemd:Started Session 193101 of user zabbix.
+14:43:06.214 14:43:06.213 sendMessageToConsole: /var/log/messages: 2019-10-09 14:43:01 IPIGNAT905G systemd:Started Session 193102 of user zabbix.
+14:43:06.214 14:43:06.213 sendMessageToConsole: /var/log/messages: 2019-10-09 14:43:01 IPIGNAT905G systemd:Started Session 193100 of user zabbix.
+14:43:06.214 14:43:06.213 sendMessageToConsole: 
+14:43:11.225 14:43:11.224 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:43:11.225 14:43:11.225 sendMessageToConsole: /var/log/messages: 2019-10-09 14:43:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:43:11.225 14:43:11.225 sendMessageToConsole: 
+14:43:24.114 14:43:24.112 Sent 1 interrupts to 1 waiting IO_task threads
+14:43:24.114 14:43:24.113 Java Heap in MB. max:  910.500; current:  251.500; used:   25.490; free:  226.010
+14:43:24.114 14:43:24.113 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:43:24.114 14:43:24.113 End of run
+14:43:24.114 14:43:24.113 **********
+14:43:24.114 
+14:43:24.114 
+14:43:24.256 14:43:24.255 Beginning of run setup
+14:43:24.256 14:43:24.255 **********************
+14:43:24.256 
+14:43:24.256 
+14:43:24.256 14:43:24.255 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:43:24.262 14:43:24.261 Started 1 Workload Generator threads.
+14:43:24.329 14:43:24.328 Started  1 i/o threads for sd_varlog
+14:43:24.329 14:43:24.328 Started a total of  1 i/o threads.
+14:43:24.329 14:43:24.328 Waiting for task synchronization
+14:43:24.329 14:43:24.328 task_wait_start_complete: IO_task /dev/dm-3 1
+14:43:24.529 14:43:24.529 Requesting full garbage collection
+14:43:24.530 14:43:24.529 GcTracker: cum:  10 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    30 free:   222 
+14:43:24.541 14:43:24.540 GcTracker: cum:  12 intv:  2 ms:      11 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+14:43:24.541 14:43:24.540 task_wait_start_complete() end
+
+<a name="_739498517"></a><i><b>14:43:25.000 Starting RD=ran_write_8k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:43:25.002 14:43:25.002 task_run_all(): 2 tasks
+14:43:51.237 14:43:51.235 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:43:51.237 14:43:51.235 sendMessageToConsole: /var/log/messages: 2019-10-09 14:43:47 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+14:43:51.237 14:43:51.235 sendMessageToConsole: 
+14:44:06.245 14:44:06.244 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:44:06.245 14:44:06.244 sendMessageToConsole: /var/log/messages: 2019-10-09 14:44:02 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:44:06.245 14:44:06.244 sendMessageToConsole: /var/log/messages: 2019-10-09 14:44:02 IPIGNAT905G systemd:Started Session 193105 of user zabbix.
+14:44:06.245 14:44:06.244 sendMessageToConsole: /var/log/messages: 2019-10-09 14:44:02 IPIGNAT905G systemd:Started Session 193104 of user zabbix.
+14:44:06.245 14:44:06.244 sendMessageToConsole: /var/log/messages: 2019-10-09 14:44:02 IPIGNAT905G systemd:Started Session 193103 of user zabbix.
+14:44:06.245 14:44:06.244 sendMessageToConsole: 
+14:44:11.257 14:44:11.256 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:44:11.257 14:44:11.256 sendMessageToConsole: /var/log/messages: 2019-10-09 14:44:07 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:44:11.257 14:44:11.256 sendMessageToConsole: 
+14:44:25.109 14:44:25.109 Sent 1 interrupts to 1 waiting IO_task threads
+14:44:25.111 14:44:25.109 Java Heap in MB. max:  910.500; current:  251.000; used:   30.087; free:  220.913
+14:44:25.111 14:44:25.109 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:44:25.111 14:44:25.109 End of run
+14:44:25.111 14:44:25.109 **********
+14:44:25.111 
+14:44:25.111 
+14:44:25.252 14:44:25.251 Beginning of run setup
+14:44:25.252 14:44:25.251 **********************
+14:44:25.252 
+14:44:25.252 
+14:44:25.252 14:44:25.252 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:44:25.260 14:44:25.257 Started 1 Workload Generator threads.
+14:44:25.325 14:44:25.324 Started  1 i/o threads for sd_varlog
+14:44:25.325 14:44:25.324 Started a total of  1 i/o threads.
+14:44:25.325 14:44:25.324 Waiting for task synchronization
+14:44:25.325 14:44:25.325 task_wait_start_complete: IO_task /dev/dm-3 1
+14:44:25.525 14:44:25.525 Requesting full garbage collection
+14:44:25.526 14:44:25.525 GcTracker: cum:  13 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   251 used:    35 free:   216 
+14:44:25.542 14:44:25.540 GcTracker: cum:  15 intv:  2 ms:      13 mss:  0.00% Heap_MB max:   911 curr:   254 used:    18 free:   236 
+14:44:25.542 14:44:25.540 task_wait_start_complete() end
+
+<a name="_125130493"></a><i><b>14:44:26.001 Starting RD=ran_write_16k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:44:26.003 14:44:26.002 task_run_all(): 2 tasks
+14:45:01.270 14:45:01.269 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:45:01.270 14:45:01.269 sendMessageToConsole: /var/log/messages: 2019-10-09 14:45:01 IPIGNAT905G systemd:Started Session 193110 of user root.
+14:45:01.270 14:45:01.269 sendMessageToConsole: /var/log/messages: 2019-10-09 14:45:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:45:01.270 14:45:01.269 sendMessageToConsole: /var/log/messages: 2019-10-09 14:45:01 IPIGNAT905G systemd:Started Session 193109 of user zabbix.
+14:45:01.270 14:45:01.269 sendMessageToConsole: /var/log/messages: 2019-10-09 14:45:01 IPIGNAT905G systemd:Started Session 193108 of user zabbix.
+14:45:01.270 14:45:01.269 sendMessageToConsole: /var/log/messages: 2019-10-09 14:45:01 IPIGNAT905G systemd:Started Session 193107 of user zabbix.
+14:45:01.270 14:45:01.269 sendMessageToConsole: /var/log/messages: 2019-10-09 14:45:01 IPIGNAT905G systemd:Started Session 193106 of user root.
+14:45:01.270 14:45:01.269 sendMessageToConsole: /var/log/messages: 2019-10-09 14:45:01 IPIGNAT905G systemd:Started Session 193111 of user root.
+14:45:01.271 14:45:01.269 sendMessageToConsole: 
+14:45:06.280 14:45:06.278 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:45:06.280 14:45:06.278 sendMessageToConsole: /var/log/messages: 2019-10-09 14:45:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:45:06.280 14:45:06.279 sendMessageToConsole: 
+14:45:26.110 14:45:26.109 Sent 1 interrupts to 1 waiting IO_task threads
+14:45:26.111 14:45:26.109 Java Heap in MB. max:  910.500; current:  246.000; used:   20.920; free:  225.080
+14:45:26.111 14:45:26.109 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:45:26.111 14:45:26.110 End of run
+14:45:26.111 14:45:26.110 **********
+14:45:26.111 
+14:45:26.111 
+14:45:26.254 14:45:26.249 Beginning of run setup
+14:45:26.254 14:45:26.249 **********************
+14:45:26.254 
+14:45:26.254 
+14:45:26.254 14:45:26.250 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:45:26.256 14:45:26.255 Started 1 Workload Generator threads.
+14:45:26.323 14:45:26.322 Started  1 i/o threads for sd_varlog
+14:45:26.323 14:45:26.323 Started a total of  1 i/o threads.
+14:45:26.323 14:45:26.323 Waiting for task synchronization
+14:45:26.323 14:45:26.323 task_wait_start_complete: IO_task /dev/dm-3 1
+14:45:26.523 14:45:26.523 Requesting full garbage collection
+14:45:26.526 14:45:26.523 GcTracker: cum:  16 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   246 used:    25 free:   221 
+14:45:26.536 14:45:26.536 GcTracker: cum:  18 intv:  2 ms:      11 mss:  0.00% Heap_MB max:   911 curr:   254 used:    18 free:   236 
+14:45:26.536 14:45:26.536 task_wait_start_complete() end
+
+<a name="_914504136"></a><i><b>14:45:27.001 Starting RD=ran_write_32k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:45:27.003 14:45:27.002 task_run_all(): 2 tasks
+14:46:01.291 14:46:01.289 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:46:01.291 14:46:01.289 sendMessageToConsole: /var/log/messages: 2019-10-09 14:46:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:46:01.291 14:46:01.289 sendMessageToConsole: /var/log/messages: 2019-10-09 14:46:01 IPIGNAT905G systemd:Started Session 193113 of user zabbix.
+14:46:01.291 14:46:01.289 sendMessageToConsole: /var/log/messages: 2019-10-09 14:46:01 IPIGNAT905G systemd:Started Session 193114 of user zabbix.
+14:46:01.291 14:46:01.289 sendMessageToConsole: /var/log/messages: 2019-10-09 14:46:01 IPIGNAT905G systemd:Started Session 193112 of user zabbix.
+14:46:01.291 14:46:01.289 sendMessageToConsole: 
+14:46:11.299 14:46:11.298 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:46:11.299 14:46:11.299 sendMessageToConsole: /var/log/messages: 2019-10-09 14:46:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:46:11.299 14:46:11.299 sendMessageToConsole: 
+14:46:27.110 14:46:27.108 Sent 1 interrupts to 1 waiting IO_task threads
+14:46:27.110 14:46:27.109 Java Heap in MB. max:  910.500; current:  245.500; used:   20.400; free:  225.100
+14:46:27.110 14:46:27.109 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:46:27.110 14:46:27.109 End of run
+14:46:27.110 14:46:27.109 **********
+14:46:27.110 
+14:46:27.110 
+14:46:27.249 14:46:27.247 Beginning of run setup
+14:46:27.249 14:46:27.247 **********************
+14:46:27.249 
+14:46:27.249 
+14:46:27.249 14:46:27.247 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:46:27.253 14:46:27.253 Started 1 Workload Generator threads.
+14:46:27.321 14:46:27.320 Started  1 i/o threads for sd_varlog
+14:46:27.321 14:46:27.320 Started a total of  1 i/o threads.
+14:46:27.321 14:46:27.320 Waiting for task synchronization
+14:46:27.321 14:46:27.320 task_wait_start_complete: IO_task /dev/dm-3 1
+14:46:27.521 14:46:27.520 Requesting full garbage collection
+14:46:27.521 14:46:27.520 GcTracker: cum:  19 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   246 used:    25 free:   221 
+14:46:27.532 14:46:27.532 GcTracker: cum:  21 intv:  2 ms:      12 mss:  0.00% Heap_MB max:   911 curr:   253 used:    18 free:   235 
+14:46:27.532 14:46:27.532 task_wait_start_complete() end
+
+<a name="_166239592"></a><i><b>14:46:28.001 Starting RD=ran_write_64k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:46:28.003 14:46:28.002 task_run_all(): 2 tasks
+14:47:06.311 14:47:06.309 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:47:06.311 14:47:06.309 sendMessageToConsole: /var/log/messages: 2019-10-09 14:47:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:47:06.311 14:47:06.309 sendMessageToConsole: /var/log/messages: 2019-10-09 14:47:01 IPIGNAT905G systemd:Started Session 193116 of user zabbix.
+14:47:06.311 14:47:06.310 sendMessageToConsole: /var/log/messages: 2019-10-09 14:47:01 IPIGNAT905G systemd:Started Session 193117 of user zabbix.
+14:47:06.311 14:47:06.310 sendMessageToConsole: /var/log/messages: 2019-10-09 14:47:01 IPIGNAT905G systemd:Started Session 193115 of user zabbix.
+14:47:06.311 14:47:06.310 sendMessageToConsole: 
+14:47:11.319 14:47:11.318 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:47:11.319 14:47:11.318 sendMessageToConsole: /var/log/messages: 2019-10-09 14:47:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:47:11.319 14:47:11.318 sendMessageToConsole: 
+14:47:28.110 14:47:28.109 Sent 1 interrupts to 1 waiting IO_task threads
+14:47:28.111 14:47:28.109 Java Heap in MB. max:  910.500; current:  245.000; used:   19.038; free:  225.962
+14:47:28.111 14:47:28.109 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:47:28.111 14:47:28.110 End of run
+14:47:28.111 14:47:28.110 **********
+14:47:28.111 
+14:47:28.111 
+14:47:28.249 14:47:28.247 Beginning of run setup
+14:47:28.249 14:47:28.247 **********************
+14:47:28.249 
+14:47:28.249 
+14:47:28.249 14:47:28.248 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:47:28.254 14:47:28.253 Started 1 Workload Generator threads.
+14:47:28.326 14:47:28.320 Started  1 i/o threads for sd_varlog
+14:47:28.326 14:47:28.320 Started a total of  1 i/o threads.
+14:47:28.326 14:47:28.320 Waiting for task synchronization
+14:47:28.326 14:47:28.321 task_wait_start_complete: IO_task /dev/dm-3 1
+14:47:28.521 14:47:28.521 Requesting full garbage collection
+14:47:28.522 14:47:28.521 GcTracker: cum:  22 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   245 used:    24 free:   221 
+14:47:28.534 14:47:28.533 GcTracker: cum:  24 intv:  2 ms:      11 mss:  0.00% Heap_MB max:   911 curr:   253 used:    18 free:   235 
+14:47:28.534 14:47:28.533 task_wait_start_complete() end
+
+<a name="_991505714"></a><i><b>14:47:29.000 Starting RD=ran_write_128k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:47:29.002 14:47:29.001 task_run_all(): 2 tasks
+14:48:06.329 14:48:06.328 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:48:06.329 14:48:06.328 sendMessageToConsole: /var/log/messages: 2019-10-09 14:48:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:48:06.329 14:48:06.328 sendMessageToConsole: /var/log/messages: 2019-10-09 14:48:01 IPIGNAT905G systemd:Started Session 193118 of user zabbix.
+14:48:06.329 14:48:06.328 sendMessageToConsole: /var/log/messages: 2019-10-09 14:48:01 IPIGNAT905G systemd:Started Session 193119 of user zabbix.
+14:48:06.329 14:48:06.328 sendMessageToConsole: /var/log/messages: 2019-10-09 14:48:01 IPIGNAT905G systemd:Started Session 193120 of user zabbix.
+14:48:06.329 14:48:06.328 sendMessageToConsole: 
+14:48:11.339 14:48:11.337 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:48:11.339 14:48:11.337 sendMessageToConsole: /var/log/messages: 2019-10-09 14:48:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:48:11.339 14:48:11.337 sendMessageToConsole: 
+14:48:29.109 14:48:29.108 Sent 1 interrupts to 1 waiting IO_task threads
+14:48:29.110 14:48:29.109 Java Heap in MB. max:  910.500; current:  252.500; used:   47.104; free:  205.396
+14:48:29.110 14:48:29.109 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:48:29.110 14:48:29.109 End of run
+14:48:29.110 14:48:29.109 **********
+14:48:29.110 
+14:48:29.110 
+14:48:29.376 14:48:29.370 Beginning of run setup
+14:48:29.376 14:48:29.370 **********************
+14:48:29.376 
+14:48:29.376 
+14:48:29.376 14:48:29.370 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:48:29.376 14:48:29.375 Started 1 Workload Generator threads.
+14:48:29.445 14:48:29.445 Started  1 i/o threads for sd_varlog
+14:48:29.445 14:48:29.445 Started a total of  1 i/o threads.
+14:48:29.445 14:48:29.445 Waiting for task synchronization
+14:48:29.445 14:48:29.445 task_wait_start_complete: IO_task /dev/dm-3 1
+14:48:29.646 14:48:29.645 Requesting full garbage collection
+14:48:29.646 14:48:29.645 GcTracker: cum:  25 intv:  1 ms:       1 mss:  0.00% Heap_MB max:   911 curr:   245 used:    22 free:   222 
+14:48:29.659 14:48:29.658 GcTracker: cum:  27 intv:  2 ms:      12 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+14:48:29.659 14:48:29.658 task_wait_start_complete() end
+
+<a name="_385242642"></a><i><b>14:48:30.001 Starting RD=ran_write_512k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:48:30.003 14:48:30.002 task_run_all(): 2 tasks
+14:48:46.349 14:48:46.347 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:48:46.349 14:48:46.347 sendMessageToConsole: /var/log/messages: 2019-10-09 14:48:44 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+14:48:46.349 14:48:46.347 sendMessageToConsole: 
+14:49:01.358 14:49:01.357 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:49:01.358 14:49:01.357 sendMessageToConsole: /var/log/messages: 2019-10-09 14:49:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:49:01.358 14:49:01.357 sendMessageToConsole: /var/log/messages: 2019-10-09 14:49:01 IPIGNAT905G systemd:Started Session 193121 of user zabbix.
+14:49:01.358 14:49:01.357 sendMessageToConsole: /var/log/messages: 2019-10-09 14:49:01 IPIGNAT905G systemd:Started Session 193122 of user zabbix.
+14:49:01.358 14:49:01.357 sendMessageToConsole: /var/log/messages: 2019-10-09 14:49:01 IPIGNAT905G systemd:Started Session 193123 of user zabbix.
+14:49:01.358 14:49:01.357 sendMessageToConsole: 
+14:49:06.369 14:49:06.368 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:49:06.369 14:49:06.369 sendMessageToConsole: /var/log/messages: 2019-10-09 14:49:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:49:06.369 14:49:06.369 sendMessageToConsole: 
+14:49:30.209 14:49:30.208 Interrupts issued for tasks WG_task: 2
+14:49:30.209 14:49:30.208 Sent 1 interrupts to 1 waiting IO_task threads
+14:49:30.210 14:49:30.208 Java Heap in MB. max:  910.500; current:  244.000; used:   23.242; free:  220.758
+14:49:30.210 14:49:30.208 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:49:30.210 14:49:30.209 End of run
+14:49:30.210 14:49:30.209 **********
+14:49:30.210 
+14:49:30.210 
+14:49:30.359 14:49:30.358 Beginning of run setup
+14:49:30.359 14:49:30.358 **********************
+14:49:30.359 
+14:49:30.359 
+14:49:30.359 14:49:30.358 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:49:30.364 14:49:30.364 Started 1 Workload Generator threads.
+14:49:30.431 14:49:30.431 Started  1 i/o threads for sd_varlog
+14:49:30.431 14:49:30.431 Started a total of  1 i/o threads.
+14:49:30.431 14:49:30.431 Waiting for task synchronization
+14:49:30.432 14:49:30.431 task_wait_start_complete: IO_task /dev/dm-3 1
+14:49:30.632 14:49:30.631 Requesting full garbage collection
+14:49:30.632 14:49:30.631 GcTracker: cum:  28 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   244 used:    28 free:   216 
+14:49:30.644 14:49:30.643 GcTracker: cum:  30 intv:  2 ms:      11 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+14:49:30.644 14:49:30.643 task_wait_start_complete() end
+
+<a name="_824009085"></a><i><b>14:49:31.001 Starting RD=ran_write_1m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:49:31.003 14:49:31.002 task_run_all(): 2 tasks
+14:50:01.381 14:50:01.379 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G systemd:Started Session 193127 of user root.
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G systemd:Started Session 193126 of user root.
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G systemd:Started Session 193125 of user zabbix.
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G systemd:Started Session 193128 of user root.
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G systemd:Started Session 193124 of user root.
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G systemd:Started Session 193129 of user zabbix.
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G systemd:Started Session 193130 of user zabbix.
+14:50:01.381 14:50:01.379 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:01 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+14:50:01.381 14:50:01.379 sendMessageToConsole: 
+14:50:11.389 14:50:11.388 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:50:11.389 14:50:11.389 sendMessageToConsole: /var/log/messages: 2019-10-09 14:50:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:50:11.389 14:50:11.389 sendMessageToConsole: 
+14:50:31.209 14:50:31.208 Interrupts issued for tasks WG_task: 2
+14:50:31.209 14:50:31.208 Sent 1 interrupts to 1 waiting IO_task threads
+14:50:31.210 14:50:31.208 Java Heap in MB. max:  910.500; current:  251.500; used:   42.283; free:  209.217
+14:50:31.210 14:50:31.208 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:50:31.210 14:50:31.208 End of run
+14:50:31.210 14:50:31.208 **********
+14:50:31.210 
+14:50:31.210 
+14:50:31.350 14:50:31.349 Beginning of run setup
+14:50:31.350 14:50:31.349 **********************
+14:50:31.350 
+14:50:31.350 
+14:50:31.350 14:50:31.349 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:50:31.355 14:50:31.354 Started 1 Workload Generator threads.
+14:50:31.422 14:50:31.422 Started  1 i/o threads for sd_varlog
+14:50:31.422 14:50:31.422 Started a total of  1 i/o threads.
+14:50:31.422 14:50:31.422 Waiting for task synchronization
+14:50:31.422 14:50:31.422 task_wait_start_complete: IO_task /dev/dm-3 1
+14:50:31.623 14:50:31.622 Requesting full garbage collection
+14:50:31.623 14:50:31.622 GcTracker: cum:  30 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    47 free:   205 
+14:50:31.635 14:50:31.634 GcTracker: cum:  32 intv:  2 ms:      10 mss:  0.00% Heap_MB max:   911 curr:   252 used:    18 free:   234 
+14:50:31.635 14:50:31.634 task_wait_start_complete() end
+
+<a name="_2085857771"></a><i><b>14:50:32.001 Starting RD=ran_write_2m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:50:32.003 14:50:32.002 task_run_all(): 2 tasks
+14:51:06.400 14:51:06.399 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:51:06.400 14:51:06.399 sendMessageToConsole: /var/log/messages: 2019-10-09 14:51:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:51:06.400 14:51:06.399 sendMessageToConsole: /var/log/messages: 2019-10-09 14:51:01 IPIGNAT905G systemd:Started Session 193132 of user zabbix.
+14:51:06.400 14:51:06.399 sendMessageToConsole: /var/log/messages: 2019-10-09 14:51:01 IPIGNAT905G systemd:Started Session 193131 of user zabbix.
+14:51:06.400 14:51:06.399 sendMessageToConsole: /var/log/messages: 2019-10-09 14:51:01 IPIGNAT905G systemd:Started Session 193133 of user zabbix.
+14:51:06.400 14:51:06.399 sendMessageToConsole: 
+14:51:11.408 14:51:11.408 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:51:11.409 14:51:11.408 sendMessageToConsole: /var/log/messages: 2019-10-09 14:51:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:51:11.409 14:51:11.408 sendMessageToConsole: 
+14:51:32.209 14:51:32.208 Interrupts issued for tasks WG_task: 2
+14:51:32.209 14:51:32.208 Sent 1 interrupts to 1 waiting IO_task threads
+14:51:32.210 14:51:32.208 Java Heap in MB. max:  910.500; current:  251.500; used:   41.262; free:  210.238
+14:51:32.210 14:51:32.208 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:51:32.210 14:51:32.208 End of run
+14:51:32.210 14:51:32.208 **********
+14:51:32.210 
+14:51:32.210 
+14:51:32.346 14:51:32.346 Beginning of run setup
+14:51:32.346 14:51:32.346 **********************
+14:51:32.346 
+14:51:32.346 
+14:51:32.346 14:51:32.346 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:51:32.352 14:51:32.351 Started 1 Workload Generator threads.
+14:51:32.419 14:51:32.419 Started  1 i/o threads for sd_varlog
+14:51:32.419 14:51:32.419 Started a total of  1 i/o threads.
+14:51:32.419 14:51:32.419 Waiting for task synchronization
+14:51:32.419 14:51:32.419 task_wait_start_complete: IO_task /dev/dm-3 1
+14:51:32.620 14:51:32.619 Requesting full garbage collection
+14:51:32.620 14:51:32.619 GcTracker: cum:  32 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   252 used:    46 free:   206 
+14:51:32.634 14:51:32.633 GcTracker: cum:  34 intv:  2 ms:      14 mss:  0.00% Heap_MB max:   911 curr:   251 used:    18 free:   233 
+14:51:32.634 14:51:32.633 task_wait_start_complete() end
+
+<a name="_248609774"></a><i><b>14:51:33.000 Starting RD=ran_read_4k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:51:33.002 14:51:33.001 task_run_all(): 2 tasks
+14:52:06.419 14:52:06.418 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:52:06.419 14:52:06.418 sendMessageToConsole: /var/log/messages: 2019-10-09 14:52:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:52:06.419 14:52:06.418 sendMessageToConsole: /var/log/messages: 2019-10-09 14:52:01 IPIGNAT905G systemd:Started Session 193134 of user zabbix.
+14:52:06.419 14:52:06.418 sendMessageToConsole: /var/log/messages: 2019-10-09 14:52:01 IPIGNAT905G systemd:Started Session 193135 of user zabbix.
+14:52:06.419 14:52:06.418 sendMessageToConsole: /var/log/messages: 2019-10-09 14:52:01 IPIGNAT905G systemd:Started Session 193136 of user zabbix.
+14:52:06.419 14:52:06.418 sendMessageToConsole: 
+14:52:11.427 14:52:11.427 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:52:11.427 14:52:11.427 sendMessageToConsole: /var/log/messages: 2019-10-09 14:52:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:52:11.427 14:52:11.427 sendMessageToConsole: 
+14:52:33.109 14:52:33.108 Sent 1 interrupts to 1 waiting IO_task threads
+14:52:33.109 14:52:33.108 Java Heap in MB. max:  910.500; current:  243.000; used:   23.651; free:  219.349
+14:52:33.110 14:52:33.108 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:52:33.110 14:52:33.109 End of run
+14:52:33.110 14:52:33.109 **********
+14:52:33.110 
+14:52:33.110 
+14:52:33.248 14:52:33.247 Beginning of run setup
+14:52:33.248 14:52:33.247 **********************
+14:52:33.248 
+14:52:33.248 
+14:52:33.248 14:52:33.247 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:52:33.253 14:52:33.253 Started 1 Workload Generator threads.
+14:52:33.320 14:52:33.320 Started  1 i/o threads for sd_varlog
+14:52:33.320 14:52:33.320 Started a total of  1 i/o threads.
+14:52:33.320 14:52:33.320 Waiting for task synchronization
+14:52:33.320 14:52:33.320 task_wait_start_complete: IO_task /dev/dm-3 1
+14:52:33.521 14:52:33.520 Requesting full garbage collection
+14:52:33.521 14:52:33.520 GcTracker: cum:  35 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   243 used:    28 free:   215 
+14:52:33.533 14:52:33.532 GcTracker: cum:  37 intv:  2 ms:      12 mss:  0.00% Heap_MB max:   911 curr:   250 used:    18 free:   232 
+14:52:33.533 14:52:33.532 task_wait_start_complete() end
+
+<a name="_708049632"></a><i><b>14:52:34.001 Starting RD=ran_read_8k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:52:34.003 14:52:34.002 task_run_all(): 2 tasks
+14:53:06.437 14:53:06.436 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:53:06.437 14:53:06.437 sendMessageToConsole: /var/log/messages: 2019-10-09 14:53:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:53:06.437 14:53:06.437 sendMessageToConsole: /var/log/messages: 2019-10-09 14:53:01 IPIGNAT905G systemd:Started Session 193138 of user zabbix.
+14:53:06.437 14:53:06.437 sendMessageToConsole: /var/log/messages: 2019-10-09 14:53:01 IPIGNAT905G systemd:Started Session 193139 of user zabbix.
+14:53:06.437 14:53:06.437 sendMessageToConsole: /var/log/messages: 2019-10-09 14:53:01 IPIGNAT905G systemd:Started Session 193137 of user zabbix.
+14:53:06.437 14:53:06.437 sendMessageToConsole: 
+14:53:11.447 14:53:11.446 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:53:11.448 14:53:11.447 sendMessageToConsole: /var/log/messages: 2019-10-09 14:53:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:53:11.448 14:53:11.447 sendMessageToConsole: 
+14:53:34.110 14:53:34.108 Sent 1 interrupts to 1 waiting IO_task threads
+14:53:34.110 14:53:34.108 Java Heap in MB. max:  910.500; current:  242.000; used:   24.111; free:  217.889
+14:53:34.110 14:53:34.108 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:53:34.110 14:53:34.108 End of run
+14:53:34.110 14:53:34.108 **********
+14:53:34.110 
+14:53:34.110 
+14:53:34.248 14:53:34.247 Beginning of run setup
+14:53:34.248 14:53:34.247 **********************
+14:53:34.248 
+14:53:34.248 
+14:53:34.248 14:53:34.247 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:53:34.253 14:53:34.252 Started 1 Workload Generator threads.
+14:53:34.320 14:53:34.319 Started  1 i/o threads for sd_varlog
+14:53:34.320 14:53:34.319 Started a total of  1 i/o threads.
+14:53:34.320 14:53:34.320 Waiting for task synchronization
+14:53:34.320 14:53:34.320 task_wait_start_complete: IO_task /dev/dm-3 1
+14:53:34.520 14:53:34.520 Requesting full garbage collection
+14:53:34.521 14:53:34.520 GcTracker: cum:  38 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   242 used:    29 free:   213 
+14:53:34.533 14:53:34.532 GcTracker: cum:  40 intv:  2 ms:      12 mss:  0.00% Heap_MB max:   911 curr:   249 used:    18 free:   231 
+14:53:34.533 14:53:34.532 task_wait_start_complete() end
+
+<a name="_1887400018"></a><i><b>14:53:35.001 Starting RD=ran_read_16k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:53:35.003 14:53:35.002 task_run_all(): 2 tasks
+14:54:06.458 14:54:06.457 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:54:06.458 14:54:06.457 sendMessageToConsole: /var/log/messages: 2019-10-09 14:54:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:54:06.458 14:54:06.457 sendMessageToConsole: /var/log/messages: 2019-10-09 14:54:01 IPIGNAT905G systemd:Started Session 193140 of user zabbix.
+14:54:06.458 14:54:06.457 sendMessageToConsole: /var/log/messages: 2019-10-09 14:54:01 IPIGNAT905G systemd:Started Session 193141 of user zabbix.
+14:54:06.458 14:54:06.457 sendMessageToConsole: /var/log/messages: 2019-10-09 14:54:01 IPIGNAT905G systemd:Started Session 193142 of user zabbix.
+14:54:06.458 14:54:06.457 sendMessageToConsole: 
+14:54:11.466 14:54:11.465 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:54:11.466 14:54:11.465 sendMessageToConsole: /var/log/messages: 2019-10-09 14:54:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:54:11.466 14:54:11.465 sendMessageToConsole: 
+14:54:35.109 14:54:35.108 Sent 1 interrupts to 1 waiting IO_task threads
+14:54:35.109 14:54:35.108 Java Heap in MB. max:  910.500; current:  241.500; used:   23.531; free:  217.969
+14:54:35.109 14:54:35.108 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:54:35.109 14:54:35.109 End of run
+14:54:35.109 14:54:35.109 **********
+14:54:35.109 
+14:54:35.109 
+14:54:35.246 14:54:35.245 Beginning of run setup
+14:54:35.246 14:54:35.245 **********************
+14:54:35.246 
+14:54:35.246 
+14:54:35.246 14:54:35.245 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:54:35.253 14:54:35.250 Started 1 Workload Generator threads.
+14:54:35.324 14:54:35.317 Started  1 i/o threads for sd_varlog
+14:54:35.324 14:54:35.318 Started a total of  1 i/o threads.
+14:54:35.324 14:54:35.318 Waiting for task synchronization
+14:54:35.324 14:54:35.318 task_wait_start_complete: IO_task /dev/dm-3 1
+14:54:35.519 14:54:35.518 Requesting full garbage collection
+14:54:35.519 14:54:35.518 GcTracker: cum:  41 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   242 used:    28 free:   213 
+14:54:35.531 14:54:35.530 GcTracker: cum:  43 intv:  2 ms:      12 mss:  0.00% Heap_MB max:   911 curr:   248 used:    18 free:   230 
+14:54:35.531 14:54:35.531 task_wait_start_complete() end
+
+<a name="_285377351"></a><i><b>14:54:36.001 Starting RD=ran_read_32k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:54:36.003 14:54:36.002 task_run_all(): 2 tasks
+14:54:41.476 14:54:41.475 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:54:41.476 14:54:41.475 sendMessageToConsole: /var/log/messages: 2019-10-09 14:54:38 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+14:54:41.476 14:54:41.475 sendMessageToConsole: 
+14:55:01.485 14:55:01.484 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:55:01.485 14:55:01.484 sendMessageToConsole: /var/log/messages: 2019-10-09 14:55:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:55:01.485 14:55:01.484 sendMessageToConsole: /var/log/messages: 2019-10-09 14:55:01 IPIGNAT905G systemd:Started Session 193144 of user zabbix.
+14:55:01.485 14:55:01.484 sendMessageToConsole: /var/log/messages: 2019-10-09 14:55:01 IPIGNAT905G systemd:Started Session 193145 of user root.
+14:55:01.485 14:55:01.484 sendMessageToConsole: /var/log/messages: 2019-10-09 14:55:01 IPIGNAT905G systemd:Started Session 193143 of user root.
+14:55:01.485 14:55:01.484 sendMessageToConsole: /var/log/messages: 2019-10-09 14:55:01 IPIGNAT905G systemd:Started Session 193146 of user zabbix.
+14:55:01.485 14:55:01.484 sendMessageToConsole: /var/log/messages: 2019-10-09 14:55:01 IPIGNAT905G systemd:Started Session 193147 of user zabbix.
+14:55:01.485 14:55:01.484 sendMessageToConsole: /var/log/messages: 2019-10-09 14:55:01 IPIGNAT905G systemd:Started Session 193148 of user root.
+14:55:01.485 14:55:01.484 sendMessageToConsole: 
+14:55:06.495 14:55:06.494 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:55:06.495 14:55:06.494 sendMessageToConsole: /var/log/messages: 2019-10-09 14:55:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:55:06.495 14:55:06.494 sendMessageToConsole: 
+14:55:36.109 14:55:36.108 Sent 1 interrupts to 1 waiting IO_task threads
+14:55:36.109 14:55:36.108 Java Heap in MB. max:  910.500; current:  248.500; used:   31.656; free:  216.844
+14:55:36.109 14:55:36.108 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:55:36.109 14:55:36.108 End of run
+14:55:36.109 14:55:36.108 **********
+14:55:36.109 
+14:55:36.109 
+14:55:36.245 14:55:36.244 Beginning of run setup
+14:55:36.245 14:55:36.244 **********************
+14:55:36.245 
+14:55:36.245 
+14:55:36.245 14:55:36.244 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:55:36.251 14:55:36.249 Started 1 Workload Generator threads.
+14:55:36.317 14:55:36.316 Started  1 i/o threads for sd_varlog
+14:55:36.317 14:55:36.316 Started a total of  1 i/o threads.
+14:55:36.317 14:55:36.316 Waiting for task synchronization
+14:55:36.317 14:55:36.316 task_wait_start_complete: IO_task /dev/dm-3 1
+14:55:36.517 14:55:36.516 Requesting full garbage collection
+14:55:36.517 14:55:36.517 GcTracker: cum:  44 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   249 used:    36 free:   212 
+14:55:36.529 14:55:36.528 GcTracker: cum:  46 intv:  2 ms:      12 mss:  0.00% Heap_MB max:   911 curr:   248 used:    18 free:   230 
+14:55:36.529 14:55:36.528 task_wait_start_complete() end
+
+<a name="_344560770"></a><i><b>14:55:37.001 Starting RD=ran_read_64k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:55:37.003 14:55:37.002 task_run_all(): 2 tasks
+14:56:06.507 14:56:06.506 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:56:06.507 14:56:06.506 sendMessageToConsole: /var/log/messages: 2019-10-09 14:56:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:56:06.507 14:56:06.506 sendMessageToConsole: /var/log/messages: 2019-10-09 14:56:01 IPIGNAT905G systemd:Started Session 193149 of user zabbix.
+14:56:06.507 14:56:06.506 sendMessageToConsole: /var/log/messages: 2019-10-09 14:56:01 IPIGNAT905G systemd:Started Session 193151 of user zabbix.
+14:56:06.507 14:56:06.506 sendMessageToConsole: /var/log/messages: 2019-10-09 14:56:01 IPIGNAT905G systemd:Started Session 193150 of user zabbix.
+14:56:06.507 14:56:06.506 sendMessageToConsole: 
+14:56:11.516 14:56:11.515 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:56:11.516 14:56:11.515 sendMessageToConsole: /var/log/messages: 2019-10-09 14:56:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:56:11.516 14:56:11.515 sendMessageToConsole: 
+14:56:37.109 14:56:37.108 Sent 1 interrupts to 1 waiting IO_task threads
+14:56:37.109 14:56:37.108 Java Heap in MB. max:  910.500; current:  248.000; used:   21.384; free:  226.616
+14:56:37.109 14:56:37.108 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:56:37.109 14:56:37.108 End of run
+14:56:37.109 14:56:37.108 **********
+14:56:37.109 
+14:56:37.109 
+14:56:37.347 14:56:37.346 Beginning of run setup
+14:56:37.347 14:56:37.346 **********************
+14:56:37.347 
+14:56:37.347 
+14:56:37.347 14:56:37.347 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:56:37.353 14:56:37.352 Started 1 Workload Generator threads.
+14:56:37.420 14:56:37.420 Started  1 i/o threads for sd_varlog
+14:56:37.420 14:56:37.420 Started a total of  1 i/o threads.
+14:56:37.420 14:56:37.420 Waiting for task synchronization
+14:56:37.420 14:56:37.420 task_wait_start_complete: IO_task /dev/dm-3 1
+14:56:37.621 14:56:37.620 Requesting full garbage collection
+14:56:37.621 14:56:37.621 GcTracker: cum:  47 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   248 used:    26 free:   222 
+14:56:37.633 14:56:37.632 GcTracker: cum:  49 intv:  2 ms:      11 mss:  0.00% Heap_MB max:   911 curr:   248 used:    18 free:   230 
+14:56:37.633 14:56:37.632 task_wait_start_complete() end
+
+<a name="_559450121"></a><i><b>14:56:38.000 Starting RD=ran_read_128k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:56:38.002 14:56:38.001 task_run_all(): 2 tasks
+14:57:06.526 14:57:06.525 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:57:06.526 14:57:06.525 sendMessageToConsole: /var/log/messages: 2019-10-09 14:57:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:57:06.526 14:57:06.525 sendMessageToConsole: /var/log/messages: 2019-10-09 14:57:01 IPIGNAT905G systemd:Started Session 193152 of user zabbix.
+14:57:06.526 14:57:06.525 sendMessageToConsole: /var/log/messages: 2019-10-09 14:57:01 IPIGNAT905G systemd:Started Session 193154 of user zabbix.
+14:57:06.526 14:57:06.525 sendMessageToConsole: /var/log/messages: 2019-10-09 14:57:01 IPIGNAT905G systemd:Started Session 193153 of user zabbix.
+14:57:06.526 14:57:06.525 sendMessageToConsole: 
+14:57:11.535 14:57:11.534 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:57:11.535 14:57:11.534 sendMessageToConsole: /var/log/messages: 2019-10-09 14:57:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:57:11.535 14:57:11.534 sendMessageToConsole: 
+14:57:38.210 14:57:38.209 Interrupts issued for tasks WG_task: 2
+14:57:38.210 14:57:38.209 Sent 1 interrupts to 1 waiting IO_task threads
+14:57:38.211 14:57:38.209 Java Heap in MB. max:  910.500; current:  248.000; used:   20.612; free:  227.388
+14:57:38.211 14:57:38.209 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:57:38.211 14:57:38.209 End of run
+14:57:38.211 14:57:38.209 **********
+14:57:38.211 
+14:57:38.211 
+14:57:38.349 14:57:38.348 Beginning of run setup
+14:57:38.349 14:57:38.348 **********************
+14:57:38.349 
+14:57:38.349 
+14:57:38.349 14:57:38.348 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:57:38.354 14:57:38.354 Started 1 Workload Generator threads.
+14:57:38.422 14:57:38.421 Started  1 i/o threads for sd_varlog
+14:57:38.422 14:57:38.421 Started a total of  1 i/o threads.
+14:57:38.422 14:57:38.421 Waiting for task synchronization
+14:57:38.422 14:57:38.421 task_wait_start_complete: IO_task /dev/dm-3 1
+14:57:38.622 14:57:38.621 Requesting full garbage collection
+14:57:38.622 14:57:38.621 GcTracker: cum:  50 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   248 used:    25 free:   223 
+14:57:38.640 14:57:38.639 GcTracker: cum:  52 intv:  2 ms:      17 mss:  0.00% Heap_MB max:   911 curr:   248 used:    18 free:   230 
+14:57:38.640 14:57:38.639 task_wait_start_complete() end
+
+<a name="_716083600"></a><i><b>14:57:39.001 Starting RD=ran_read_512k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:57:39.003 14:57:39.002 task_run_all(): 2 tasks
+14:57:46.544 14:57:46.543 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:57:46.544 14:57:46.543 sendMessageToConsole: /var/log/messages: 2019-10-09 14:57:46 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+14:57:46.544 14:57:46.543 sendMessageToConsole: 
+14:58:01.557 14:58:01.555 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:58:01.557 14:58:01.555 sendMessageToConsole: /var/log/messages: 2019-10-09 14:58:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:58:01.557 14:58:01.555 sendMessageToConsole: /var/log/messages: 2019-10-09 14:58:01 IPIGNAT905G systemd:Started Session 193155 of user zabbix.
+14:58:01.557 14:58:01.555 sendMessageToConsole: /var/log/messages: 2019-10-09 14:58:01 IPIGNAT905G systemd:Started Session 193156 of user zabbix.
+14:58:01.557 14:58:01.556 sendMessageToConsole: /var/log/messages: 2019-10-09 14:58:01 IPIGNAT905G systemd:Started Session 193157 of user zabbix.
+14:58:01.557 14:58:01.556 sendMessageToConsole: 
+14:58:06.567 14:58:06.566 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:58:06.567 14:58:06.566 sendMessageToConsole: /var/log/messages: 2019-10-09 14:58:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:58:06.567 14:58:06.566 sendMessageToConsole: 
+14:58:39.212 14:58:39.210 Interrupts issued for tasks WG_task: 2
+14:58:39.212 14:58:39.210 Sent 0 interrupts to 1 waiting IO_task threads
+14:58:40.202 14:58:40.201 Java Heap in MB. max:  910.500; current:  248.000; used:   26.460; free:  221.540
+14:58:40.203 14:58:40.201 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:58:40.203 14:58:40.202 End of run
+14:58:40.203 14:58:40.202 **********
+14:58:40.203 
+14:58:40.203 
+14:58:40.253 14:58:40.252 Beginning of run setup
+14:58:40.253 14:58:40.252 **********************
+14:58:40.253 
+14:58:40.253 
+14:58:40.258 14:58:40.252 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:58:40.259 14:58:40.257 Started 1 Workload Generator threads.
+14:58:40.325 14:58:40.324 Started  1 i/o threads for sd_varlog
+14:58:40.325 14:58:40.324 Started a total of  1 i/o threads.
+14:58:40.325 14:58:40.324 Waiting for task synchronization
+14:58:40.325 14:58:40.324 task_wait_start_complete: IO_task /dev/dm-3 1
+14:58:40.527 14:58:40.524 Requesting full garbage collection
+14:58:40.527 14:58:40.524 GcTracker: cum:  53 intv:  0 ms:       0 mss:  0.00% Heap_MB max:   911 curr:   248 used:    31 free:   217 
+14:58:40.544 14:58:40.543 GcTracker: cum:  55 intv:  2 ms:      17 mss:  0.00% Heap_MB max:   911 curr:   248 used:    18 free:   230 
+14:58:40.544 14:58:40.543 task_wait_start_complete() end
+
+<a name="_791885625"></a><i><b>14:58:41.001 Starting RD=ran_read_1m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:58:41.003 14:58:41.002 task_run_all(): 2 tasks
+14:59:01.580 14:59:01.578 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:59:01.580 14:59:01.578 sendMessageToConsole: /var/log/messages: 2019-10-09 14:59:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+14:59:01.580 14:59:01.578 sendMessageToConsole: /var/log/messages: 2019-10-09 14:59:01 IPIGNAT905G systemd:Started Session 193160 of user zabbix.
+14:59:01.580 14:59:01.578 sendMessageToConsole: /var/log/messages: 2019-10-09 14:59:01 IPIGNAT905G systemd:Started Session 193159 of user zabbix.
+14:59:01.580 14:59:01.578 sendMessageToConsole: 
+14:59:11.589 14:59:11.587 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+14:59:11.589 14:59:11.587 sendMessageToConsole: /var/log/messages: 2019-10-09 14:59:01 IPIGNAT905G systemd:Started Session 193158 of user zabbix.
+14:59:11.589 14:59:11.587 sendMessageToConsole: /var/log/messages: 2019-10-09 14:59:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+14:59:11.589 14:59:11.587 sendMessageToConsole: 
+14:59:41.209 14:59:41.207 Interrupts issued for tasks WG_task: 2
+14:59:41.209 14:59:41.208 Sent 0 interrupts to 1 waiting IO_task threads
+14:59:42.200 14:59:42.199 Java Heap in MB. max:  910.500; current:  247.500; used:   41.716; free:  205.784
+14:59:42.200 14:59:42.199 Maximum native memory allocation:    4,194,304; Current allocation:            0
+14:59:42.200 14:59:42.199 End of run
+14:59:42.200 14:59:42.199 **********
+14:59:42.200 
+14:59:42.200 
+14:59:42.949 14:59:42.947 Beginning of run setup
+14:59:42.949 14:59:42.947 **********************
+14:59:42.949 
+14:59:42.949 
+14:59:42.949 14:59:42.948 Opening sd=sd_varlog,lun=/dev/dm-3; write: true; flags: OpenFlags: 0x00004000 OtherFlags: 0x00000000
+14:59:42.954 14:59:42.953 Started 1 Workload Generator threads.
+14:59:43.022 14:59:43.022 Started  1 i/o threads for sd_varlog
+14:59:43.022 14:59:43.022 Started a total of  1 i/o threads.
+14:59:43.022 14:59:43.022 Waiting for task synchronization
+14:59:43.022 14:59:43.022 task_wait_start_complete: IO_task /dev/dm-3 1
+14:59:43.223 14:59:43.222 Requesting full garbage collection
+14:59:43.223 14:59:43.222 GcTracker: cum:  56 intv:  1 ms:       1 mss:  0.00% Heap_MB max:   911 curr:   248 used:    22 free:   226 
+14:59:43.236 14:59:43.234 GcTracker: cum:  58 intv:  2 ms:      13 mss:  0.00% Heap_MB max:   911 curr:   249 used:    17 free:   231 
+14:59:43.236 14:59:43.234 task_wait_start_complete() end
+
+<a name="_2001112025"></a><i><b>14:59:44.001 Starting RD=ran_read_2m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+14:59:44.003 14:59:44.002 task_run_all(): 2 tasks
+15:00:06.599 15:00:06.597 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193163 of user root.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193165 of user root.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193161 of user root.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193164 of user zabbix.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193168 of user root.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193162 of user root.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193167 of user root.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193166 of user root.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193169 of user zabbix.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G systemd:Started Session 193170 of user zabbix.
+15:00:06.599 15:00:06.597 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:01 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+15:00:06.599 15:00:06.597 sendMessageToConsole: 
+15:00:11.607 15:00:11.606 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:00:11.607 15:00:11.606 sendMessageToConsole: /var/log/messages: 2019-10-09 15:00:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:00:11.607 15:00:11.606 sendMessageToConsole: 
+15:00:44.212 15:00:44.210 Interrupts issued for tasks WG_task: 2
+15:00:44.212 15:00:44.210 Sent 0 interrupts to 1 waiting IO_task threads
+15:00:45.202 15:00:45.201 Java Heap in MB. max:  910.500; current:  248.500; used:   40.852; free:  207.648
+15:00:45.202 15:00:45.201 Maximum native memory allocation:    4,194,304; Current allocation:            0
+15:00:45.202 15:00:45.201 End of run
+15:00:45.202 15:00:45.201 **********
+15:00:45.202 
+15:00:45.202 
+
+<a name="_314265080"></a><i><b>15:00:46.001 Starting RD=seq_write_4k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:01:06.618 15:01:06.617 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:01:06.618 15:01:06.617 sendMessageToConsole: /var/log/messages: 2019-10-09 15:01:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:01:06.618 15:01:06.617 sendMessageToConsole: /var/log/messages: 2019-10-09 15:01:01 IPIGNAT905G systemd:Started Session 193174 of user zabbix.
+15:01:06.618 15:01:06.617 sendMessageToConsole: /var/log/messages: 2019-10-09 15:01:01 IPIGNAT905G systemd:Started Session 193173 of user zabbix.
+15:01:06.618 15:01:06.617 sendMessageToConsole: /var/log/messages: 2019-10-09 15:01:01 IPIGNAT905G systemd:Started Session 193171 of user root.
+15:01:06.618 15:01:06.617 sendMessageToConsole: /var/log/messages: 2019-10-09 15:01:01 IPIGNAT905G systemd:Started Session 193172 of user zabbix.
+15:01:06.619 15:01:06.617 sendMessageToConsole: 
+15:01:11.626 15:01:11.625 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:01:11.627 15:01:11.625 sendMessageToConsole: /var/log/messages: 2019-10-09 15:01:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:01:11.627 15:01:11.625 sendMessageToConsole: 
+15:01:26.635 15:01:26.634 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:01:26.635 15:01:26.634 sendMessageToConsole: /var/log/messages: 2019-10-09 15:01:22 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+15:01:26.635 15:01:26.634 sendMessageToConsole: 
+
+<a name="_1288141870"></a><i><b>15:01:47.001 Starting RD=seq_write_8k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:02:06.646 15:02:06.644 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:02:06.646 15:02:06.645 sendMessageToConsole: /var/log/messages: 2019-10-09 15:02:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:02:06.646 15:02:06.645 sendMessageToConsole: /var/log/messages: 2019-10-09 15:02:01 IPIGNAT905G systemd:Started Session 193176 of user zabbix.
+15:02:06.646 15:02:06.645 sendMessageToConsole: /var/log/messages: 2019-10-09 15:02:01 IPIGNAT905G systemd:Started Session 193175 of user zabbix.
+15:02:06.646 15:02:06.645 sendMessageToConsole: /var/log/messages: 2019-10-09 15:02:01 IPIGNAT905G systemd:Started Session 193177 of user zabbix.
+15:02:06.646 15:02:06.645 sendMessageToConsole: 
+15:02:11.654 15:02:11.653 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:02:11.654 15:02:11.653 sendMessageToConsole: /var/log/messages: 2019-10-09 15:02:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:02:11.654 15:02:11.653 sendMessageToConsole: 
+
+<a name="_2054881392"></a><i><b>15:02:48.001 Starting RD=seq_write_16k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:03:06.664 15:03:06.663 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:03:06.664 15:03:06.663 sendMessageToConsole: /var/log/messages: 2019-10-09 15:03:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:03:06.664 15:03:06.663 sendMessageToConsole: /var/log/messages: 2019-10-09 15:03:01 IPIGNAT905G systemd:Started Session 193178 of user zabbix.
+15:03:06.664 15:03:06.663 sendMessageToConsole: /var/log/messages: 2019-10-09 15:03:01 IPIGNAT905G systemd:Started Session 193180 of user zabbix.
+15:03:06.664 15:03:06.663 sendMessageToConsole: /var/log/messages: 2019-10-09 15:03:01 IPIGNAT905G systemd:Started Session 193179 of user zabbix.
+15:03:06.664 15:03:06.663 sendMessageToConsole: 
+15:03:11.674 15:03:11.673 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:03:11.674 15:03:11.673 sendMessageToConsole: /var/log/messages: 2019-10-09 15:03:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:03:11.674 15:03:11.673 sendMessageToConsole: 
+
+<a name="_966808741"></a><i><b>15:03:49.001 Starting RD=seq_write_32k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:04:06.685 15:04:06.683 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:04:06.685 15:04:06.683 sendMessageToConsole: /var/log/messages: 2019-10-09 15:04:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:04:06.685 15:04:06.683 sendMessageToConsole: /var/log/messages: 2019-10-09 15:04:01 IPIGNAT905G systemd:Started Session 193182 of user zabbix.
+15:04:06.685 15:04:06.683 sendMessageToConsole: /var/log/messages: 2019-10-09 15:04:01 IPIGNAT905G systemd:Started Session 193181 of user zabbix.
+15:04:06.685 15:04:06.683 sendMessageToConsole: /var/log/messages: 2019-10-09 15:04:01 IPIGNAT905G systemd:Started Session 193183 of user zabbix.
+15:04:06.685 15:04:06.683 sendMessageToConsole: 
+15:04:11.693 15:04:11.692 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:04:11.693 15:04:11.692 sendMessageToConsole: /var/log/messages: 2019-10-09 15:04:07 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:04:11.693 15:04:11.692 sendMessageToConsole: 
+
+<a name="_1908153060"></a><i><b>15:04:50.001 Starting RD=seq_write_64k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:05:01.704 15:05:01.702 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:05:01.704 15:05:01.702 sendMessageToConsole: /var/log/messages: 2019-10-09 15:05:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:05:01.704 15:05:01.702 sendMessageToConsole: /var/log/messages: 2019-10-09 15:05:01 IPIGNAT905G systemd:Started Session 193186 of user zabbix.
+15:05:01.704 15:05:01.702 sendMessageToConsole: /var/log/messages: 2019-10-09 15:05:01 IPIGNAT905G systemd:Started Session 193184 of user root.
+15:05:01.704 15:05:01.702 sendMessageToConsole: /var/log/messages: 2019-10-09 15:05:01 IPIGNAT905G systemd:Started Session 193185 of user zabbix.
+15:05:01.704 15:05:01.702 sendMessageToConsole: /var/log/messages: 2019-10-09 15:05:01 IPIGNAT905G systemd:Started Session 193187 of user root.
+15:05:01.704 15:05:01.702 sendMessageToConsole: /var/log/messages: 2019-10-09 15:05:01 IPIGNAT905G systemd:Started Session 193188 of user root.
+15:05:01.704 15:05:01.702 sendMessageToConsole: /var/log/messages: 2019-10-09 15:05:01 IPIGNAT905G systemd:Started Session 193189 of user zabbix.
+15:05:01.704 15:05:01.702 sendMessageToConsole: 
+15:05:06.712 15:05:06.710 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:05:06.712 15:05:06.710 sendMessageToConsole: /var/log/messages: 2019-10-09 15:05:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:05:06.712 15:05:06.710 sendMessageToConsole: 
+
+<a name="_116211441"></a><i><b>15:05:51.001 Starting RD=seq_write_128k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:06:01.723 15:06:01.721 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:06:01.723 15:06:01.721 sendMessageToConsole: /var/log/messages: 2019-10-09 15:06:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:06:01.723 15:06:01.721 sendMessageToConsole: /var/log/messages: 2019-10-09 15:06:01 IPIGNAT905G systemd:Started Session 193190 of user zabbix.
+15:06:01.723 15:06:01.721 sendMessageToConsole: /var/log/messages: 2019-10-09 15:06:01 IPIGNAT905G systemd:Started Session 193191 of user zabbix.
+15:06:01.723 15:06:01.721 sendMessageToConsole: /var/log/messages: 2019-10-09 15:06:01 IPIGNAT905G systemd:Started Session 193192 of user zabbix.
+15:06:01.723 15:06:01.721 sendMessageToConsole: 
+15:06:06.731 15:06:06.730 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:06:06.731 15:06:06.730 sendMessageToConsole: /var/log/messages: 2019-10-09 15:06:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:06:06.731 15:06:06.730 sendMessageToConsole: 
+
+<a name="_607635164"></a><i><b>15:06:52.001 Starting RD=seq_write_512k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:07:01.742 15:07:01.740 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:07:01.742 15:07:01.740 sendMessageToConsole: /var/log/messages: 2019-10-09 15:07:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:07:01.742 15:07:01.740 sendMessageToConsole: /var/log/messages: 2019-10-09 15:07:01 IPIGNAT905G systemd:Started Session 193193 of user zabbix.
+15:07:01.742 15:07:01.740 sendMessageToConsole: /var/log/messages: 2019-10-09 15:07:01 IPIGNAT905G systemd:Started Session 193195 of user zabbix.
+15:07:01.742 15:07:01.740 sendMessageToConsole: /var/log/messages: 2019-10-09 15:07:01 IPIGNAT905G systemd:Started Session 193194 of user zabbix.
+15:07:01.742 15:07:01.740 sendMessageToConsole: 
+15:07:06.752 15:07:06.750 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:07:06.752 15:07:06.750 sendMessageToConsole: /var/log/messages: 2019-10-09 15:07:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:07:06.752 15:07:06.750 sendMessageToConsole: 
+
+<a name="_529116035"></a><i><b>15:07:53.000 Starting RD=seq_write_1m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:08:01.762 15:08:01.760 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:08:01.762 15:08:01.760 sendMessageToConsole: /var/log/messages: 2019-10-09 15:08:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:08:01.762 15:08:01.760 sendMessageToConsole: /var/log/messages: 2019-10-09 15:08:01 IPIGNAT905G systemd:Started Session 193198 of user zabbix.
+15:08:01.762 15:08:01.760 sendMessageToConsole: /var/log/messages: 2019-10-09 15:08:01 IPIGNAT905G systemd:Started Session 193197 of user zabbix.
+15:08:01.762 15:08:01.760 sendMessageToConsole: /var/log/messages: 2019-10-09 15:08:01 IPIGNAT905G systemd:Started Session 193196 of user zabbix.
+15:08:01.762 15:08:01.760 sendMessageToConsole: 
+15:08:06.770 15:08:06.769 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:08:06.770 15:08:06.769 sendMessageToConsole: /var/log/messages: 2019-10-09 15:08:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:08:06.770 15:08:06.769 sendMessageToConsole: 
+15:08:16.779 15:08:16.778 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:08:16.779 15:08:16.778 sendMessageToConsole: /var/log/messages: 2019-10-09 15:08:14 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+15:08:16.779 15:08:16.778 sendMessageToConsole: 
+
+<a name="_242481580"></a><i><b>15:08:54.001 Starting RD=seq_write_2m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:09:01.790 15:09:01.788 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:09:01.790 15:09:01.788 sendMessageToConsole: /var/log/messages: 2019-10-09 15:09:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:09:01.790 15:09:01.788 sendMessageToConsole: /var/log/messages: 2019-10-09 15:09:01 IPIGNAT905G systemd:Started Session 193200 of user zabbix.
+15:09:01.790 15:09:01.788 sendMessageToConsole: /var/log/messages: 2019-10-09 15:09:01 IPIGNAT905G systemd:Started Session 193199 of user zabbix.
+15:09:01.790 15:09:01.788 sendMessageToConsole: /var/log/messages: 2019-10-09 15:09:01 IPIGNAT905G systemd:Started Session 193201 of user zabbix.
+15:09:01.790 15:09:01.788 sendMessageToConsole: 
+15:09:06.798 15:09:06.797 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:09:06.798 15:09:06.797 sendMessageToConsole: /var/log/messages: 2019-10-09 15:09:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:09:06.798 15:09:06.797 sendMessageToConsole: 
+
+<a name="_1627800613"></a><i><b>15:09:55.001 Starting RD=seq_read_4k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:10:01.810 15:10:01.807 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G systemd:Started Session 193205 of user zabbix.
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G systemd:Started Session 193204 of user zabbix.
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G systemd:Started Session 193203 of user root.
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G systemd:Started Session 193202 of user root.
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G systemd:Started Session 193206 of user root.
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G systemd:Started Session 193207 of user root.
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G systemd:Started Session 193208 of user zabbix.
+15:10:01.810 15:10:01.808 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:01 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+15:10:01.810 15:10:01.808 sendMessageToConsole: 
+15:10:06.819 15:10:06.818 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:10:06.819 15:10:06.818 sendMessageToConsole: /var/log/messages: 2019-10-09 15:10:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:10:06.819 15:10:06.818 sendMessageToConsole: 
+
+<a name="_2065530879"></a><i><b>15:10:56.001 Starting RD=seq_read_8k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:11:01.830 15:11:01.828 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:11:01.830 15:11:01.828 sendMessageToConsole: /var/log/messages: 2019-10-09 15:11:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:11:01.830 15:11:01.828 sendMessageToConsole: /var/log/messages: 2019-10-09 15:11:01 IPIGNAT905G systemd:Started Session 193209 of user zabbix.
+15:11:01.830 15:11:01.828 sendMessageToConsole: /var/log/messages: 2019-10-09 15:11:01 IPIGNAT905G systemd:Started Session 193211 of user zabbix.
+15:11:01.830 15:11:01.828 sendMessageToConsole: /var/log/messages: 2019-10-09 15:11:01 IPIGNAT905G systemd:Started Session 193210 of user zabbix.
+15:11:01.830 15:11:01.828 sendMessageToConsole: 
+15:11:06.838 15:11:06.837 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:11:06.838 15:11:06.837 sendMessageToConsole: /var/log/messages: 2019-10-09 15:11:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:11:06.838 15:11:06.837 sendMessageToConsole: 
+
+<a name="_697960108"></a><i><b>15:11:57.001 Starting RD=seq_read_16k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:12:01.849 15:12:01.848 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:12:01.849 15:12:01.848 sendMessageToConsole: /var/log/messages: 2019-10-09 15:12:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:12:01.849 15:12:01.848 sendMessageToConsole: /var/log/messages: 2019-10-09 15:12:01 IPIGNAT905G systemd:Started Session 193213 of user zabbix.
+15:12:01.849 15:12:01.848 sendMessageToConsole: /var/log/messages: 2019-10-09 15:12:01 IPIGNAT905G systemd:Started Session 193214 of user zabbix.
+15:12:01.849 15:12:01.848 sendMessageToConsole: /var/log/messages: 2019-10-09 15:12:01 IPIGNAT905G systemd:Started Session 193212 of user zabbix.
+15:12:01.849 15:12:01.848 sendMessageToConsole: 
+15:12:06.857 15:12:06.856 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:12:06.857 15:12:06.856 sendMessageToConsole: /var/log/messages: 2019-10-09 15:12:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:12:06.858 15:12:06.856 sendMessageToConsole: 
+
+<a name="_943010986"></a><i><b>15:12:58.001 Starting RD=seq_read_32k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:13:01.869 15:13:01.867 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:13:01.869 15:13:01.867 sendMessageToConsole: /var/log/messages: 2019-10-09 15:13:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:13:01.869 15:13:01.867 sendMessageToConsole: /var/log/messages: 2019-10-09 15:13:01 IPIGNAT905G systemd:Started Session 193217 of user zabbix.
+15:13:01.869 15:13:01.867 sendMessageToConsole: /var/log/messages: 2019-10-09 15:13:01 IPIGNAT905G systemd:Started Session 193215 of user zabbix.
+15:13:01.869 15:13:01.867 sendMessageToConsole: /var/log/messages: 2019-10-09 15:13:01 IPIGNAT905G systemd:Started Session 193216 of user zabbix.
+15:13:01.869 15:13:01.867 sendMessageToConsole: 
+15:13:06.878 15:13:06.876 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:13:06.878 15:13:06.876 sendMessageToConsole: /var/log/messages: 2019-10-09 15:13:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:13:06.878 15:13:06.876 sendMessageToConsole: 
+15:13:21.887 15:13:21.885 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:13:21.887 15:13:21.885 sendMessageToConsole: /var/log/messages: 2019-10-09 15:13:20 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+15:13:21.887 15:13:21.885 sendMessageToConsole: 
+
+<a name="_1807837413"></a><i><b>15:13:59.001 Starting RD=seq_read_64k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:14:01.897 15:14:01.895 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:14:01.897 15:14:01.895 sendMessageToConsole: /var/log/messages: 2019-10-09 15:14:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:14:01.897 15:14:01.895 sendMessageToConsole: /var/log/messages: 2019-10-09 15:14:01 IPIGNAT905G systemd:Started Session 193219 of user zabbix.
+15:14:01.897 15:14:01.895 sendMessageToConsole: /var/log/messages: 2019-10-09 15:14:01 IPIGNAT905G systemd:Started Session 193218 of user zabbix.
+15:14:01.897 15:14:01.895 sendMessageToConsole: /var/log/messages: 2019-10-09 15:14:01 IPIGNAT905G systemd:Started Session 193220 of user zabbix.
+15:14:01.897 15:14:01.895 sendMessageToConsole: 
+15:14:06.906 15:14:06.904 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:14:06.906 15:14:06.904 sendMessageToConsole: /var/log/messages: 2019-10-09 15:14:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:14:06.906 15:14:06.904 sendMessageToConsole: 
+
+<a name="_2066940133"></a><i><b>15:15:00.001 Starting RD=seq_read_128k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:15:01.916 15:15:01.914 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:15:01.916 15:15:01.914 sendMessageToConsole: /var/log/messages: 2019-10-09 15:15:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:15:01.916 15:15:01.914 sendMessageToConsole: /var/log/messages: 2019-10-09 15:15:01 IPIGNAT905G systemd:Started Session 193221 of user zabbix.
+15:15:01.916 15:15:01.914 sendMessageToConsole: /var/log/messages: 2019-10-09 15:15:01 IPIGNAT905G systemd:Started Session 193222 of user zabbix.
+15:15:01.916 15:15:01.914 sendMessageToConsole: /var/log/messages: 2019-10-09 15:15:01 IPIGNAT905G systemd:Started Session 193224 of user root.
+15:15:01.916 15:15:01.914 sendMessageToConsole: /var/log/messages: 2019-10-09 15:15:01 IPIGNAT905G systemd:Started Session 193225 of user zabbix.
+15:15:01.916 15:15:01.914 sendMessageToConsole: /var/log/messages: 2019-10-09 15:15:01 IPIGNAT905G systemd:Started Session 193223 of user root.
+15:15:01.916 15:15:01.914 sendMessageToConsole: /var/log/messages: 2019-10-09 15:15:01 IPIGNAT905G systemd:Started Session 193226 of user root.
+15:15:01.916 15:15:01.914 sendMessageToConsole: 
+15:15:06.924 15:15:06.922 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:15:06.924 15:15:06.922 sendMessageToConsole: /var/log/messages: 2019-10-09 15:15:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:15:06.924 15:15:06.922 sendMessageToConsole: 
+15:16:01.934 15:16:01.932 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:16:01.934 15:16:01.932 sendMessageToConsole: /var/log/messages: 2019-10-09 15:16:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:16:01.934 15:16:01.932 sendMessageToConsole: /var/log/messages: 2019-10-09 15:16:01 IPIGNAT905G systemd:Started Session 193229 of user zabbix.
+15:16:01.934 15:16:01.932 sendMessageToConsole: /var/log/messages: 2019-10-09 15:16:01 IPIGNAT905G systemd:Started Session 193228 of user zabbix.
+15:16:01.934 15:16:01.932 sendMessageToConsole: /var/log/messages: 2019-10-09 15:16:01 IPIGNAT905G systemd:Started Session 193227 of user zabbix.
+15:16:01.934 15:16:01.932 sendMessageToConsole: 
+
+<a name="_48612937"></a><i><b>15:16:02.001 Starting RD=seq_read_512k; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:16:06.943 15:16:06.942 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:16:06.943 15:16:06.942 sendMessageToConsole: /var/log/messages: 2019-10-09 15:16:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:16:06.943 15:16:06.942 sendMessageToConsole: 
+15:16:51.954 15:16:51.951 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:16:51.954 15:16:51.952 sendMessageToConsole: /var/log/messages: 2019-10-09 15:16:48 IPIGNAT905G automount:add_host_addrs: hostname lookup failed: Name or service not known
+15:16:51.954 15:16:51.952 sendMessageToConsole: 
+15:17:01.962 15:17:01.960 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:17:01.962 15:17:01.960 sendMessageToConsole: /var/log/messages: 2019-10-09 15:17:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:17:01.962 15:17:01.960 sendMessageToConsole: /var/log/messages: 2019-10-09 15:17:01 IPIGNAT905G systemd:Started Session 193230 of user zabbix.
+15:17:01.962 15:17:01.960 sendMessageToConsole: /var/log/messages: 2019-10-09 15:17:01 IPIGNAT905G systemd:Started Session 193232 of user zabbix.
+15:17:01.962 15:17:01.960 sendMessageToConsole: /var/log/messages: 2019-10-09 15:17:01 IPIGNAT905G systemd:Started Session 193231 of user zabbix.
+15:17:01.962 15:17:01.960 sendMessageToConsole: 
+
+<a name="_325333723"></a><i><b>15:17:04.001 Starting RD=seq_read_1m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:17:06.971 15:17:06.969 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:17:06.971 15:17:06.969 sendMessageToConsole: /var/log/messages: 2019-10-09 15:17:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:17:06.971 15:17:06.969 sendMessageToConsole: 
+15:18:01.981 15:18:01.980 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:18:01.981 15:18:01.980 sendMessageToConsole: /var/log/messages: 2019-10-09 15:18:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:18:01.981 15:18:01.980 sendMessageToConsole: /var/log/messages: 2019-10-09 15:18:01 IPIGNAT905G systemd:Started Session 193233 of user zabbix.
+15:18:01.981 15:18:01.980 sendMessageToConsole: /var/log/messages: 2019-10-09 15:18:01 IPIGNAT905G systemd:Started Session 193235 of user zabbix.
+15:18:01.981 15:18:01.980 sendMessageToConsole: /var/log/messages: 2019-10-09 15:18:01 IPIGNAT905G systemd:Started Session 193234 of user zabbix.
+15:18:01.981 15:18:01.980 sendMessageToConsole: 
+
+<a name="_1937962514"></a><i><b>15:18:06.001 Starting RD=seq_read_2m; I/O rate: Uncontrolled MAX; elapsed=60; For loops: None</b></i>
+
+15:18:06.989 15:18:06.988 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:18:06.989 15:18:06.988 sendMessageToConsole: /var/log/messages: 2019-10-09 15:18:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:18:06.990 15:18:06.988 sendMessageToConsole: 
+15:19:02.000 15:19:01.998 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:19:02.000 15:19:01.998 sendMessageToConsole: /var/log/messages: 2019-10-09 15:19:01 IPIGNAT905G systemd:Created slice User Slice of zabbix.
+15:19:02.000 15:19:01.998 sendMessageToConsole: /var/log/messages: 2019-10-09 15:19:01 IPIGNAT905G systemd:Started Session 193237 of user zabbix.
+15:19:02.000 15:19:01.998 sendMessageToConsole: /var/log/messages: 2019-10-09 15:19:01 IPIGNAT905G systemd:Started Session 193236 of user zabbix.
+15:19:02.000 15:19:01.998 sendMessageToConsole: /var/log/messages: 2019-10-09 15:19:01 IPIGNAT905G systemd:Started Session 193238 of user zabbix.
+15:19:02.000 15:19:01.998 sendMessageToConsole: 
+15:19:07.009 15:19:07.007 sendMessageToConsole: New messages found on /var/adm/messages. Do they belong to you?
+15:19:07.009 15:19:07.007 sendMessageToConsole: /var/log/messages: 2019-10-09 15:19:06 IPIGNAT905G systemd:Removed slice User Slice of zabbix.
+15:19:07.009 15:19:07.007 sendMessageToConsole: 
+15:19:07.141 15:19:07.139 Master is requesting slave shutdown
+15:19:07.141 15:19:07.139 Java Heap in MB. max:  910.500; current:  252.000; used:   26.396; free:  225.604
